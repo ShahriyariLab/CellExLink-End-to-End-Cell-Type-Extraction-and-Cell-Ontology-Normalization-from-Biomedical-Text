@@ -1,0 +1,16 @@
+accelerate==0.34.2
+bioc==2.1
+datasets==3.0.1
+huggingface-hub==0.25.1
+numpy==1.26.4
+pyab3p==0.1.1
+pyobo==0.12.18
+scipy==1.14.1
+scispacy==0.6.2
+sentence-transformers==5.3.0
+spacy==3.7.5
+torch==2.4.1
+tqdm==4.67.3
+transformers==4.45.1
+en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz#sha256=a54a114ee11dab7cf6db8cf69ef485145011537f45f3c16c71338c48fd6f070b
+
