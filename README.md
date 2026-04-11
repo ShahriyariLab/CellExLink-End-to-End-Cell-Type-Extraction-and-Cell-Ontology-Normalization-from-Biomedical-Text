@@ -1,4 +1,4 @@
-# CellExLink
+## CellExLink: End-to-End Cell-Type Recognition and Normalization in Biomedical Text
 
 
 ### Prepraration
