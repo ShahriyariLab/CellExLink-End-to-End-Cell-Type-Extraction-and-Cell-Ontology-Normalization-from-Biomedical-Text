@@ -128,6 +128,20 @@ The training and test datasets shared in this repository are available from Zeno
 
 Please follow the dataset's own license, citation, and redistribution terms.
 
+## License
+
+Unless otherwise noted, the CellExLink source code is licensed under the
+Apache License, Version 2.0. See [LICENSE](LICENSE).
+
+Datasets, ontology resources, dependencies remain subject to their respective licenses and terms of use.
+
+## Citation
+
+If you use CellExLink, please cite the versioned release and the
+associated paper. Citation metadata are provided in
+[CITATION.cff](CITATION.cff).
+
+
 ## Questions and Issues
 
 For usage questions or bug reports, please open a GitHub issue and include:
