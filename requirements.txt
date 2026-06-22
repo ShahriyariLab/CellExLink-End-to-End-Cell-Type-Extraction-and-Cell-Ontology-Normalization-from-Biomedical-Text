@@ -12,5 +12,4 @@ spacy==3.7.5
 torch==2.4.1
 tqdm==4.67.3
 transformers==4.45.1
-en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz#sha256=a54a114ee11dab7cf6db8cf69ef485145011537f45f3c16c71338c48fd6f070b
 

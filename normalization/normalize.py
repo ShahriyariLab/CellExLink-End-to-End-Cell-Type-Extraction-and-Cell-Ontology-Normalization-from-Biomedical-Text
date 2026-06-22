@@ -1,6 +1,6 @@
+import json
 import argparse
 import re
-import json
 import time
 from pathlib import Path
 from collections import Counter, defaultdict
@@ -11,7 +11,10 @@ import torch
 from scipy.spatial.distance import cdist
 from tqdm.auto import tqdm
 from transformers import AutoTokenizer, AutoModel
-from .plural_stemmer import normalize_text as plural_normalize_text
+try:
+    from .plural_stemmer import normalize_text as plural_normalize_text
+except ImportError:  # pragma: no cover
+    from plural_stemmer import normalize_text as plural_normalize_text
 
 try:
     import pyab3p
@@ -21,7 +24,6 @@ except ImportError:  # pragma: no cover
 
 DEFAULT_TOPN = 1
 AMBIGUOUS_TOPN = 5
-EL_RUNTIME_SUMMARY_FILENAME = "el_predict_runtime_summary.json"
 
 ABBREVIATION_HEADER = [
     "short_form",
@@ -424,8 +426,8 @@ def load_abbreviation_identifier_lookup(abbr_paths, verbose=True):
 
 def get_document_key(document, passage):
     key = (
-        passage.infons.get("article-id_pmid")
-        or document.id
+        document.id
+        or passage.infons.get("article-id_pmid")
         or passage.infons.get("passage_id")
     )
     if key is None:
@@ -1042,7 +1044,12 @@ def run_inference(
     }
 
 
-def process_collection(input_filename, models_results, output_filename):
+def process_collection(
+    input_filename,
+    models_results,
+    output_filename,
+    include_identifier_scores=False,
+):
     print("Processing file", input_filename, "to", output_filename)
 
     with open(input_filename, "r", encoding="utf-8") as fp:
@@ -1084,13 +1091,11 @@ def process_collection(input_filename, models_results, output_filename):
 
                             annotation.infons[model_name + "_id_0"] = best["identifier"]
                             annotation.infons[model_name + "_identifier_name_0"] = best["name"]
-                            annotation.infons[model_name + "_identifier_score_0"] = float(
-                                best.get("final_score", best.get("embedding_score", 0.0))
-                            )
-                            annotation.infons[model_name + "_match_source"] = best.get("source", "unknown")
+                            if include_identifier_scores:
+                                annotation.infons[model_name + "_identifier_score_0"] = float(
+                                    best.get("final_score", best.get("embedding_score", 0.0))
+                                )
 
-                            if "abbreviation_method" in best:
-                                annotation.infons[model_name + "_abbreviation_method"] = best["abbreviation_method"]
                             if "expanded_long_form" in best:
                                 annotation.infons[model_name + "_expanded_long_form"] = best["expanded_long_form"]
                             if "ab3p_method" in best and best["ab3p_method"] is not None:
@@ -1153,6 +1158,7 @@ def main(
     model_names,
     abbr_verbose=True,
     el_warmup_runs=1,
+    include_identifier_scores=False,
 ):
     if isinstance(abbr_paths, str):
         abbr_paths = [abbr_paths]
@@ -1203,9 +1209,8 @@ def main(
     )
 
     models_results = {}
-    runtime_summaries = {}
     for model_nickname, model_fullname in model_names.items():
-        model_results, runtime_summary = run_inference(
+        model_results, _runtime_summary = run_inference(
             model_fullname,
             term_entries,
             concept_metadata,
@@ -1215,7 +1220,6 @@ def main(
             el_warmup_runs=el_warmup_runs,
         )
         models_results[model_nickname] = model_results
-        runtime_summaries[model_nickname] = runtime_summary
         print(
             "Model {} produced {} normalized mention entries".format(
                 model_nickname,
@@ -1225,11 +1229,12 @@ def main(
 
     print("Going to process files")
     for input_filename, output_filename in zip(input_paths, output_paths):
-        process_collection(input_filename, models_results, output_filename)
-
-    if output_paths:
-        runtime_summary_path = Path(output_paths[0]).resolve().parent / EL_RUNTIME_SUMMARY_FILENAME
-        runtime_summary_path.write_text(json.dumps(runtime_summaries, indent=2), encoding="utf-8")
+        process_collection(
+            input_filename,
+            models_results,
+            output_filename,
+            include_identifier_scores=include_identifier_scores,
+        )
 
     print("Done.")
 
@@ -1261,6 +1266,11 @@ def parse_args():
         default=1,
         help="Number of EL warmup runs before timing mention normalization.",
     )
+    parser.add_argument(
+        "--include-identifier-scores",
+        action="store_true",
+        help="Write `*_identifier_score_0` fields for evaluation workflows.",
+    )
     return parser.parse_args()
 
 
@@ -1277,4 +1287,5 @@ if __name__ == "__main__":
         model_names={model_name: args.model_path},
         abbr_verbose=args.abbr_verbose,
         el_warmup_runs=args.el_warmup_runs,
+        include_identifier_scores=args.include_identifier_scores,
     )

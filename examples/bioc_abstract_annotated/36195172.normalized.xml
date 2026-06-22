@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>36195172</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Human natural killer cells: Form, function, and development.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">natural killer cell</infon>
+        <location offset="0" length="26"/>
+        <text>Human natural killer cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>61</offset>
+      <text>Human natural killer (NK) cells are innate lymphoid cells that mediate important effector functions in the control of viral infection and malignancy. Their ability to distinguish "self" from "nonself" and lyse virally infected and tumorigenic cells through germline-encoded receptors makes them important players in maintaining human health and a powerful tool for immunotherapeutic applications and fighting disease. This review introduces our current understanding of NK cell biology, including key facets of NK cell differentiation and the acquisition and execution of NK cell effector function. Further, it addresses the clinical relevance of NK cells in both primary immunodeficiency and immunotherapy. It is intended to provide an up-to-date and comprehensive overview of this important and interesting innate immune effector cell subset.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">natural killer cell</infon>
+        <location offset="61" length="31"/>
+        <text>Human natural killer (NK) cells</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="97" length="21"/>
+        <text>innate lymphoid cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">NK cell</infon>
+        <location offset="531" length="7"/>
+        <text>NK cell</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">NK cell</infon>
+        <location offset="572" length="7"/>
+        <text>NK cell</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">NK cell</infon>
+        <location offset="633" length="7"/>
+        <text>NK cell</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">NK cell</infon>
+        <location offset="708" length="8"/>
+        <text>NK cells</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002127</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate effector T cell</infon>
+        <location offset="870" length="27"/>
+        <text>innate immune effector cell</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>29466753</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Human T Cell Development, Localization, and Function throughout Life.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="6" length="6"/>
+        <text>T Cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>70</offset>
+      <text>Throughout life, T cells coordinate multiple aspects of adaptive immunity, including responses to pathogens, allergens, and tumors. In mouse models, the role of T cells is studied in the context of a specific type of pathogen, antigen, or disease condition over a limited time frame, whereas in humans, T cells control multiple insults simultaneously throughout the body and maintain immune homeostasis over decades. In this review, we discuss how human T cells develop and provide essential immune protection at different life stages and highlight tissue localization and subset delineation as key determinants of the T cell functional role in immune responses. We also discuss how anatomic compartments undergo distinct age-associated changes in T cell subset composition and function over a lifetime. It is important to consider age and tissue influences on human T cells when developing targeted strategies to modulate T cell-mediated immunity in vaccines and immunotherapies.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="87" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="231" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="373" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="524" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="689" length="6"/>
+        <text>T cell</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="818" length="6"/>
+        <text>T cell</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="937" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="993" length="6"/>
+        <text>T cell</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

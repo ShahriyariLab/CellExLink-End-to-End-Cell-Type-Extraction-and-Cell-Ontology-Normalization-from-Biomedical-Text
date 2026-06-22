@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>34297930</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Fibroblasts: Origins, definitions, and functions in health and disease.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="0" length="11"/>
+        <text>Fibroblasts</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>72</offset>
+      <text>Fibroblasts are diverse mesenchymal cells that participate in tissue homeostasis and disease by producing complex extracellular matrix and creating signaling niches through biophysical and biochemical cues. Transcriptionally and functionally heterogeneous across and within organs, fibroblasts encode regional positional information and maintain distinct cellular progeny. We summarize their development, lineages, functions, and contributions to fibrosis in four fibroblast-rich organs: skin, lung, skeletal muscle, and heart. We propose that fibroblasts are uniquely poised for tissue repair by easily reentering the cell cycle and exhibiting a reversible plasticity in phenotype and cell fate. These properties, when activated aberrantly, drive fibrotic disorders in humans.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="72" length="11"/>
+        <text>Fibroblasts</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0008019</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mesenchymal cell</infon>
+        <location offset="96" length="17"/>
+        <text>mesenchymal cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="354" length="11"/>
+        <text>fibroblasts</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="536" length="10"/>
+        <text>fibroblast</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="616" length="11"/>
+        <text>fibroblasts</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

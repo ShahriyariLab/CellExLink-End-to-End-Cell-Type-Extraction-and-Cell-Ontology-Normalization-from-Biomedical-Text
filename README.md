@@ -1,113 +1,138 @@
-## CellExLink: End-to-End Cell-Type Recognition and Normalization in Biomedical Text
+# CellExLink: End-to-End Cell-Type Recognition and Normalization in Biomedical Text
 
+`CellExLink` is a Python pipeline for end-to-end cell-type extraction from biomedical text.
 
-### Prepraration
+The inference pipeline has two stages:
+
+1. `NER`: detect cell-type mention spans
+2. `NEN`: assign Cell Ontology (`CL`) identifiers to detected mentions
+
+## Installation
 
 ```bash
-conda create -n CellExlink python=3.12
-conda activate CellExlink
-git clone https://github.com/CellExLink
+git clone https://github.com/ShahriyariLab/CellExLink-End-to-End-Cell-Type-Extraction-and-Cell-Ontology-Normalization-from-Biomedical-Text.git CellExLink
 cd CellExLink
-pip install -r requirements.txt
-```
-This repository provides the code required to fine-tune the CellExLink NER and NEN models. Alternatively, the fine-tuned checkpoints can be downloaded directly from Hugging Face.
-Download the fine-tuned checkpoints from Hugging Face and place them in the appropriate directories.
 
-For the CellExLink NER component, download the checkpoint from [here](https://huggingface.co/almire/CellExLink-bioformer16L) and place it under `recognition/models/`. or 
+conda create -n cellexlink python=3.12 -y
+conda activate cellexlink
+python -m pip install -r requirements.txt
+```
+
+## Model Download
+The default model checkpoints used by the recognition and ontology-linking components are hosted on Hugging Face and are not stored in this repository.
+
+Default checkpoints:
+
+- Recognition model: [`almire/CellExLink-bioformer16L`](https://huggingface.co/almire/CellExLink-bioformer16L)
+- Ontology-linking embedding-retrieval model: [`almire/CellExLink-Sapbert`](https://huggingface.co/almire/CellExLink-Sapbert)
+
+Download the default checkpoints with:
 
 ```bash
-huggingface-cli download almire/CellExLink-bioformer16L --local-dir ./recognition/models/CellExLink-bioformer16L
+python -m pip install huggingface_hub
+python download_models.py
 ```
 
-For the CellExLink NEN component, download the checkpoint from [here](https://huggingface.co/almire/CellExLink-Sapbert) and place it under `normalization/models/`. or 
+This creates:
+
+```text
+models/
+  CellExLink-bioformer16L/
+  CellExLink-Sapbert/
+  models.json
+```
+
+## Usage
+
+CellExLink accepts unannotated [BioC XML](https://bioc.sourceforge.net/) documents, including:
+
+- PubMed titles and abstracts obtained through the NCBI BioC PubMed API
+- Eligible PMC full-text articles obtained through the NCBI BioC PMC API
+
+Example input files are provided in:
+
+```text
+examples/bioc_abstracts/
+examples/bioc_fulltext/
+```
+
+Run CellExLink on PubMed abstracts
 
 ```bash
-huggingface-cli download almire/CellExLink-Sapbert --local-dir ./normalization/models/CellExLink-Sapbert
+python prediction_script.py \
+    examples/bioc_abstracts \
+    --output-root examples/bioc_abstracts_annotated
 ```
 
-### Using CellExLink
-
-#### NER prediction
-```bash
-from recognition import predict_ner
-
-predict_ner(
-    model_path="recognition/models/CellExLink-bioformer16L",
-    input_xml="dataset/BioID/test.xml",
-    output_dir="model_outputs/ner",
-    output_xml="model_outputs/ner/ner_predictions.xml",
-)
-```
-#### NEN prediction
-```bash
-from normalization import normalize_bioc
-
-normalize_bioc(
-    input_xml="model_outputs/ner/ner_predictions.xml",
-    #input_xml="dataset/BioID/test.xml"  # for gold mention normalization
-    output_xml="model_outputs/normalized.xml",
-    model_path="normalization/models/CellExLink-Sapbert",
-)
-```
-### Fine-tuning
-Fine-tune the NER model:
+Run CellExLink on PMC full-text articles
 
 ```bash
-python recognition/src/run_fine_tune.py \
-  --train-xml dataset/train_data.xml \
-  --output-dir recognition/models/CellExLink-bioformer16L
-  --model-name-or-path bioformers/bioformer-16L 
+python prediction_script.py \
+    examples/bioc_fulltext \
+    --output-root examples/bioc_fulltext_annotated
 ```
-Fine-tune the NEN model:
+
+The command runs the complete end-to-end workflow. It detects cell-type mentions and assigns a Cell Ontology identifier to each detected span. The original BioC document structure and text are preserved, and the predictions are added as BioC XML annotations.
+
+For example, an input passage containing:
+
+```xml
+<passage>
+  <infon key="type">title</infon>
+  <offset>0</offset>
+  <text>B lymphocytes: how they develop and function.</text>
+</passage>
+```
+is returned with an annotation such as:
+
+```xml
+<annotation id="T1">
+  <infon key="type">cell_type</infon>
+  <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+  <infon key="CellExLink-Sapbert_identifier_name_0">B lymphocyte</infon>
+  <location offset="0" length="13"/>
+  <text>B lymphocytes</text>
+</annotation>
+```
+
+Precomputed outputs for the supplied examples are available in:
+
+```text
+examples/bioc_abstracts_annotated/
+examples/bioc_fulltext_annotated/
+```
+
+Run the end-to-end pipeline on a single BioC XML file:
 
 ```bash
-python normalization/fine_tune_NEN.py \
-  --train-pairs normalization/train_data/sapbert_training_pairs.txt \
-  --output-dir normalization/models/CellExLink-Sapbertx
+python prediction_script.py examples/input_bioc.xml
+```
+Precomputed output is available in:
+
+```tesxt
+examples/input_bioc_normalized.xml
 ```
 
-### Evaluation
-Run NER-only evaluation:
+## Additional Guidance
 
-```bash
-python evaluation/run_eval_NER_only.py \
-  --reference-path dataset/BioID/test.xml \
-  --prediction-path model_outputs/ner/ner_predictions.xml \
-  --evaluation-method strict
-```
+Additional repository guides are available for developers for training and benchmark evaluation.
 
-Evaluation method can be `strict` or `relax`.
-
-Run NEN evaluation:
-
-```bash
-python evaluation/run_eval.py \
-  --dataset other \
-  --reference-path dataset/BioID/test.xml \
-  --prediction-path model_outputs/normalized.xml \
-  --model-names CellExLink-Sapbert \
-  --score-mode end_to_end
-```
-
-- `--score-mode gold_mention_normalize`: evaluates only the correctness of the normalized identifier for gold-standard mentions.
-- `--score-mode end_to_end`: evaluates both exact span matching and the correctness of the normalized identifier.
-
-Run time evaluation:
-
-```bash
-
-python evaluation/run_time_eval.py \
-  --task ner \
-  --input-xml dataset/JNLPBA/test.xml \
-  --model-path recognition/models/celllink_bioformer 
-```
-- `--task ner`: evaluation for named entity recognition (NER)
-- `--task el`: evaluation for named entity normalization (NEN)
+- [Training and benchmark evaluation](docs/TRAINING_EVALUATION.md)
+- [Baseline methods](other_baselines/README.md)
 
 
-### Datasets
-The CellLink, BioID, AnatEM, CRAFT, and JNLPBA datasets used in this project are available from the original Zenodo record: [link](https://zenodo.org/records/18090009).
+## Data
 
-Download the datasets from the original source and place them in the `dataset/` directory before running training or evaluation.
+The training and test datasets shared in this repository are available from Zenodo and the associated paper resource: <https://doi.org/10.5281/zenodo.18090009>
 
-Use of these datasets is subject to the license and terms specified by the original source. Please refer to the Zenodo record for citation and licensing information.
+
+Please follow the dataset's own license, citation, and redistribution terms.
+
+## Questions and Issues
+
+For usage questions or bug reports, please open a GitHub issue and include:
+
+- the command or script you ran
+- the input format
+- the relevant error message
+- your operating system and Python version

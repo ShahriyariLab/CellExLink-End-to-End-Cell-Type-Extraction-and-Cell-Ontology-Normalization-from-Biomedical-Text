@@ -1,0 +1,3455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>7067656</id>
+    <infon key="license">author_manuscript</infon>
+    <passage>
+      <infon key="article-id_doi">10.1016/j.coi.2019.11.004</infon>
+      <infon key="article-id_manuscript">NIHMS1553045</infon>
+      <infon key="article-id_pmc">7067656</infon>
+      <infon key="article-id_pmid">31874430</infon>
+      <infon key="fpage">45</infon>
+      <infon key="license">
+          This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.
+        </infon>
+      <infon key="lpage">53</infon>
+      <infon key="name_0">surname:Larsen;given-names:Samantha B</infon>
+      <infon key="name_1">surname:Cowley;given-names:Christopher J</infon>
+      <infon key="name_2">surname:Fuchs;given-names:Elaine</infon>
+      <infon key="section_type">TITLE</infon>
+      <infon key="type">front</infon>
+      <infon key="volume">62</infon>
+      <infon key="year">2020</infon>
+      <offset>0</offset>
+      <text>Epithelial cells: liaisons of immunity</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="0" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">ABSTRACT</infon>
+      <infon key="type">abstract</infon>
+      <offset>39</offset>
+      <text>The surface and lining tissues of our body are exposed to the external environment, and as such these epithelial tissues must form structural barriers able to defend against microbes, environmental toxins, and mechanical stress. Their cells are equipped to detect a diverse array of surface perturbations, and then launch signaling relays to the immune system. The aim of these liaisons is to coordinate the requisite immune cell response needed to preserve and/or restore barrier integrity and defend the host. It has been recently appreciated that epithelial cells learn from these experiences. Following inflammatory exposure, long-lived stem cells within the tissue retain an epigenetic memory that endows them with heightened responsiveness to subsequent encounters with stress. Here, we review the recent literature on how epithelial cells sense signals from microbes, allergens, and injury at the tissue surface, and transmit this information to immune cells, while embedding a memory of the experience within their chromatin.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="457" length="11"/>
+        <text>immune cell</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="589" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="680" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="868" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="992" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>1073</offset>
+      <text>Introduction</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>1086</offset>
+      <text>Epithelial tissues, including those of the gastrointestinal tract, skin, and lungs constitute the physical barrier between our bodies and the external environment and are routinely exposed to a myriad of inflammatory stimuli. These barriers are formed and maintained by stem cells that balance self-renewal with differentiation to replenish dying cells and repair the tissue after injury (Figure 1). An ever-growing body of literature points to the ability of epithelial stem cells to sense a barrier breach and relay this information to the immune system to mount a defense against pathogen invasion.</text>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="1356" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="1546" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>1688</offset>
+      <text>Epithelial cells are fully functional sentinels, capable of recognizing perturbations in their microenvironment, signaling for reinforcements, and secreting defensins to control a threat. They are equipped with an arsenal of pattern recognition receptors that enable them to sense and respond to an array of cues. These cues form and instruct epithelial stem cell responses via downstream signaling cascades that reinforce barrier integrity, alert neighboring epithelial cells, recruit immune cells, and ameliorate damage. The dialogue between epithelial progenitors and immune cells is fine-tuned to facilitate coordinated responses to preserve homeostasis and mount host defense.</text>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="1688" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+      <annotation id="T10">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="2031" length="20"/>
+        <text>epithelial stem cell</text>
+      </annotation>
+      <annotation id="T11">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="2148" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T12">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="2174" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T13">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033059</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">progenitor MEC</infon>
+        <location offset="2232" length="22"/>
+        <text>epithelial progenitors</text>
+      </annotation>
+      <annotation id="T14">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="2259" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>2370</offset>
+      <text>The extent of the epithelial-immune cell dialogue as well as the explicit role of immune cells in mediating immunity have been previously reviewed. Here, we discuss how cues stemming from microbes, environmental factors/allergens and tissue damage instruct epithelial defenses and relays signals to the immune system. We conclude by addressing a novel function of epithelial cells in mediating immunity namely through their retention of an epigenetic memory of inflammatory exposures that heightens their sensitivity to future challenges.</text>
+      <annotation id="T15">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epitheliocyte</infon>
+        <location offset="2388" length="22"/>
+        <text>epithelial-immune cell</text>
+      </annotation>
+      <annotation id="T16">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="2452" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T17">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="2734" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>2909</offset>
+      <text>Altogether, the recent literature demonstrates that epithelial cells are not mere foot soldiers carrying out orders from commanding lymphocytes. Rather, they too are generals that orchestrate tissue response to threats, and initiate inflammatory responses, co-opting the help of immune cells, and learning from prior exposures.</text>
+      <annotation id="T18">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="2961" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T19">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000542</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Lymphocyte</infon>
+        <location offset="3041" length="11"/>
+        <text>lymphocytes</text>
+      </annotation>
+      <annotation id="T20">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="3188" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>3237</offset>
+      <text>Microbes inform epithelial responses</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>3274</offset>
+      <text>Residing at environmental interfaces, epithelial tissues are exposed to and colonized by microbes including bacteria, fungi, protozoa, and viruses. An individual’s microbiota is comprised of trillions of microorganisms, consisting largely of commensal bacteria that facilitate homeostasis by setting the immunological tone, affecting cellular metabolism, and regulating pH. The composition of the microbiome differs from one body site to another and is dependent on factors including chemistry of the tissue, nutritional status, environment, genetic landscape, and co-infection of the host. As such, different epithelial barriers are exposed to and adapt to diverse microbes. Establishment of host-microbe interactions is particularly important after birth, where epithelial cells must rapidly cope with exposure to microbiota beyond that which exists in the intrauterine environment. Failure to generate a healthy microbiome with appropriate colonization leads to an increase in immune-mediated diseases such as autoimmunity, allergy, obesity, and cancer. Bacteria themselves elicit epithelial responses, which depending on the species and microenvironment can function to either maintain tissue homeostasis or alternatively, alert the tissue to pathogenic insult and trigger a hyperproliferative response within the epithelium (Figure 2a).</text>
+      <annotation id="T21">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="4038" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_2</infon>
+      <offset>4618</offset>
+      <text>Commensal colonization and healthy interactions</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>4666</offset>
+      <text>One of the first commensals to colonize intestinal epithelium is the facultative aerobe Escherichia coli. Introduction of commensal E. coli to sterile intestinal organoids stimulated production of mucus and other protective programs that help the epithelium protect itself and the host from harm. In vivo, commensal microbiota instruct intestinal epithelial cells (IECs) to preserve microbial homeostasis, while simultaneously tuning IEC-immune cell crosstalk to prevent pathogenic microbial invasion. Commensals achieve this regulatory capacity by secreting modulatory proteins, effecting changes in gene expression within the IECs and influencing MHC Class II expression and antigen presentation to immune cells.</text>
+      <annotation id="T22">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="5002" length="27"/>
+        <text>intestinal epithelial cells</text>
+      </annotation>
+      <annotation id="T23">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="5031" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T24">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="5100" length="3"/>
+        <text>IEC</text>
+      </annotation>
+      <annotation id="T25">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="5104" length="11"/>
+        <text>immune cell</text>
+      </annotation>
+      <annotation id="T26">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="5294" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T27">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="5367" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>5381</offset>
+      <text>Microbial-epithelial crosstalk is complex and a comprehensive review is beyond the scope of the current review. However, the ability of epithelia to sense microbial species and enact an informed response is integral to why epithelia are increasingly considered as a bona fide central component of the immune system. For instance, the presence of intestinal commensals such as Enterococcus faecium, elicits a protective effect by secreting a peptidoglycan hydrolase, secreted antigen A (SagA). IECs respond to SagA by increasing their expression of barrier effectors and antimicrobial peptides, which in turn confer protection to the host. This commensal-epithelial cell interaction is a conserved feature from Caenorhabitis elegans to mice, highlighting the near universal requirements and commonalities for barrier epithelium throughout evolution and also emphasizing the importance of microbial instruction in facilitating epithelial homeostasis.</text>
+      <annotation id="T28">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="5874" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T29">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="6035" length="15"/>
+        <text>epithelial cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>6330</offset>
+      <text>Another important example of microbial instruction involves retinoic acid (RA), an immunomodulatory vitamin A metabolite that is released by IECs and stimulates T cells and group 3 innate lymphoid cells (ILC3s) to release interleukin(IL)-22. Vitamin A induces retinoic acid receptor β (RARβ) activation, an IEC transcription factor that directs expression of serum amyloid A (SAA) genes to regulate T helper 17 (TH17) cell effector function and T cell homing in the gut. In a turn-about, IL-22 receptor signaling in the IECs stimulates them to mount an anti-pathogen response. The commensal family Clostridia regulates RA concentration in IECs by suppressing expression of a key enzyme involved in Vitamin A metabolism, enabling the microbe to use IECs as go-betweens in fine-tuning the IL-22 immune response that prevents microbial dysbiosis and pathogen colonization.</text>
+      <annotation id="T30">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="6471" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T31">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="6491" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T32">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001071</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">group 3 innate lymphoid cell</infon>
+        <location offset="6503" length="29"/>
+        <text>group 3 innate lymphoid cells</text>
+      </annotation>
+      <annotation id="T33">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001071</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC3</infon>
+        <location offset="6534" length="5"/>
+        <text>ILC3s</text>
+      </annotation>
+      <annotation id="T34">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000899</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Th17 T-cell</infon>
+        <location offset="6729" length="23"/>
+        <text>T helper 17 (TH17) cell</text>
+      </annotation>
+      <annotation id="T35">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="6775" length="6"/>
+        <text>T cell</text>
+      </annotation>
+      <annotation id="T36">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="6850" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T37">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="6969" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T38">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="7078" length="4"/>
+        <text>IECs</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>7206</offset>
+      <text>Recently, it was found that commensal segmented filamentous bacteria (SFB) tightly hook onto IECs and extrude a protein through microbial adhesion-triggered endocytosis (MATE). IECs process this protein and present it through major histocompatibility complex (MHC) class II to TH17 cells, which expand in response to maintain mucosal T cell homeostasis to these resident gut microbes. In another example of direct communication between commensal microbiota and epithelium, commensals colonizing neonatal skin stimulate nearby epidermal cells to secrete the chemokine CCL20, which activates its cognate receptor CCR6 on regulatory T cells (Tregs) in the skin. In turn, these Tregs establish tolerance to skin commensal bacteria, thereby facilitating proper immune homeostasis. Keratinocyte-derived CCL20 also recruits RORyt+ ILCs to hair follicle orifices, where they restrict sebocyte proliferation and thereby limit sebum production. The relation is a symbiotic one, since sebum contains antimicrobial lipids that restrict colonization of Gram-positive bacterial communities. Together, these studies beautifully demonstrate that epithelial cells are key players in sampling microbial populations and relaying information to the immune system in the collective decision-making process of which will be allowed to stay as resident commensals.</text>
+      <annotation id="T39">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="7299" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T40">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="7383" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T41">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000899</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">TH17 cell</infon>
+        <location offset="7483" length="10"/>
+        <text>TH17 cells</text>
+      </annotation>
+      <annotation id="T42">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000940</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mucosal invariant T cell</infon>
+        <location offset="7532" length="14"/>
+        <text>mucosal T cell</text>
+      </annotation>
+      <annotation id="T43">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000362</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal cell</infon>
+        <location offset="7732" length="15"/>
+        <text>epidermal cells</text>
+      </annotation>
+      <annotation id="T44">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000815</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Regulatory T cell</infon>
+        <location offset="7825" length="18"/>
+        <text>regulatory T cells</text>
+      </annotation>
+      <annotation id="T45">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000815</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T-reg</infon>
+        <location offset="7845" length="5"/>
+        <text>Tregs</text>
+      </annotation>
+      <annotation id="T46">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000815</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T-reg</infon>
+        <location offset="7880" length="5"/>
+        <text>Tregs</text>
+      </annotation>
+      <annotation id="T47">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000312</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Keratinocyte</infon>
+        <location offset="7982" length="12"/>
+        <text>Keratinocyte</text>
+      </annotation>
+      <annotation id="T48">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0009105</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T cell zone reticular cell</infon>
+        <location offset="8023" length="11"/>
+        <text>RORyt+ ILCs</text>
+      </annotation>
+      <annotation id="T49">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000317</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Sebocytes</infon>
+        <location offset="8082" length="8"/>
+        <text>sebocyte</text>
+      </annotation>
+      <annotation id="T50">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="8336" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>8548</offset>
+      <text>Combating pathogens and restoring homeostasis</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>8594</offset>
+      <text>Upon detection of pathogenic insults, epithelia respond by upregulating expression of defensins, which confer immediate protection to the host, and alarmins, which convey danger signals to neighboring epithelial cells and to the immune system. Salmonella enterica infection, a pathogenic microbe for the gut, mobilizes IECs to generate a plethora of antimicrobial peptides, and to express pattern recognition receptors, such as NLRP6. Under homeostatic conditions, these antimicrobial peptides are largely restricted to the enterocyte lineage of intestinal epithelial stem cells (ISCs), but Salmonella broadens expression across the entire epithelium. If the ability to make antimicrobial peptides is compromised, flagellated bacteria like S.enterica proliferate rampantly, resulting in microbial dysbiosis and colitis. Similarly in skin lesions of atopic dermaitis patients, Staphylococcus aureus dominates leading to a loss of anaerobic spcies. This dysbiosis elicits a robust epithelial transcriptional response related to barrier function, metabolic reprogramming, antimicrobial defense, and T helper type 2 signaling.</text>
+      <annotation id="T51">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="8795" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T52">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="8913" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T53">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000584</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Enterocytes</infon>
+        <location offset="9118" length="10"/>
+        <text>enterocyte</text>
+      </annotation>
+      <annotation id="T54">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <location offset="9140" length="32"/>
+        <text>intestinal epithelial stem cells</text>
+      </annotation>
+      <annotation id="T55">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="9174" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T56">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000912</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T helper</infon>
+        <location offset="9690" length="8"/>
+        <text>T helper</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>9717</offset>
+      <text>Epithelia are also equipped with surface receptors called toll like receptors (TLRs), which recognize conserved molecular patterns associated with pathogens or tissue damage. Once activated, TLRs signal through an adaptor protein Myd88 to activate NFκB. Loss of Myd88 in IECs also compromises production of antimicrobial peptides and leads to expansion of pathogens. These receptors also facilitate detection of pulmonary fungal infections, which lung epithelial cells restrict through an NFkB-IL-1R-CCL20 axis that recruits Th17 cells and ILCs to fight infection.</text>
+      <annotation id="T57">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Epithelial</infon>
+        <location offset="9717" length="9"/>
+        <text>Epithelia</text>
+      </annotation>
+      <annotation id="T58">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="9988" length="4"/>
+        <text>IECs</text>
+      </annotation>
+      <annotation id="T59">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="10164" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+      <annotation id="T60">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000899</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">TH17 cell</infon>
+        <location offset="10242" length="10"/>
+        <text>Th17 cells</text>
+      </annotation>
+      <annotation id="T61">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC</infon>
+        <location offset="10257" length="4"/>
+        <text>ILCs</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>10286</offset>
+      <text>Recently, researchers have found that at least in some instances, these infections can coax epithelial stem cells to skew their fate decisions and differentiate into more specialized effectors of host defense. Some infections can affect epithelial fate decisions by activating specific lineage programs within the ISCs. Thus, for instance, in response to S. enterica infection, ISCs and their short-lived progeny execute a transcriptional program that increases the pools of enterocytes and Paneth cells, epithelial lineages that are primed to fight infections. Alternatively, however, as in the case of a Clostridium difficile infection, infected IECs trigger a host defense mechanism, undergoing apoptosis to prevent the spread of infection.</text>
+      <annotation id="T62">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="10378" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+      <annotation id="T63">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Epithelial</infon>
+        <location offset="10523" length="10"/>
+        <text>epithelial</text>
+      </annotation>
+      <annotation id="T64">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="10600" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T65">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="10664" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T66">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000584</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Enterocytes</infon>
+        <location offset="10761" length="11"/>
+        <text>enterocytes</text>
+      </annotation>
+      <annotation id="T67">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000510</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Paneth cell</infon>
+        <location offset="10777" length="12"/>
+        <text>Paneth cells</text>
+      </annotation>
+      <annotation id="T68">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="10934" length="4"/>
+        <text>IECs</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>11030</offset>
+      <text>Microbial DNA and viral nucleoproteins are pathogen-associated-molecular-patterns (PAMPs), and their detection within a cell launches host defense systems. One mechanism is through inflammasome activation. Upon encountering cytosolic DNA, the AIM2 inflammasome triggers a molecular cascade that culminates in the activation of caspase 1 (CASP1) and proinflammatory cytokines IL-1β and IL-18. Influenze A virus (IAV) nucleoprotein also serves as a PAMP and is detected by lung epithelial cells through human myxoma resistance protein 1 (MxA), an inflammasome sensor protein. Upon IAV detection, MxA induces inflammasome formation and IL-1β secretion. Like a number of other cytokines, IL-1β and IL-18 are secreted where they can act on neighboring epithelial cells to induce an antimicrobial pattern, which in turn aids in regulating the epithelium’s bacterial flora. Cyclic GMP-AMP synthase (cGAS) is another cytosolic DNA sensor, where when activated generates cGAMP to activate the stimulator of interferon response genes (STING) and mount a strong innate immune response that restricts viral infection. The two pathways may be intertwined since IL-1β can signal to neighboring epithelia, which can trigger release of mitochondrial DNA into the cytoplasm, thereby activating STING. Adding to this complexity, following infection by pattern recognition-evasive viruses such as VSV, ZIKV and HSV1, epidermal keratinocytes release IL-1 cytokines, enabling an antiviral program to be induced in surrounding fibroblasts and epithelial cells.</text>
+      <annotation id="T69">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="11501" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+      <annotation id="T70">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="11777" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T71">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4052061</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal keratinocyte</infon>
+        <location offset="12428" length="23"/>
+        <text>epidermal keratinocytes</text>
+      </annotation>
+      <annotation id="T72">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Fibroblast</infon>
+        <location offset="12535" length="11"/>
+        <text>fibroblasts</text>
+      </annotation>
+      <annotation id="T73">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="12551" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>12581</offset>
+      <text>Following resolution of a pathogenic insult, the epithelium becomes central in restoring its homeostatic commensal flora. Indeed, all epithelia have to be equipped to deal with microbial dysbiosis, or overexpansion of certain commensal species. One subset of chemosensing epithelial cells are Tuft cells, which are derived from ISCs in the gut. Tuft cells express receptors to detect succinate, released into the environment by certain microbes/pathogens. When succinate-producing organisms expand, an indicator of dysbiosis, Tuft cells sense the accumulating metabolite and expand in synchrony. In turn, the local concentration Tuft cell-derived IL-25 rises, leading to ILC2 activation and a type 2 immune response. Intriguingly, the expansion of ILC2s results in a feedforward loop, since ILC2s produce IL-13, which prompts ISCs to skew their fates favoring their differentiation into tuft and goblet cells. Overall, this epithelial-ILC2 response circuit is important not only to restoring homeostasis after microbial dysbiosis, but also to the clearance of parasites and helminths.</text>
+      <annotation id="T74">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000206</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">chemoreceptor cell</infon>
+        <location offset="12840" length="29"/>
+        <text>chemosensing epithelial cells</text>
+      </annotation>
+      <annotation id="T75">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="12874" length="10"/>
+        <text>Tuft cells</text>
+      </annotation>
+      <annotation id="T76">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="12909" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T77">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="12926" length="10"/>
+        <text>Tuft cells</text>
+      </annotation>
+      <annotation id="T78">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="13107" length="10"/>
+        <text>Tuft cells</text>
+      </annotation>
+      <annotation id="T79">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="13210" length="9"/>
+        <text>Tuft cell</text>
+      </annotation>
+      <annotation id="T80">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="13252" length="4"/>
+        <text>ILC2</text>
+      </annotation>
+      <annotation id="T81">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="13329" length="5"/>
+        <text>ILC2s</text>
+      </annotation>
+      <annotation id="T82">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="13372" length="5"/>
+        <text>ILC2s</text>
+      </annotation>
+      <annotation id="T83">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="13407" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T84">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000160</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">goblet cell</infon>
+        <location offset="13468" length="21"/>
+        <text>tuft and goblet cells</text>
+      </annotation>
+      <annotation id="T85">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Epithelial</infon>
+        <location offset="13505" length="10"/>
+        <text>epithelial</text>
+      </annotation>
+      <annotation id="T86">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="13516" length="4"/>
+        <text>ILC2</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>13666</offset>
+      <text>Together these studies highlight the importance of commensal microbe-host interaction in maintaining epithelial cell barriers and the epithelium’s role in preventing and coping with pathogenic infection.</text>
+      <annotation id="T87">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="13767" length="15"/>
+        <text>epithelial cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>13872</offset>
+      <text>Instruction from environmental and allergic cues</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>13921</offset>
+      <text>As the primary interfaces with the external environment, epithelial surfaces also come into contact with various chemical and allergic cues that influence their behavior. Epithelia must be equipped to mount an immune response, but they must also be able to temper it in order to prevent detrimental oversensitization to harmless substances. Similar to microbial pattern recognition receptors, the epithelium is equipped with multiple sensors that alert it to pollutants, allergens, and other encounters with non-living irritants (Figure 2b).</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>14463</offset>
+      <text>One mode by which the epithelium senses such changes is through the environmental sensor, arylhydrocarbon receptor (AHR). AHR is a transcription factor, which is activated by a myriad of environmental contaminants (‘co-factors’) such as dioxin or xenobiotic substances, as well as tryptophan, glucosinolate, and polyphenolic metabolites. AHR signaling is key in epithelial barrier integrity, microbial balance, and maintenance of intraepithelial lymphocytes and ILC3s. In the intestine, AHR is essential to the epithelium’s defense against pathogenic infection by microbes such as Citrobacter rodentium. It also regulates stem cell self-renewal and differentiation following injury. In the absence of AHR signaling, stem cell divisions are left unchecked, promoting chronic inflammation and contributing to tumorigenesis. Microbial metabolites such as Urolithin A (UroA), which come from polyphenolics in berries and pomegranate fruits, activate AHR to trigger NRF2, the master transcriptional regulator of the glutathione pathway that clears reactive oxygen species and other damaging compounds from the cell. AHR signaling also upregulates epithelial tight junction proteins, ameliorating barrier dysfunction in pre-clinical models of colitis and protecting the skin against transepidermal water loss and chronic inflammatory states like psoriasis, which involves the production of excessive Th17 cells. While protection against inflammation is good in disease contexts, it can be deleterious when the immune system must be rapidly called to action. Not surprisingly, AHR activation is under tight control. As soon as it is activated, its downstream targets include genes whose proteins metabolize AHR ligands, thereby eliminating the stimulus. Interruption of this negative feedback loop, through aberrant AHR receptor activation and/or dietary/environmental intervention will be interesting future avenues to pursue for treating humans with barrier disorders and/or chronic inflammation.</text>
+      <annotation id="T88">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000793</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intraepithelial lymphocyte</infon>
+        <location offset="14893" length="27"/>
+        <text>intraepithelial lymphocytes</text>
+      </annotation>
+      <annotation id="T89">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001071</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC3</infon>
+        <location offset="14925" length="5"/>
+        <text>ILC3s</text>
+      </annotation>
+      <annotation id="T90">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="15085" length="9"/>
+        <text>stem cell</text>
+      </annotation>
+      <annotation id="T91">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="15179" length="9"/>
+        <text>stem cell</text>
+      </annotation>
+      <annotation id="T92">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000899</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">TH17 cell</infon>
+        <location offset="15857" length="10"/>
+        <text>Th17 cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>16461</offset>
+      <text>Allergic inflammation in the airways is often caused by exposure and inhalation of allergens such as house dust mites, particulate matter, or cockroach allergen, which sensitizes the epithelium to subsequent encounters. Epi-cutaneous exposure to such antigens can also trigger atopic dermatitis, an inflammatory skin disorder typified by an imbalance in epidermal differentiation and an excess of Th2 cells. Skin sensitization to allergens often results in a systemic allergic response, and patient studies suggest that this predates, and may exacerbate asthma and allergic rhinitis.</text>
+      <annotation id="T93">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000546</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Th2 cells</infon>
+        <location offset="16858" length="9"/>
+        <text>Th2 cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>17045</offset>
+      <text>Inhaling allergens triggers TLR-Myd88 signaling in lung epithelial cells, causing them to release uric acid and cytokines such as GM-CSF, IL-33, and IL-1α that can augment antigen-specific T cell proliferation, activate dendritic cells and lead to chronic airway inflammation. Some allergens such as the cockroach protease ‘Per a 10’, trigger an allergic response by disrupting the epithelium’s tight junctions, chemoattractants for dendritic and other immune cells, which is known to destabilize adherens junctions and in turn lead to NFκB activation and the production of a number of different chemoattractants for dendritic and other immune cells. Intriguingly, people who live on farms rarely develop asthma or allergies. Work by Schuijs et al., revealed that exposure to low-dose endotoxin (bacterial lipopolysaccharide) or farm dust, dampens NFκB activation and epithelial production of the cytokines that activate dendritic cells, thereby suppressing type 2 immunity to house dust mites and curbing development of an asthmatic response.</text>
+      <annotation id="T94">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="17096" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+      <annotation id="T95">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="17234" length="6"/>
+        <text>T cell</text>
+      </annotation>
+      <annotation id="T96">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <location offset="17265" length="15"/>
+        <text>dendritic cells</text>
+      </annotation>
+      <annotation id="T97">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <location offset="17478" length="32"/>
+        <text>dendritic and other immune cells</text>
+      </annotation>
+      <annotation id="T98">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <location offset="17662" length="32"/>
+        <text>dendritic and other immune cells</text>
+      </annotation>
+      <annotation id="T99">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <location offset="17966" length="15"/>
+        <text>dendritic cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>18101</offset>
+      <text>Together, these findings further underscore that an epithelium’s ability to effectively identify and adapt to cues from the external environment is paramount to organismal survival. Proper epithelial recognition of these cues leads to generation of immune tolerance, and prevention of both allergic responses and inflammatory disease.</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>18438</offset>
+      <text>Exposure to injury instructs epithelial stem cells to respond</text>
+      <annotation id="T100">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="18467" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>18500</offset>
+      <text>At the boundary between an organism and the external environment, epithelial tissues are often subjected to mechanical stress. The injury instructs the epithelium on how quickly to respond to the threat and establishes the communication network involved in recruiting immune cells to collaborate on patching the breached barrier (Figure 2c). Recent work, by Lay et al., revealed that in a stratified epithelium such as the skin epidermis, a breach in the terminally differentiated cells of the barrier may be sensed directly by the underlying stem cells, through the shared, aberrant intercellular interface. Independent of the resulting bacterial infiltration, the stem cells sense the breach and transmit chemokine and cytokine distress signals to recruit and galvanize dendritic cells and regulatory T cells. The activated Tregs in particular appear to stimulate the stem cells to proliferate and patch the barrier breach. Following tissue damage skin epithelial cells secrete alarmins including IL-1, IL-18, IL-25, and IL-33 that signal to commensal-specific type 17 T cells, which homeostatically mediate antimicrobial activity, but can be co-opted to rapidly turn on tissue repair programs including release of type 2 cytokines to facilitate wound healing. Increasing evidence suggests that establishing communication lines with these T cells may be of general importance for tissue stem cells to efficiently repair their wounds.</text>
+      <annotation id="T101">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="18768" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T102">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4030002</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">terminally differentiated effector memory CD45RA+ T cells</infon>
+        <location offset="18955" length="10"/>
+        <text>terminally</text>
+      </annotation>
+      <annotation id="T103">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="19043" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T104">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="19166" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T105">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <location offset="19272" length="15"/>
+        <text>dendritic cells</text>
+      </annotation>
+      <annotation id="T106">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000815</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Regulatory T cell</infon>
+        <location offset="19292" length="18"/>
+        <text>regulatory T cells</text>
+      </annotation>
+      <annotation id="T107">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001048</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">activated Tregs</infon>
+        <location offset="19316" length="15"/>
+        <text>activated Tregs</text>
+      </annotation>
+      <annotation id="T108">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="19370" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T109">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000362</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell of skin</infon>
+        <location offset="19450" length="21"/>
+        <text>skin epithelial cells</text>
+      </annotation>
+      <annotation id="T110">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000899</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T helper cells type 17</infon>
+        <location offset="19563" length="15"/>
+        <text>type 17 T cells</text>
+      </annotation>
+      <annotation id="T111">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="19841" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T112">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002638</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">BASC</infon>
+        <location offset="19882" length="17"/>
+        <text>tissue stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>19936</offset>
+      <text>In the lung, injury induced by influenza virus or bleomycin results in the activation of NOTCH signaling in the epithelial progenitors. Once mobilized, lung progenitors migrate to the site of injury and begin to differentiate to restore the lung epithelium and reconstitute the multiple cell lineages that comprise the airway. If the injury is severe, the lung has distal facultative progenitors, which can regenerate alveoli. Responsive to WNT and FGF signaling, which are elevated at the wound site after severe injury, these alveolar epithelial progenitors then proliferate and migrate to re-epithelialize the damaged tissue. WNTs are known to be produced by activated macrophages, which accumulate at sites of tissue damage, suggestive of a communication network between the lung progenitors and the immune system.</text>
+      <annotation id="T113">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033059</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">progenitor MEC</infon>
+        <location offset="20048" length="22"/>
+        <text>epithelial progenitors</text>
+      </annotation>
+      <annotation id="T114">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">alveolar progenitor</infon>
+        <location offset="20088" length="16"/>
+        <text>lung progenitors</text>
+      </annotation>
+      <annotation id="T115">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0011026</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">progenitor cell</infon>
+        <location offset="20308" length="23"/>
+        <text>facultative progenitors</text>
+      </annotation>
+      <annotation id="T116">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">alveolar progenitor</infon>
+        <location offset="20464" length="31"/>
+        <text>alveolar epithelial progenitors</text>
+      </annotation>
+      <annotation id="T117">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000863</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">M1 macrophage</infon>
+        <location offset="20598" length="21"/>
+        <text>activated macrophages</text>
+      </annotation>
+      <annotation id="T118">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033057</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">alveolar progenitor</infon>
+        <location offset="20715" length="16"/>
+        <text>lung progenitors</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>20755</offset>
+      <text>Following injury in the intestine, ISCs also rely on crosstalk with immune cells to repair the niche. Resident ILCs sense danger and secrete IL-22. IL-22 receptor signaling in ISCs triggers the JAK/STAT pathway, stimulating proliferation and expansion of the stem cell pool. If damage is too great, as it can be after ionizing radiation, ISCs will die, leading to life-threatening gastrointestinal damage. In this case, the culprit appears to be AIM2, which is activated by the double-stranded DNA breaks that are generated by ionizing radiation. Indeed loss of AIM2 protects against irradiation-induced gastrointestinal syndrome.</text>
+      <annotation id="T119">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="20790" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T120">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="20823" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T121">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC</infon>
+        <location offset="20866" length="4"/>
+        <text>ILCs</text>
+      </annotation>
+      <annotation id="T122">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="20931" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+      <annotation id="T123">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="21014" length="9"/>
+        <text>stem cell</text>
+      </annotation>
+      <annotation id="T124">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell of intestinal crypt of Lieberkuhn</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">intestinal epithelial stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">ISCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="21093" length="4"/>
+        <text>ISCs</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>21386</offset>
+      <text>Overall, these findings indicate that although each epithelial tissue is at risk of distinct injuries, the resident stem cells of each epithelium possess the same underlying mission, namely to repair a breach to the epithelial barrier. Studies show that although epithelial stem cells possess intrinsic means of responding to tissue damage, they rely upon their recruited immune cell collaborators to effectively patch and restore the barrier. Herein lies the diversity as based upon the literature thus far, the communication networks between tissue stem cells and immune cells seem endless, and will occupy scientists at these switchboards for years to come.</text>
+      <annotation id="T125">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">animal stem cell</infon>
+        <location offset="21493" length="27"/>
+        <text>resident stem cells of each</text>
+      </annotation>
+      <annotation id="T126">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="21649" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+      <annotation id="T127">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="21758" length="11"/>
+        <text>immune cell</text>
+      </annotation>
+      <annotation id="T128">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002638</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">BASC</infon>
+        <location offset="21930" length="17"/>
+        <text>tissue stem cells</text>
+      </annotation>
+      <annotation id="T129">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="21952" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">title_1</infon>
+      <offset>22047</offset>
+      <text>Epithelial cells learn from and remember their inflammatory exposures</text>
+      <annotation id="T130">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="22047" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>22117</offset>
+      <text>Thus far we have discussed how epithelial cells receive cues from microbes, environmental agents, and injury that influence their immediate behavior to preserve barrier integrity. In a provocative study, it was discovered that the influence of these cues extends beyond short-term experience. Rather, epithelial stem cells possess epigenetic scars of their inflammatory experiences long after the pathology of an initial assault has resolved (Figure 3). Moreover, as recently demonstrated by Naik et al., this memory, harbored within the chromatin of the stem cell, heightens their sensitivity to similar, subsequent exposures, and equips them with enhanced tissue repair capacity.</text>
+      <annotation id="T131">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="22148" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T132">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="22418" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+      <annotation id="T133">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="22672" length="9"/>
+        <text>stem cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>22799</offset>
+      <text>In part, this accelerated wound healing results from a cohort of chromatin domains that become accessible at the peak of the inflammatory response and are retained following resolution. Underscoring their physiological relevance, when these chromatin domains are used as enhancers to drive eGFP in vivo, they act as inflammation sensing regulatory elements. Furthermore, these elements are associated with genes encoding epidermal migration and barrier proteins that are important in wound repair and restoration of the skin barrier.</text>
+    </passage>
+    <passage>
+      <infon key="section_type">INTRO</infon>
+      <infon key="type">paragraph</infon>
+      <offset>23333</offset>
+      <text>While the field is still new, signs of a conserved mechanism among epithelial tissues are beginning to surface. Recently, it was reported that lung epithelial cells differentially adjust their transcriptome long-term following pneumonia exposure. Approximately 80% of the expression profile was dependent upon CD4+ tissue resident memory T cells, including the elevation of the CXCL5 chemokine which enhanced the recruitment of neutrophils to optimize host defense. Notably, however, a subset of genes changes persisted even after T cells were depleted, suggesting that lung epithelial cells retain a memory of their encounter with pneumonia. While Naik et al., show inflammatory memory is largely an adaptive feature of epithelial progenitors, another study suggests that a similar mechanism may contribute to the chronic nature of allergic disorders. In lung epithelium, basal cells retain a signature of inflammatory exposure following chronic rhinosinusitis even after removal from their environment. Treatment of a patient with a monoclonal antibody targeting the shared IL4Rα subunit of the IL-4 and IL-13 receptors, showed retention of several disease-associated genes including CTNNB1, a key WNT mediator that influences basal cell proliferation and differentiation. This begs the question of whether inflammatory memory is adaptive or maladaptive. Can the ‘good’ memories be uncoupled from the ‘bad’ memories? Can inflammatory memory in epithelial stem cells be targeted for development of novel therapies to treat inflammatory disorders?</text>
+      <annotation id="T134">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="23476" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+      <annotation id="T135">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000897</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">CD4-positive, alpha-beta memory T cell</infon>
+        <location offset="23643" length="35"/>
+        <text>CD4+ tissue resident memory T cells</text>
+      </annotation>
+      <annotation id="T136">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="23761" length="11"/>
+        <text>neutrophils</text>
+      </annotation>
+      <annotation id="T137">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="23864" length="7"/>
+        <text>T cells</text>
+      </annotation>
+      <annotation id="T138">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="23903" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+      <annotation id="T139">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033059</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">progenitor MEC</infon>
+        <location offset="24054" length="22"/>
+        <text>epithelial progenitors</text>
+      </annotation>
+      <annotation id="T140">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000646</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">basal cell</infon>
+        <location offset="24206" length="11"/>
+        <text>basal cells</text>
+      </annotation>
+      <annotation id="T141">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000646</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">basal cell</infon>
+        <location offset="24562" length="10"/>
+        <text>basal cell</text>
+      </annotation>
+      <annotation id="T142">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="24779" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">title_1</infon>
+      <offset>24890</offset>
+      <text>Concluding remarks</text>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">paragraph</infon>
+      <offset>24909</offset>
+      <text>Epithelial cells are equipped with an arsenal of receptors that facilitate their detection of specific microbes, environmental agents, and tissue damage. These cells coordinate this information to implement fine-tuned responses to mitigate damage, repair the tissue, and restore homeostasis. These cues not only instruct the epithelium in the short-term, but also educate its stem cells so that they remember and can respond faster during subsequent exposures. Like that which has been described in both the innate and adaptive immune cells, epithelial stem cells too can be trained and retain long-term adaptions resulting in their enhanced responsiveness (Figure 3).</text>
+      <annotation id="T143">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="24909" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+      <annotation id="T144">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="25285" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T145">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="25417" length="32"/>
+        <text>innate and adaptive immune cells</text>
+      </annotation>
+      <annotation id="T146">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="25451" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">paragraph</infon>
+      <offset>25578</offset>
+      <text>Finally, on the heels of these studies, it was recently shown that hematopoietic stem cells and multi-potent progenitors also possess epigenetic memory of their inflammatory experiences. Inflammatory memory in stem cells is akin to what has been described for trained immunity in monocytes, macrophages, innate lymphoid cells, and natural killer cells. Following a stimulus, innate immune cells are epigenetically rewired resulting in sustained changes in transcriptional programs and contributing to increased responsiveness to nonspecific secondary stimuli. One readily apparent, but interesting difference between memory in stem cells and innate immune cells is stem cell’s multipotency and their ability to pass these epigenetic signatures on to future generations of stem cells and to their differentiated progeny resulting in education of the entire tissue. The longevity of memory in stem cells versus innate immune cells will be an interesting area to explore as stem cells persist for the majority of an organism’s lifetime.</text>
+      <annotation id="T147">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic stem cell</infon>
+        <location offset="25645" length="24"/>
+        <text>hematopoietic stem cells</text>
+      </annotation>
+      <annotation id="T148">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000837</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic multipotent progenitor cell</infon>
+        <location offset="25674" length="24"/>
+        <text>multi-potent progenitors</text>
+      </annotation>
+      <annotation id="T149">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="25788" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T150">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000576</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Monocyte</infon>
+        <location offset="25858" length="9"/>
+        <text>monocytes</text>
+      </annotation>
+      <annotation id="T151">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="25869" length="11"/>
+        <text>macrophages</text>
+      </annotation>
+      <annotation id="T152">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="25882" length="21"/>
+        <text>innate lymphoid cells</text>
+      </annotation>
+      <annotation id="T153">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000623</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">natural killer cell</infon>
+        <location offset="25909" length="20"/>
+        <text>natural killer cells</text>
+      </annotation>
+      <annotation id="T154">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="25953" length="19"/>
+        <text>innate immune cells</text>
+      </annotation>
+      <annotation id="T155">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="26205" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T156">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="26220" length="19"/>
+        <text>innate immune cells</text>
+      </annotation>
+      <annotation id="T157">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="26243" length="9"/>
+        <text>stem cell</text>
+      </annotation>
+      <annotation id="T158">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="26350" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T159">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="26469" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T160">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="26487" length="19"/>
+        <text>innate immune cells</text>
+      </annotation>
+      <annotation id="T161">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="26549" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">paragraph</infon>
+      <offset>26616</offset>
+      <text>Furthermore, it remains to be explored whether there are conserved mechanisms of inflammatory memory between distinct tissue compartments. For instance, in HSCs, the inflammatory memory involves a cohort of cholesterol biosynthesis genes that are remarkably similar to those induced by epidermal stem cells. However, in contrast to epidermal stem cells which appear to use these proteins for re-epithelialization and barrier establishment, HSCs appear to use them to skew their lineages in favor of myeloid cells, such as macrophages. In the future, it will be interesting to determine the underlying mechanisms involved in the establishment of inflammatory memory and the extent to which memory harbored within stem cells is utilized to suit the particular needs of each tissue and its repair process.</text>
+      <annotation id="T162">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">HSC</infon>
+        <location offset="26772" length="4"/>
+        <text>HSCs</text>
+      </annotation>
+      <annotation id="T163">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:1000428</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal stem cell</infon>
+        <location offset="26902" length="20"/>
+        <text>epidermal stem cells</text>
+      </annotation>
+      <annotation id="T164">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:1000428</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal stem cell</infon>
+        <location offset="26948" length="20"/>
+        <text>epidermal stem cells</text>
+      </annotation>
+      <annotation id="T165">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">HSC</infon>
+        <location offset="27056" length="4"/>
+        <text>HSCs</text>
+      </annotation>
+      <annotation id="T166">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000763</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">myeloid cell</infon>
+        <location offset="27115" length="13"/>
+        <text>myeloid cells</text>
+      </annotation>
+      <annotation id="T167">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="27138" length="11"/>
+        <text>macrophages</text>
+      </annotation>
+      <annotation id="T168">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="27328" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">paragraph</infon>
+      <offset>27419</offset>
+      <text>Lastly, future work is needed to better characterize inflammatory memory in stem cells. To date these memory domains have been defined by chromatin accessibility, but the fundamental question of what further distinguishes their chromatin landscape that results in propagation of epigenetic information long-term is still largely a mystery.</text>
+      <annotation id="T169">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="27495" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">footnote</infon>
+      <offset>27759</offset>
+      <text>Conflict of interest statement</text>
+    </passage>
+    <passage>
+      <infon key="section_type">CONCL</infon>
+      <infon key="type">footnote</infon>
+      <offset>27790</offset>
+      <text>Nothing declared.</text>
+    </passage>
+    <passage>
+      <infon key="section_type">REF</infon>
+      <infon key="type">title</infon>
+      <offset>27808</offset>
+      <text>References and recommended reading</text>
+    </passage>
+    <passage>
+      <infon key="section_type">REF</infon>
+      <infon key="type">paragraph</infon>
+      <offset>27843</offset>
+      <text>Papers of particular interest, published within the period of review, have been highlighted as:</text>
+    </passage>
+    <passage>
+      <infon key="section_type">REF</infon>
+      <infon key="type">paragraph</infon>
+      <offset>27939</offset>
+      <text>• of special interest</text>
+    </passage>
+    <passage>
+      <infon key="section_type">REF</infon>
+      <infon key="type">paragraph</infon>
+      <offset>27963</offset>
+      <text>•• of outstanding interest</text>
+    </passage>
+    <passage>
+      <infon key="fpage">445</infon>
+      <infon key="lpage">458</infon>
+      <infon key="name_0">surname:Blanpain;given-names:C</infon>
+      <infon key="name_1">surname:Horsley;given-names:V</infon>
+      <infon key="name_2">surname:Fuchs;given-names:E</infon>
+      <infon key="pub-id_pmid">17289566</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">128</infon>
+      <infon key="year">2007</infon>
+      <offset>27994</offset>
+      <text>Epithelial stem cells: turning over new leaves</text>
+      <annotation id="T170">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="27994" length="21"/>
+        <text>Epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">908</infon>
+      <infon key="lpage">920</infon>
+      <infon key="name_0">surname:Naik;given-names:S</infon>
+      <infon key="name_1">surname:Larsen;given-names:SB</infon>
+      <infon key="name_2">surname:Cowley;given-names:CJ</infon>
+      <infon key="name_3">surname:Fuchs;given-names:E</infon>
+      <infon key="pub-id_pmid">30388451</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">175</infon>
+      <infon key="year">2018</infon>
+      <offset>28041</offset>
+      <text>Two to tango: dialog between immunity and stem cells in health and disease</text>
+      <annotation id="T171">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="28083" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">29</infon>
+      <infon key="lpage">40</infon>
+      <infon key="name_0">surname:Hammad;given-names:H</infon>
+      <infon key="name_1">surname:Lambrecht;given-names:BN</infon>
+      <infon key="pub-id_pmid">26200011</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">43</infon>
+      <infon key="year">2015</infon>
+      <offset>28116</offset>
+      <text>Barrier epithelial cells and the control of type 2 immunity</text>
+      <annotation id="T172">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000238</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">non keratinizing barrier epithelial cell</infon>
+        <location offset="28116" length="24"/>
+        <text>Barrier epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">27</infon>
+      <infon key="lpage">35</infon>
+      <infon key="name_0">surname:Whitsett;given-names:JA</infon>
+      <infon key="name_1">surname:Alenghat;given-names:T</infon>
+      <infon key="pub-id_pmid">25521682</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">16</infon>
+      <infon key="year">2015</infon>
+      <offset>28176</offset>
+      <text>Respiratory epithelial cells orchestrate pulmonary innate immunity</text>
+      <annotation id="T173">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002368</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">respiratory epithelial cell</infon>
+        <location offset="28176" length="28"/>
+        <text>Respiratory epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">343</infon>
+      <infon key="lpage">353</infon>
+      <infon key="name_0">surname:Iwasaki;given-names:A</infon>
+      <infon key="name_1">surname:Medzhitov;given-names:R</infon>
+      <infon key="pub-id_pmid">25789684</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">16</infon>
+      <infon key="year">2015</infon>
+      <offset>28243</offset>
+      <text>Control of adaptive immunity by the innate immune system</text>
+    </passage>
+    <passage>
+      <infon key="fpage">141</infon>
+      <infon key="lpage">153</infon>
+      <infon key="name_0">surname:Peterson;given-names:LW</infon>
+      <infon key="name_1">surname:Artis;given-names:D</infon>
+      <infon key="pub-id_pmid">24566914</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Rev Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">14</infon>
+      <infon key="year">2014</infon>
+      <offset>28300</offset>
+      <text>Intestinal epithelial cells: regulators of barrier function and immune homeostasis</text>
+      <annotation id="T174">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="28300" length="27"/>
+        <text>Intestinal epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">562</infon>
+      <infon key="lpage">576</infon>
+      <infon key="name_0">surname:Belkaid;given-names:Y</infon>
+      <infon key="name_1">surname:Harrison;given-names:OJ</infon>
+      <infon key="pub-id_pmid">28423337</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">46</infon>
+      <infon key="year">2017</infon>
+      <offset>28383</offset>
+      <text>Homeostatic immunity and the microbiota</text>
+    </passage>
+    <passage>
+      <infon key="fpage">427</infon>
+      <infon key="lpage">436</infon>
+      <infon key="name_0">surname:Chen;given-names:YE</infon>
+      <infon key="name_1">surname:Fischbach;given-names:MA</infon>
+      <infon key="name_2">surname:Belkaid;given-names:Y</infon>
+      <infon key="pub-id_pmid">29364286</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">553</infon>
+      <infon key="year">2018</infon>
+      <offset>28423</offset>
+      <text>Skin microbiota-host interactions</text>
+    </passage>
+    <passage>
+      <infon key="fpage">237ra65</infon>
+      <infon key="name_0">surname:Aagaard;given-names:K</infon>
+      <infon key="name_1">surname:Ma;given-names:J</infon>
+      <infon key="name_2">surname:Antony;given-names:KM</infon>
+      <infon key="name_3">surname:Ganu;given-names:R</infon>
+      <infon key="name_4">surname:Petrosino;given-names:J</infon>
+      <infon key="name_5">surname:Versalovic;given-names:J</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Sci Transl Med</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">6</infon>
+      <infon key="year">2014</infon>
+      <offset>28457</offset>
+      <text>The placenta harbors a unique microbiome</text>
+    </passage>
+    <passage>
+      <infon key="fpage">314</infon>
+      <infon key="lpage">326</infon>
+      <infon key="name_0">surname:Chu;given-names:DM</infon>
+      <infon key="name_1">surname:Ma;given-names:J</infon>
+      <infon key="name_2">surname:Prince;given-names:AL</infon>
+      <infon key="name_3">surname:Antony;given-names:KM</infon>
+      <infon key="name_4">surname:Seferovic;given-names:MD</infon>
+      <infon key="name_5">surname:Aagaard;given-names:KM</infon>
+      <infon key="pub-id_pmid">28112736</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Med</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">23</infon>
+      <infon key="year">2017</infon>
+      <offset>28498</offset>
+      <text>Maturation of the infant microbiome community structure and function across multiple body sites and in relation to mode of delivery</text>
+    </passage>
+    <passage>
+      <infon key="fpage">387</infon>
+      <infon key="lpage">395</infon>
+      <infon key="name_0">surname:Walker;given-names:WA</infon>
+      <infon key="pub-id_pmid">28426649</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Pediatr Res</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">82</infon>
+      <infon key="year">2017</infon>
+      <offset>28630</offset>
+      <text>The importance of appropriate initial bacterial colonization of the intestine in newborn, child, and adult health</text>
+    </passage>
+    <passage>
+      <infon key="fpage">1241214</infon>
+      <infon key="name_0">surname:Ridaura;given-names:VK</infon>
+      <infon key="name_1">surname:Faith;given-names:JJ</infon>
+      <infon key="name_2">surname:Rey;given-names:FE</infon>
+      <infon key="name_3">surname:Cheng;given-names:J</infon>
+      <infon key="name_4">surname:Duncan;given-names:AE</infon>
+      <infon key="name_5">surname:Kau;given-names:AL</infon>
+      <infon key="name_6">surname:Griffin;given-names:NW</infon>
+      <infon key="name_7">surname:Lombard;given-names:V</infon>
+      <infon key="name_8">surname:Henrissat;given-names:B</infon>
+      <infon key="name_9">surname:Bain;given-names:JR</infon>
+      <infon key="pub-id_pmid">24009397</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">341</infon>
+      <infon key="year">2013</infon>
+      <offset>28744</offset>
+      <text>Gut microbiota from twins discordant for obesity modulate metabolism in mice</text>
+    </passage>
+    <passage>
+      <infon key="fpage">55</infon>
+      <infon key="lpage">60</infon>
+      <infon key="name_0">surname:Qin;given-names:J</infon>
+      <infon key="name_1">surname:Li;given-names:Y</infon>
+      <infon key="name_2">surname:Cai;given-names:Z</infon>
+      <infon key="name_3">surname:Li;given-names:S</infon>
+      <infon key="name_4">surname:Zhu;given-names:J</infon>
+      <infon key="name_5">surname:Zhang;given-names:F</infon>
+      <infon key="name_6">surname:Liang;given-names:S</infon>
+      <infon key="name_7">surname:Zhang;given-names:W</infon>
+      <infon key="name_8">surname:Guan;given-names:Y</infon>
+      <infon key="name_9">surname:Shen;given-names:D</infon>
+      <infon key="pub-id_pmid">23023125</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">490</infon>
+      <infon key="year">2012</infon>
+      <offset>28821</offset>
+      <text>A metagenome-wide association study of gut microbiota in type 2 diabetes</text>
+    </passage>
+    <passage>
+      <infon key="fpage">508</infon>
+      <infon key="lpage">512</infon>
+      <infon key="name_0">surname:Schulz;given-names:MD</infon>
+      <infon key="name_1">surname:Atay;given-names:C</infon>
+      <infon key="name_2">surname:Heringer;given-names:J</infon>
+      <infon key="name_3">surname:Romrig;given-names:FK</infon>
+      <infon key="name_4">surname:Schwitalla;given-names:S</infon>
+      <infon key="name_5">surname:Aydin;given-names:B</infon>
+      <infon key="name_6">surname:Ziegler;given-names:PK</infon>
+      <infon key="name_7">surname:Varga;given-names:J</infon>
+      <infon key="name_8">surname:Reindl;given-names:W</infon>
+      <infon key="name_9">surname:Pommerenke;given-names:C</infon>
+      <infon key="pub-id_pmid">25174708</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">514</infon>
+      <infon key="year">2014</infon>
+      <offset>28894</offset>
+      <text>High-fat-diet-mediated dysbiosis promotes intestinal carcinogenesis independently of obesity</text>
+    </passage>
+    <passage>
+      <infon key="fpage">1035S</infon>
+      <infon key="lpage">1045S</infon>
+      <infon key="name_0">surname:Mackie;given-names:RI</infon>
+      <infon key="name_1">surname:Sghir;given-names:A</infon>
+      <infon key="name_2">surname:Gaskins;given-names:HR</infon>
+      <infon key="pub-id_pmid">10232646</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Am J Clin Nutr</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">69</infon>
+      <infon key="year">1999</infon>
+      <offset>28987</offset>
+      <text>Developmental microbial ecology of the neonatal gastrointestinal tract</text>
+    </passage>
+    <passage>
+      <infon key="fpage">237ra</infon>
+      <infon key="name_0">surname:Hill;given-names:DR</infon>
+      <infon key="name_1">surname:Huang;given-names:S</infon>
+      <infon key="name_2">surname:Nagy;given-names:MS</infon>
+      <infon key="name_3">surname:Yadagiri;given-names:VK</infon>
+      <infon key="name_4">surname:Fields;given-names:C</infon>
+      <infon key="name_5">surname:Mukherjee;given-names:D</infon>
+      <infon key="name_6">surname:Bons;given-names:B</infon>
+      <infon key="name_7">surname:Dedhia;given-names:PH</infon>
+      <infon key="name_8">surname:Chin;given-names:AM</infon>
+      <infon key="name_9">surname:Tsai;given-names:Y-H</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">eLife</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">6</infon>
+      <infon key="year">2017</infon>
+      <offset>29058</offset>
+      <text>Bacterial colonization stimulates a complex physiological response in the immature human intestinal epithelium</text>
+    </passage>
+    <passage>
+      <infon key="fpage">265</infon>
+      <infon key="lpage">278</infon>
+      <infon key="name_0">surname:McGuckin;given-names:MA</infon>
+      <infon key="name_1">surname:Lindén;given-names:SK</infon>
+      <infon key="name_2">surname:Sutton;given-names:P</infon>
+      <infon key="name_3">surname:Florin;given-names:TH</infon>
+      <infon key="pub-id_pmid">21407243</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Rev Microbiol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">9</infon>
+      <infon key="year">2011</infon>
+      <offset>29169</offset>
+      <text>Mucin dynamics and enteric pathogens</text>
+    </passage>
+    <passage>
+      <infon key="fpage">4607</infon>
+      <infon key="issue">Suppl. 1</infon>
+      <infon key="lpage">4614</infon>
+      <infon key="name_0">surname:Wells;given-names:JM</infon>
+      <infon key="name_1">surname:Rossi;given-names:O</infon>
+      <infon key="name_2">surname:Meijerink;given-names:M</infon>
+      <infon key="name_3">surname:van Baarlen;given-names:P</infon>
+      <infon key="pub-id_pmid">20826446</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Proc Natl Acad Sci U S A</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">108</infon>
+      <infon key="year">2011</infon>
+      <offset>29206</offset>
+      <text>Epithelial crosstalk at the microbiota-mucosal interface</text>
+    </passage>
+    <passage>
+      <infon key="fpage">eaai7732</infon>
+      <infon key="name_0">surname:Pedicord;given-names:VA</infon>
+      <infon key="name_1">surname:Lockhart;given-names:AAK</infon>
+      <infon key="name_2">surname:Rangan;given-names:KJ</infon>
+      <infon key="name_3">surname:Craig;given-names:JW</infon>
+      <infon key="name_4">surname:Loschko;given-names:J</infon>
+      <infon key="name_5">surname:Rogoz;given-names:A</infon>
+      <infon key="name_6">surname:Hang;given-names:HC</infon>
+      <infon key="name_7">surname:Mucida;given-names:D</infon>
+      <infon key="pub-id_pmid">28580440</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Sci Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">1</infon>
+      <infon key="year">2016</infon>
+      <offset>29263</offset>
+      <text>Exploiting a host-commensal interaction to promote intestinal barrier function and enteric pathogen tolerance</text>
+    </passage>
+    <passage>
+      <infon key="fpage">1434</infon>
+      <infon key="lpage">1437</infon>
+      <infon key="name_0">surname:Rangan;given-names:KJ</infon>
+      <infon key="name_1">surname:Pedicord;given-names:VA</infon>
+      <infon key="name_2">surname:Wang;given-names:Y-C</infon>
+      <infon key="name_3">surname:Kim;given-names:B</infon>
+      <infon key="name_4">surname:Lu;given-names:Y</infon>
+      <infon key="name_5">surname:Shaham;given-names:S</infon>
+      <infon key="name_6">surname:Mucida;given-names:D</infon>
+      <infon key="name_7">surname:Hang;given-names:HC</infon>
+      <infon key="pub-id_pmid">27708039</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">353</infon>
+      <infon key="year">2016</infon>
+      <offset>29373</offset>
+      <text>A secreted bacterial peptidoglycan hydrolase enhances tolerance to enteric pathogens</text>
+    </passage>
+    <passage>
+      <infon key="fpage">1103</infon>
+      <infon key="lpage">1115.e6</infon>
+      <infon key="name_0">surname:Grizotte-Lake;given-names:M</infon>
+      <infon key="name_1">surname:Zhong;given-names:G</infon>
+      <infon key="name_2">surname:Duncan;given-names:K</infon>
+      <infon key="name_3">surname:Kirkwood;given-names:J</infon>
+      <infon key="name_4">surname:Iyer;given-names:N</infon>
+      <infon key="name_5">surname:Smolenski;given-names:I</infon>
+      <infon key="name_6">surname:Isoherranen;given-names:N</infon>
+      <infon key="name_7">surname:Vaishnava;given-names:S</infon>
+      <infon key="pub-id_pmid">30566883</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">49</infon>
+      <infon key="year">2018</infon>
+      <offset>29458</offset>
+      <text>Commensals suppress intestinal epithelial cell retinoic acid synthesis to regulate interleukin-22 activity and prevent microbial dysbiosis</text>
+      <annotation id="T175">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="29478" length="26"/>
+        <text>intestinal epithelial cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">eaat4042</infon>
+      <infon key="name_0">surname:Ladinsky;given-names:MS</infon>
+      <infon key="name_1">surname:Araujo;given-names:LP</infon>
+      <infon key="name_2">surname:Zhang;given-names:X</infon>
+      <infon key="name_3">surname:Veltri;given-names:J</infon>
+      <infon key="name_4">surname:Galan-Diez;given-names:M</infon>
+      <infon key="name_5">surname:Soualhi;given-names:S</infon>
+      <infon key="name_6">surname:Lee;given-names:C</infon>
+      <infon key="name_7">surname:Irie;given-names:K</infon>
+      <infon key="name_8">surname:Pinker;given-names:EY</infon>
+      <infon key="name_9">surname:Narushima;given-names:S</infon>
+      <infon key="note">Segmented filamentous bacteria hook into and release proteins into IECs, which then subsequently process and present them as antigens on MHCII to stimulate mucosal Th17 cell differentiation and modulate T-cell homeostasis. 
+          
+        </infon>
+      <infon key="pub-id_pmid">30846568</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">363</infon>
+      <infon key="year">2019</infon>
+      <offset>29597</offset>
+      <text>Endocytosis of commensal antigens by intestinal epithelial cells regulates mucosal T cell homeostasis</text>
+      <annotation id="T176">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="29634" length="27"/>
+        <text>intestinal epithelial cells</text>
+      </annotation>
+      <annotation id="T177">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000940</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mucosal invariant T cell</infon>
+        <location offset="29672" length="14"/>
+        <text>mucosal T cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">467</infon>
+      <infon key="lpage">477.e5</infon>
+      <infon key="name_0">surname:Scharschmidt;given-names:TC</infon>
+      <infon key="name_1">surname:Vasquez;given-names:KS</infon>
+      <infon key="name_2">surname:Pauli;given-names:ML</infon>
+      <infon key="name_3">surname:Leitner;given-names:EG</infon>
+      <infon key="name_4">surname:Chu;given-names:K</infon>
+      <infon key="name_5">surname:Truong;given-names:H-A</infon>
+      <infon key="name_6">surname:Lowe;given-names:MM</infon>
+      <infon key="name_7">surname:Sanchez Rodriguez;given-names:R</infon>
+      <infon key="name_8">surname:Ali;given-names:N</infon>
+      <infon key="name_9">surname:Laszik;given-names:ZG</infon>
+      <infon key="pub-id_pmid">28343820</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell Host Microbe</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">21</infon>
+      <infon key="year">2017</infon>
+      <offset>29699</offset>
+      <text>Commensal microbes and hair follicle morphogenesis coordinately drive Treg migration into neonatal skin</text>
+      <annotation id="T178">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000815</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T-reg</infon>
+        <location offset="29769" length="4"/>
+        <text>Treg</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">982</infon>
+      <infon key="lpage">997.e16</infon>
+      <infon key="name_0">surname:Kobayashi;given-names:T</infon>
+      <infon key="name_1">surname:Voisin;given-names:B</infon>
+      <infon key="name_2">surname:Kim;given-names:DY</infon>
+      <infon key="name_3">surname:Kennedy;given-names:EA</infon>
+      <infon key="name_4">surname:Jo;given-names:J-H</infon>
+      <infon key="name_5">surname:Shih;given-names:H-Y</infon>
+      <infon key="name_6">surname:Truong;given-names:A</infon>
+      <infon key="name_7">surname:Doebel;given-names:T</infon>
+      <infon key="name_8">surname:Sakamoto;given-names:K</infon>
+      <infon key="name_9">surname:Cui;given-names:C-Y</infon>
+      <infon key="pub-id_pmid">30712873</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">176</infon>
+      <infon key="year">2019</infon>
+      <offset>29803</offset>
+      <text>Homeostatic control of sebaceous glands by innate lymphoid cells regulates commensal bacteria equilibrium</text>
+      <annotation id="T179">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="29846" length="21"/>
+        <text>innate lymphoid cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">333</infon>
+      <infon key="lpage">339</infon>
+      <infon key="name_0">surname:Haber;given-names:AL</infon>
+      <infon key="name_1">surname:Biton;given-names:M</infon>
+      <infon key="name_2">surname:Rogel;given-names:N</infon>
+      <infon key="name_3">surname:Herbst;given-names:RH</infon>
+      <infon key="name_4">surname:Shekhar;given-names:K</infon>
+      <infon key="name_5">surname:Smillie;given-names:C</infon>
+      <infon key="name_6">surname:Burgin;given-names:G</infon>
+      <infon key="name_7">surname:Delorey;given-names:TM</infon>
+      <infon key="name_8">surname:Howitt;given-names:MR</infon>
+      <infon key="name_9">surname:Katz;given-names:Y</infon>
+      <infon key="pub-id_pmid">29144463</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">551</infon>
+      <infon key="year">2017</infon>
+      <offset>29909</offset>
+      <text>A single-cell survey of the small intestinal epithelium</text>
+    </passage>
+    <passage>
+      <infon key="fpage">2208</infon>
+      <infon key="lpage">2218</infon>
+      <infon key="name_0">surname:Aden;given-names:K</infon>
+      <infon key="name_1">surname:Rehman;given-names:A</infon>
+      <infon key="name_2">surname:Falk-Paulsen;given-names:M</infon>
+      <infon key="name_3">surname:Secher;given-names:T</infon>
+      <infon key="name_4">surname:Kuiper;given-names:J</infon>
+      <infon key="name_5">surname:Tran;given-names:F</infon>
+      <infon key="name_6">surname:Pfeuffer;given-names:S</infon>
+      <infon key="name_7">surname:Sheibani-Tezerji;given-names:R</infon>
+      <infon key="name_8">surname:Breuer;given-names:A</infon>
+      <infon key="name_9">surname:Luzius;given-names:A</infon>
+      <infon key="pub-id_pmid">27524624</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell Rep</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">16</infon>
+      <infon key="year">2016</infon>
+      <offset>29965</offset>
+      <text>Epithelial IL-23R signaling licenses protective IL-22 responses in intestinal inflammation</text>
+    </passage>
+    <passage>
+      <infon key="fpage">560</infon>
+      <infon key="lpage">575.e6</infon>
+      <infon key="name_0">surname:Price;given-names:AE</infon>
+      <infon key="name_1">surname:Shamardani;given-names:K</infon>
+      <infon key="name_2">surname:Lugo;given-names:KA</infon>
+      <infon key="name_3">surname:Deguine;given-names:J</infon>
+      <infon key="name_4">surname:Roberts;given-names:AW</infon>
+      <infon key="name_5">surname:Lee;given-names:BL</infon>
+      <infon key="name_6">surname:Barton;given-names:GM</infon>
+      <infon key="pub-id_pmid">30170812</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">49</infon>
+      <infon key="year">2018</infon>
+      <offset>30056</offset>
+      <text>A map of toll-like receptor expression in the intestinal epithelium reveals distinct spatial, cell type-specific, and temporal patterns</text>
+    </passage>
+    <passage>
+      <infon key="fpage">501</infon>
+      <infon key="lpage">512</infon>
+      <infon key="name_0">surname:Frantz;given-names:AL</infon>
+      <infon key="name_1">surname:Rogier;given-names:EW</infon>
+      <infon key="name_2">surname:Weber;given-names:CR</infon>
+      <infon key="name_3">surname:Shen;given-names:L</infon>
+      <infon key="name_4">surname:Cohen;given-names:DA</infon>
+      <infon key="name_5">surname:Fenton;given-names:LA</infon>
+      <infon key="name_6">surname:Bruno;given-names:MEC</infon>
+      <infon key="name_7">surname:Kaetzel;given-names:CS</infon>
+      <infon key="pub-id_pmid">22491177</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mucosal Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">5</infon>
+      <infon key="year">2012</infon>
+      <offset>30192</offset>
+      <text>Targeted deletion of MyD88 in intestinal epithelial cells results in compromised antibacterial immunity associated with downregulation of polymeric immunoglobulin receptor, mucin-2, and antibacterial peptides</text>
+      <annotation id="T180">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="30222" length="27"/>
+        <text>intestinal epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">4846</infon>
+      <infon key="name_0">surname:Saavedra;given-names:PHV</infon>
+      <infon key="name_1">surname:Huang;given-names:L</infon>
+      <infon key="name_2">surname:Ghazavi;given-names:F</infon>
+      <infon key="name_3">surname:Kourula;given-names:S</infon>
+      <infon key="name_4">surname:Vanden Berghe;given-names:T</infon>
+      <infon key="name_5">surname:Takahashi;given-names:N</infon>
+      <infon key="name_6">surname:Vandenabeele;given-names:P</infon>
+      <infon key="name_7">surname:Lamkanfi;given-names:M</infon>
+      <infon key="pub-id_pmid">30451870</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Commun</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">9</infon>
+      <infon key="year">2018</infon>
+      <offset>30401</offset>
+      <text>Apoptosis of intestinal epithelial cells restricts Clostridium difficile infection in a model of pseudomembranous colitis</text>
+      <annotation id="T181">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002563</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal epithelial cell</infon>
+        <location offset="30414" length="27"/>
+        <text>intestinal epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">1922</infon>
+      <infon key="lpage">1936</infon>
+      <infon key="name_0">surname:Hu;given-names:S</infon>
+      <infon key="name_1">surname:Peng;given-names:L</infon>
+      <infon key="name_2">surname:Kwak;given-names:Y-T</infon>
+      <infon key="name_3">surname:Tekippe;given-names:EM</infon>
+      <infon key="name_4">surname:Pasare;given-names:C</infon>
+      <infon key="name_5">surname:Malter;given-names:JS</infon>
+      <infon key="name_6">surname:Hooper;given-names:LV</infon>
+      <infon key="name_7">surname:Zaki;given-names:MH</infon>
+      <infon key="pub-id_pmid">26655906</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell Rep</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">13</infon>
+      <infon key="year">2015</infon>
+      <offset>30523</offset>
+      <text>The DNA sensor AIM2 maintains intestinal homeostasis via regulation of epithelial antimicrobial host defense</text>
+    </passage>
+    <passage>
+      <infon key="fpage">461</infon>
+      <infon key="lpage">488</infon>
+      <infon key="name_0">surname:Wu;given-names:J</infon>
+      <infon key="name_1">surname:Chen;given-names:ZJ</infon>
+      <infon key="pub-id_pmid">24655297</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Annu Rev Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">32</infon>
+      <infon key="year">2014</infon>
+      <offset>30632</offset>
+      <text>Innate immune sensing and signaling of cytosolic nucleic acids</text>
+    </passage>
+    <passage>
+      <infon key="fpage">801</infon>
+      <infon key="lpage">815.e6</infon>
+      <infon key="name_0">surname:Aarreberg;given-names:LD</infon>
+      <infon key="name_1">surname:Esser-Nobis;given-names:K</infon>
+      <infon key="name_2">surname:Driscoll;given-names:C</infon>
+      <infon key="name_3">surname:Shuvarikov;given-names:A</infon>
+      <infon key="name_4">surname:Roby;given-names:JA</infon>
+      <infon key="name_5">surname:Gale;given-names:M</infon>
+      <infon key="pub-id_pmid">30952515</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mol Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">74</infon>
+      <infon key="year">2019</infon>
+      <offset>30695</offset>
+      <text>Interleukin-1b induces mtDNA release to activate innate immune signaling via cGAS-STING</text>
+    </passage>
+    <passage>
+      <infon key="fpage">825</infon>
+      <infon key="lpage">840.e6</infon>
+      <infon key="name_0">surname:Orzalli;given-names:MH</infon>
+      <infon key="name_1">surname:Smith;given-names:A</infon>
+      <infon key="name_2">surname:Jurado;given-names:KA</infon>
+      <infon key="name_3">surname:Iwasaki;given-names:A</infon>
+      <infon key="name_4">surname:Garlick;given-names:JA</infon>
+      <infon key="name_5">surname:Kagan;given-names:JC</infon>
+      <infon key="pub-id_pmid">30100266</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mol Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">71</infon>
+      <infon key="year">2018</infon>
+      <offset>30783</offset>
+      <text>An antiviral branch of the IL-1 signaling pathway restricts immune-evasive virus replication</text>
+    </passage>
+    <passage>
+      <infon key="fpage">5552</infon>
+      <infon key="lpage">5557</infon>
+      <infon key="name_0">surname:Lei;given-names:W</infon>
+      <infon key="name_1">surname:Ren;given-names:W</infon>
+      <infon key="name_2">surname:Ohmoto;given-names:M</infon>
+      <infon key="name_3">surname:Urban;given-names:JF</infon>
+      <infon key="name_4">surname:Matsumoto;given-names:I</infon>
+      <infon key="name_5">surname:Margolskee;given-names:RF</infon>
+      <infon key="name_6">surname:Jiang;given-names:P</infon>
+      <infon key="pub-id_pmid">29735652</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Proc Natl Acad Sci U S A</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">115</infon>
+      <infon key="year">2018</infon>
+      <offset>30876</offset>
+      <text>Activation of intestinal tuft cell-expressed Sucnr1 triggers type 2 immunity in the mouse small intestine</text>
+      <annotation id="T182">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0019032</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal tuft cell</infon>
+        <location offset="30890" length="20"/>
+        <text>intestinal tuft cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">33</infon>
+      <infon key="lpage">41.e7</infon>
+      <infon key="name_0">surname:Nadjsombati;given-names:MS</infon>
+      <infon key="name_1">surname:McGinty;given-names:JW</infon>
+      <infon key="name_2">surname:Lyons-Cohen;given-names:MR</infon>
+      <infon key="name_3">surname:Jaffe;given-names:JB</infon>
+      <infon key="name_4">surname:DiPeso;given-names:L</infon>
+      <infon key="name_5">surname:Schneider;given-names:C</infon>
+      <infon key="name_6">surname:Miller;given-names:CN</infon>
+      <infon key="name_7">surname:Pollack;given-names:JL</infon>
+      <infon key="name_8">surname:Nagana Gowda;given-names:GA</infon>
+      <infon key="name_9">surname:Fontana;given-names:MF</infon>
+      <infon key="pub-id_pmid">30021144</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">49</infon>
+      <infon key="year">2018</infon>
+      <offset>30982</offset>
+      <text>Detection of succinate by intestinal tuft cells triggers a Type 2 innate immune circuit</text>
+      <annotation id="T183">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0019032</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal tuft cell</infon>
+        <location offset="31008" length="21"/>
+        <text>intestinal tuft cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">271</infon>
+      <infon key="lpage">284.e14</infon>
+      <infon key="name_0">surname:Schneider;given-names:C</infon>
+      <infon key="name_1">surname:O’Leary;given-names:CE</infon>
+      <infon key="name_2">surname:Moltke von;given-names:J</infon>
+      <infon key="name_3">surname:Liang;given-names:H-E</infon>
+      <infon key="name_4">surname:Ang;given-names:QY</infon>
+      <infon key="name_5">surname:Turnbaugh;given-names:PJ</infon>
+      <infon key="name_6">surname:Radhakrishnan;given-names:S</infon>
+      <infon key="name_7">surname:Pellizzon;given-names:M</infon>
+      <infon key="name_8">surname:Ma;given-names:A</infon>
+      <infon key="name_9">surname:Locksley;given-names:RM</infon>
+      <infon key="note">Small intestinal tuft cells mediate immune response to intestinal helminths and protists through chemosensing of the metabolite succinate, activating a tuft cell mediated IL-25-ILC2 circuit to restore luminal homeostasis. 
+          
+        </infon>
+      <infon key="pub-id_pmid">29887373</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">174</infon>
+      <infon key="year">2018</infon>
+      <offset>31070</offset>
+      <text>A metabolite-triggered tuft Cell-ILC2 circuit drives small intestinal remodeling</text>
+      <annotation id="T184">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="31093" length="9"/>
+        <text>tuft Cell</text>
+      </annotation>
+      <annotation id="T185">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="31103" length="4"/>
+        <text>ILC2</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">1105</infon>
+      <infon key="lpage">1116</infon>
+      <infon key="name_0">surname:Fallon;given-names:PG</infon>
+      <infon key="name_1">surname:Ballantyne;given-names:SJ</infon>
+      <infon key="name_2">surname:Mangan;given-names:NE</infon>
+      <infon key="name_3">surname:Barlow;given-names:JL</infon>
+      <infon key="name_4">surname:Dasvarma;given-names:A</infon>
+      <infon key="name_5">surname:Hewett;given-names:DR</infon>
+      <infon key="name_6">surname:McIlgorm;given-names:A</infon>
+      <infon key="name_7">surname:Jolin;given-names:HE</infon>
+      <infon key="name_8">surname:McKenzie;given-names:ANJ</infon>
+      <infon key="pub-id_pmid">16606668</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">J Exp Med</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">203</infon>
+      <infon key="year">2006</infon>
+      <offset>31151</offset>
+      <text>Identification of an interleukin (IL)-25-dependent cell population that provides IL-4, IL-5, and IL-13 at the onset of helminth expulsion</text>
+    </passage>
+    <passage>
+      <infon key="fpage">226</infon>
+      <infon key="lpage">230</infon>
+      <infon key="name_0">surname:Gerbe;given-names:F</infon>
+      <infon key="name_1">surname:Sidot;given-names:E</infon>
+      <infon key="name_2">surname:Smyth;given-names:DJ</infon>
+      <infon key="name_3">surname:Ohmoto;given-names:M</infon>
+      <infon key="name_4">surname:Matsumoto;given-names:I</infon>
+      <infon key="name_5">surname:Dardalhon;given-names:V</infon>
+      <infon key="name_6">surname:Cesses;given-names:P</infon>
+      <infon key="name_7">surname:Garnier;given-names:L</infon>
+      <infon key="name_8">surname:Pouzolles;given-names:M</infon>
+      <infon key="name_9">surname:Brulin;given-names:B</infon>
+      <infon key="pub-id_pmid">26762460</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">529</infon>
+      <infon key="year">2016</infon>
+      <offset>31289</offset>
+      <text>Intestinal epithelial tuft cells initiate type 2 mucosal immunity to helminth parasites</text>
+      <annotation id="T186">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0019032</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal tuft cell</infon>
+        <location offset="31289" length="32"/>
+        <text>Intestinal epithelial tuft cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">1329</infon>
+      <infon key="lpage">1333</infon>
+      <infon key="name_0">surname:Howitt;given-names:MR</infon>
+      <infon key="name_1">surname:Lavoie;given-names:S</infon>
+      <infon key="name_2">surname:Michaud;given-names:M</infon>
+      <infon key="name_3">surname:Blum;given-names:AM</infon>
+      <infon key="name_4">surname:Tran;given-names:SV</infon>
+      <infon key="name_5">surname:Weinstock;given-names:JV</infon>
+      <infon key="name_6">surname:Gallini;given-names:CA</infon>
+      <infon key="name_7">surname:Redding;given-names:K</infon>
+      <infon key="name_8">surname:Margolskee;given-names:RF</infon>
+      <infon key="name_9">surname:Osborne;given-names:LC</infon>
+      <infon key="pub-id_pmid">26847546</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">351</infon>
+      <infon key="year">2016</infon>
+      <offset>31377</offset>
+      <text>Tuft cells, taste-chemosensory cells, orchestrate parasite type 2 immunity in the gut</text>
+      <annotation id="T187">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="31377" length="10"/>
+        <text>Tuft cells</text>
+      </annotation>
+      <annotation id="T188">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000209</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">taste receptor cell</infon>
+        <location offset="31389" length="24"/>
+        <text>taste-chemosensory cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">221</infon>
+      <infon key="lpage">225</infon>
+      <infon key="name_0">surname:Moltke von;given-names:J</infon>
+      <infon key="name_1">surname:Ji;given-names:M</infon>
+      <infon key="name_2">surname:Liang;given-names:H-E</infon>
+      <infon key="name_3">surname:Locksley;given-names:RM</infon>
+      <infon key="pub-id_pmid">26675736</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">529</infon>
+      <infon key="year">2016</infon>
+      <offset>31463</offset>
+      <text>Tuft-cell-derived IL-25 regulates an intestinal ILC2-epithelial response circuit</text>
+      <annotation id="T189">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="31463" length="9"/>
+        <text>Tuft-cell</text>
+      </annotation>
+      <annotation id="T190">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001069</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">ILC2</infon>
+        <location offset="31500" length="15"/>
+        <text>intestinal ILC2</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">184</infon>
+      <infon key="lpage">197</infon>
+      <infon key="name_0">surname:Rothhammer;given-names:V</infon>
+      <infon key="name_1">surname:Quintana;given-names:FJ</infon>
+      <infon key="pub-id_pmid">30718831</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Rev Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">19</infon>
+      <infon key="year">2019</infon>
+      <offset>31544</offset>
+      <text>The aryl hydrocarbon receptor: an environmental sensor integrating immune responses in health and disease</text>
+    </passage>
+    <passage>
+      <infon key="fpage">353</infon>
+      <infon key="lpage">362.e5</infon>
+      <infon key="name_0">surname:Metidji;given-names:A</infon>
+      <infon key="name_1">surname:Omenetti;given-names:S</infon>
+      <infon key="name_2">surname:Crotta;given-names:S</infon>
+      <infon key="name_3">surname:Li;given-names:Y</infon>
+      <infon key="name_4">surname:Nye;given-names:E</infon>
+      <infon key="name_5">surname:Ross;given-names:E</infon>
+      <infon key="name_6">surname:Li;given-names:V</infon>
+      <infon key="name_7">surname:Maradana;given-names:MR</infon>
+      <infon key="name_8">surname:Schiering;given-names:C</infon>
+      <infon key="name_9">surname:Stockinger;given-names:B</infon>
+      <infon key="pub-id_pmid">30119997</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">49</infon>
+      <infon key="year">2018</infon>
+      <offset>31650</offset>
+      <text>The environmental sensor AHR protects from inflammatory damage by maintaining intestinal stem cell homeostasis and barrier integrity</text>
+      <annotation id="T191">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal crypt stem cell</infon>
+        <location offset="31728" length="20"/>
+        <text>intestinal stem cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">89</infon>
+      <infon key="name_0">surname:Singh;given-names:R</infon>
+      <infon key="name_1">surname:Chandrashekharappa;given-names:S</infon>
+      <infon key="name_2">surname:Bodduluri;given-names:SR</infon>
+      <infon key="name_3">surname:Baby;given-names:BV</infon>
+      <infon key="name_4">surname:Hegde;given-names:B</infon>
+      <infon key="name_5">surname:Kotla;given-names:NG</infon>
+      <infon key="name_6">surname:Hiwale;given-names:AA</infon>
+      <infon key="name_7">surname:Saiyed;given-names:T</infon>
+      <infon key="name_8">surname:Patel;given-names:P</infon>
+      <infon key="name_9">surname:Vijay-Kumar;given-names:M</infon>
+      <infon key="pub-id_pmid">30626868</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Commun</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">10</infon>
+      <infon key="year">2019</infon>
+      <offset>31783</offset>
+      <text>Enhancement of the gut barrier integrity by a microbial metabolite through the Nrf2 pathway</text>
+    </passage>
+    <passage>
+      <infon key="fpage">989</infon>
+      <infon key="lpage">1001</infon>
+      <infon key="name_0">surname:Di Meglio;given-names:P</infon>
+      <infon key="name_1">surname:Duarte;given-names:JH</infon>
+      <infon key="name_2">surname:Ahlfors;given-names:H</infon>
+      <infon key="name_3">surname:Owens;given-names:NDL</infon>
+      <infon key="name_4">surname:Li;given-names:Y</infon>
+      <infon key="name_5">surname:Villanova;given-names:F</infon>
+      <infon key="name_6">surname:Tosi;given-names:I</infon>
+      <infon key="name_7">surname:Hirota;given-names:K</infon>
+      <infon key="name_8">surname:Nestle;given-names:FO</infon>
+      <infon key="name_9">surname:Mrowietz;given-names:U</infon>
+      <infon key="pub-id_pmid">24909886</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">40</infon>
+      <infon key="year">2014</infon>
+      <offset>31875</offset>
+      <text>Activation of the aryl hydrocarbon receptor dampens the severity of inflammatory skin conditions</text>
+    </passage>
+    <passage>
+      <infon key="fpage">55</infon>
+      <infon key="lpage">89</infon>
+      <infon key="name_0">surname:Schmidt;given-names:JV</infon>
+      <infon key="name_1">surname:Bradfield;given-names:CA</infon>
+      <infon key="pub-id_pmid">8970722</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Annu Rev Cell Dev Biol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">12</infon>
+      <infon key="year">1996</infon>
+      <offset>31972</offset>
+      <text>Ah receptor signaling pathways</text>
+    </passage>
+    <passage>
+      <infon key="fpage">S258</infon>
+      <infon key="lpage">63</infon>
+      <infon key="name_0">surname:Beck;given-names:LA</infon>
+      <infon key="name_1">surname:Leung;given-names:DY</infon>
+      <infon key="pub-id_pmid">11080741</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">J Allergy Clin Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">106</infon>
+      <infon key="year">2000</infon>
+      <offset>32003</offset>
+      <text>Allergen sensitization through the skin induces systemic allergic responses</text>
+    </passage>
+    <passage>
+      <infon key="fpage">705</infon>
+      <infon key="lpage">715</infon>
+      <infon key="name_0">surname:Sheih;given-names:A</infon>
+      <infon key="name_1">surname:Parks;given-names:WC</infon>
+      <infon key="name_2">surname:Ziegler;given-names:SF</infon>
+      <infon key="pub-id_pmid">27731325</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mucosal Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">10</infon>
+      <infon key="year">2017</infon>
+      <offset>32079</offset>
+      <text>GM-CSF produced by the airway epithelium is required for sensitization to cockroach allergen</text>
+    </passage>
+    <passage>
+      <infon key="fpage">809</infon>
+      <infon key="lpage">820</infon>
+      <infon key="name_0">surname:Gold;given-names:MJ</infon>
+      <infon key="name_1">surname:Hiebert;given-names:PR</infon>
+      <infon key="name_2">surname:Park;given-names:HY</infon>
+      <infon key="name_3">surname:Stefanowicz;given-names:D</infon>
+      <infon key="name_4">surname:Le;given-names:A</infon>
+      <infon key="name_5">surname:Starkey;given-names:MR</infon>
+      <infon key="name_6">surname:Deane;given-names:A</infon>
+      <infon key="name_7">surname:Brown;given-names:AC</infon>
+      <infon key="name_8">surname:Liu;given-names:G</infon>
+      <infon key="name_9">surname:Horvat;given-names:JC</infon>
+      <infon key="pub-id_pmid">26509876</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mucosal Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">9</infon>
+      <infon key="year">2016</infon>
+      <offset>32172</offset>
+      <text>Mucosal production of uric acid by airway epithelial cells contributes to particulate matter-induced allergic sensitization</text>
+      <annotation id="T192">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002368</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">airway epithelial cell</infon>
+        <location offset="32207" length="23"/>
+        <text>airway epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">1505</infon>
+      <infon key="lpage">1517</infon>
+      <infon key="name_0">surname:Willart;given-names:MAM</infon>
+      <infon key="name_1">surname:Deswarte;given-names:K</infon>
+      <infon key="name_2">surname:Pouliot;given-names:P</infon>
+      <infon key="name_3">surname:Braun;given-names:H</infon>
+      <infon key="name_4">surname:Beyaert;given-names:R</infon>
+      <infon key="name_5">surname:Lambrecht;given-names:BN</infon>
+      <infon key="name_6">surname:Hammad;given-names:H</infon>
+      <infon key="pub-id_pmid">22802353</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">J Exp Med</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">209</infon>
+      <infon key="year">2012</infon>
+      <offset>32296</offset>
+      <text>Interleukin-1α controls allergic sensitization to inhaled house dust mite via the epithelial release of GM-CSF and IL-33</text>
+    </passage>
+    <passage>
+      <infon key="fpage">275</infon>
+      <infon key="lpage">287.e5</infon>
+      <infon key="name_0">surname:Moon;given-names:H-G</infon>
+      <infon key="name_1">surname:Kim;given-names:S-J</infon>
+      <infon key="name_2">surname:Jeong;given-names:JJ</infon>
+      <infon key="name_3">surname:Han;given-names:S-S</infon>
+      <infon key="name_4">surname:Jarjour;given-names:NN</infon>
+      <infon key="name_5">surname:Lee;given-names:H</infon>
+      <infon key="name_6">surname:Abboud-Werner;given-names:SL</infon>
+      <infon key="name_7">surname:Chung;given-names:S</infon>
+      <infon key="name_8">surname:Choi;given-names:HS</infon>
+      <infon key="name_9">surname:Natarajan;given-names:V</infon>
+      <infon key="pub-id_pmid">30054206</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">49</infon>
+      <infon key="year">2018</infon>
+      <offset>32421</offset>
+      <text>Airway epithelial cell-derived colony stimulating factor-1 promotes allergen sensitization</text>
+      <annotation id="T193">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002368</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">airway epithelial cell</infon>
+        <location offset="32421" length="22"/>
+        <text>Airway epithelial cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">42341</infon>
+      <infon key="name_0">surname:Kale;given-names:SL</infon>
+      <infon key="name_1">surname:Agrawal;given-names:K</infon>
+      <infon key="name_2">surname:Gaur;given-names:SN</infon>
+      <infon key="name_3">surname:Arora;given-names:N</infon>
+      <infon key="pub-id_pmid">28198394</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Sci Rep</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">7</infon>
+      <infon key="year">2017</infon>
+      <offset>32512</offset>
+      <text>Cockroach protease allergen induces allergic airway inflammation via epithelial cell activation</text>
+      <annotation id="T194">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="32581" length="15"/>
+        <text>epithelial cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">631</infon>
+      <infon key="lpage">644</infon>
+      <infon key="name_0">surname:Perez-Moreno;given-names:M</infon>
+      <infon key="name_1">surname:Davis;given-names:MA</infon>
+      <infon key="name_2">surname:Wong;given-names:E</infon>
+      <infon key="name_3">surname:Pasolli;given-names:HA</infon>
+      <infon key="name_4">surname:Reynolds;given-names:AB</infon>
+      <infon key="name_5">surname:Fuchs;given-names:E</infon>
+      <infon key="pub-id_pmid">16469707</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">124</infon>
+      <infon key="year">2006</infon>
+      <offset>32608</offset>
+      <text>p120-catenin mediates inflammatory responses in the skin</text>
+    </passage>
+    <passage>
+      <infon key="fpage">1272</infon>
+      <infon key="name_0">surname:Lay;given-names:K</infon>
+      <infon key="name_1">surname:Yuan;given-names:S</infon>
+      <infon key="name_2">surname:Gur-Cohen;given-names:S</infon>
+      <infon key="name_3">surname:Miao;given-names:Y</infon>
+      <infon key="name_4">surname:Han;given-names:T</infon>
+      <infon key="name_5">surname:Naik;given-names:S</infon>
+      <infon key="name_6">surname:Pasolli;given-names:HA</infon>
+      <infon key="name_7">surname:Larsen;given-names:SB</infon>
+      <infon key="name_8">surname:Fuchs;given-names:E</infon>
+      <infon key="note">Epidermal stem cells sense barrier breaches and release chemokines that recruit dendritic cells and regulatory T-cells to the site of injury, whereby they promote and repurpose stem cell proliferation to seal the breach and restore barrier integrity. 
+          
+        </infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">eLife</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">7</infon>
+      <infon key="year">2018</infon>
+      <offset>32665</offset>
+      <text>Stem cells repurpose proliferation to contain a breach in their niche barrier</text>
+      <annotation id="T195">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Stem Cell</infon>
+        <location offset="32665" length="10"/>
+        <text>Stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">1106</infon>
+      <infon key="lpage">1110</infon>
+      <infon key="name_0">surname:Schuijs;given-names:MJ</infon>
+      <infon key="name_1">surname:Willart;given-names:MA</infon>
+      <infon key="name_2">surname:Vergote;given-names:K</infon>
+      <infon key="name_3">surname:Gras;given-names:D</infon>
+      <infon key="name_4">surname:Deswarte;given-names:K</infon>
+      <infon key="name_5">surname:Ege;given-names:MJ</infon>
+      <infon key="name_6">surname:Madeira;given-names:FB</infon>
+      <infon key="name_7">surname:Beyaert;given-names:R</infon>
+      <infon key="name_8">surname:van Loo;given-names:G</infon>
+      <infon key="name_9">surname:Bracher;given-names:F</infon>
+      <infon key="note">Long-term exposure to endotoxin reduces epithelial cell-derived cytokines that promote dendritic cell activation resulting in suppression of type 2 immunity and dampening of allergic responses and asthma. 
+          
+        </infon>
+      <infon key="pub-id_pmid">26339029</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">349</infon>
+      <infon key="year">2015</infon>
+      <offset>32743</offset>
+      <text>Farm dust and endotoxin protect against allergy through A20 induction in lung epithelial cells</text>
+      <annotation id="T196">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung epithelial cell</infon>
+        <location offset="32816" length="21"/>
+        <text>lung epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">eaat6280</infon>
+      <infon key="name_0">surname:Harrison;given-names:OJ</infon>
+      <infon key="name_1">surname:Linehan;given-names:JL</infon>
+      <infon key="name_2">surname:Shih;given-names:H-Y</infon>
+      <infon key="name_3">surname:Bouladoux;given-names:N</infon>
+      <infon key="name_4">surname:Han;given-names:S-J</infon>
+      <infon key="name_5">surname:Smelkinson;given-names:M</infon>
+      <infon key="name_6">surname:Sen;given-names:SK</infon>
+      <infon key="name_7">surname:Byrd;given-names:AL</infon>
+      <infon key="name_8">surname:Enamorado;given-names:M</infon>
+      <infon key="name_9">surname:Yao;given-names:C</infon>
+      <infon key="note">Epithelial-derived alarmins stimulate a subset of tissue resident commensal-specific TH17-cells to express type 2 cytokines following injury, promoting host defense and tissue repair. 
+          
+        </infon>
+      <infon key="pub-id_pmid">30523076</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">363</infon>
+      <infon key="year">2019</infon>
+      <offset>32838</offset>
+      <text>Commensal-specific T cell plasticity promotes rapid tissue adaptation to injury</text>
+      <annotation id="T197">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T Cell</infon>
+        <location offset="32857" length="6"/>
+        <text>T cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">11394</infon>
+      <infon key="name_0">surname:Li;given-names:Z</infon>
+      <infon key="name_1">surname:Hodgkinson;given-names:T</infon>
+      <infon key="name_2">surname:Gothard;given-names:EJ</infon>
+      <infon key="name_3">surname:Boroumand;given-names:S</infon>
+      <infon key="name_4">surname:Lamb;given-names:R</infon>
+      <infon key="name_5">surname:Cummins;given-names:I</infon>
+      <infon key="name_6">surname:Narang;given-names:P</infon>
+      <infon key="name_7">surname:Sawtell;given-names:A</infon>
+      <infon key="name_8">surname:Coles;given-names:J</infon>
+      <infon key="name_9">surname:Leonov;given-names:G</infon>
+      <infon key="pub-id_pmid">27099134</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Commun</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">7</infon>
+      <infon key="year">2016</infon>
+      <offset>32918</offset>
+      <text>Epidermal Notch1 recruits RORγ(+) group 3 innate lymphoid cells to orchestrate normal skin repair</text>
+      <annotation id="T198">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001071</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">group 3 innate lymphoid cell</infon>
+        <location offset="32947" length="34"/>
+        <text>γ(+) group 3 innate lymphoid cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">621</infon>
+      <infon key="lpage">625</infon>
+      <infon key="name_0">surname:Vaughan;given-names:AE</infon>
+      <infon key="name_1">surname:Brumwell;given-names:AN</infon>
+      <infon key="name_2">surname:Xi;given-names:Y</infon>
+      <infon key="name_3">surname:Gotts;given-names:JE</infon>
+      <infon key="name_4">surname:Brownfield;given-names:DG</infon>
+      <infon key="name_5">surname:Treutlein;given-names:B</infon>
+      <infon key="name_6">surname:Tan;given-names:K</infon>
+      <infon key="name_7">surname:Tan;given-names:V</infon>
+      <infon key="name_8">surname:Liu;given-names:FC</infon>
+      <infon key="name_9">surname:Looney;given-names:MR</infon>
+      <infon key="pub-id_pmid">25533958</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">517</infon>
+      <infon key="year">2015</infon>
+      <offset>33020</offset>
+      <text>Lineage-negative progenitors mobilize to regenerate lung epithelium after major injury</text>
+      <annotation id="T199">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002031</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic lineage restricted progenitor cell</infon>
+        <location offset="33020" length="28"/>
+        <text>Lineage-negative progenitors</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">251</infon>
+      <infon key="lpage">255</infon>
+      <infon key="name_0">surname:Zacharias;given-names:WJ</infon>
+      <infon key="name_1">surname:Frank;given-names:DB</infon>
+      <infon key="name_2">surname:Zepp;given-names:JA</infon>
+      <infon key="name_3">surname:Morley;given-names:MP</infon>
+      <infon key="name_4">surname:Alkhaleel;given-names:FA</infon>
+      <infon key="name_5">surname:Kong;given-names:J</infon>
+      <infon key="name_6">surname:Zhou;given-names:S</infon>
+      <infon key="name_7">surname:Cantu;given-names:E</infon>
+      <infon key="name_8">surname:Morrisey;given-names:EE</infon>
+      <infon key="pub-id_pmid">29489752</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">555</infon>
+      <infon key="year">2018</infon>
+      <offset>33107</offset>
+      <text>Regeneration of the lung alveolus by an evolutionarily conserved epithelial progenitor</text>
+      <annotation id="T200">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Epithelial</infon>
+        <location offset="33172" length="10"/>
+        <text>epithelial</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">2581</infon>
+      <infon key="lpage">2591</infon>
+      <infon key="name_0">surname:Petrie;given-names:TA</infon>
+      <infon key="name_1">surname:Strand;given-names:NS</infon>
+      <infon key="name_2">surname:Yang;given-names:C-T</infon>
+      <infon key="name_3">surname:Tsung-Yang;given-names:C</infon>
+      <infon key="name_4">surname:Rabinowitz;given-names:JS</infon>
+      <infon key="name_5">surname:Moon;given-names:RT</infon>
+      <infon key="pub-id_pmid">24961798</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Development</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">141</infon>
+      <infon key="year">2014</infon>
+      <offset>33194</offset>
+      <text>Macrophages modulate adult zebrafish tail fin regeneration</text>
+      <annotation id="T201">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="33194" length="11"/>
+        <text>Macrophages</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">560</infon>
+      <infon key="lpage">564</infon>
+      <infon key="name_0">surname:Lindemans;given-names:CA</infon>
+      <infon key="name_1">surname:Calafiore;given-names:M</infon>
+      <infon key="name_2">surname:Mertelsmann;given-names:AM</infon>
+      <infon key="name_3">surname:O’Connor;given-names:MH</infon>
+      <infon key="name_4">surname:Dudakov;given-names:JA</infon>
+      <infon key="name_5">surname:Jenq;given-names:RR</infon>
+      <infon key="name_6">surname:Velardi;given-names:E</infon>
+      <infon key="name_7">surname:Young;given-names:LF</infon>
+      <infon key="name_8">surname:Smith;given-names:OM</infon>
+      <infon key="name_9">surname:Lawrence;given-names:G</infon>
+      <infon key="pub-id_pmid">26649819</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">528</infon>
+      <infon key="year">2015</infon>
+      <offset>33253</offset>
+      <text>Interleukin-22 promotes intestinal-stem-cell-mediated epithelial regeneration</text>
+      <annotation id="T202">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002250</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">intestinal crypt stem cell</infon>
+        <location offset="33277" length="20"/>
+        <text>intestinal-stem-cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">765</infon>
+      <infon key="lpage">768</infon>
+      <infon key="name_0">surname:Hu;given-names:B</infon>
+      <infon key="name_1">surname:Jin;given-names:C</infon>
+      <infon key="name_2">surname:Li;given-names:H-B</infon>
+      <infon key="name_3">surname:Tong;given-names:J</infon>
+      <infon key="name_4">surname:Ouyang;given-names:X</infon>
+      <infon key="name_5">surname:Cetinbas;given-names:NM</infon>
+      <infon key="name_6">surname:Zhu;given-names:S</infon>
+      <infon key="name_7">surname:Strowig;given-names:T</infon>
+      <infon key="name_8">surname:Lam;given-names:FC</infon>
+      <infon key="name_9">surname:Zhao;given-names:C</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science (New York, N.Y.)</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">354</infon>
+      <infon key="year">2016</infon>
+      <offset>33331</offset>
+      <text>The DNA-sensing AIM2 inflammasome controls radiation-induced cell death and tissue injury</text>
+    </passage>
+    <passage>
+      <infon key="fpage">475</infon>
+      <infon key="lpage">480</infon>
+      <infon key="name_0">surname:Naik;given-names:S</infon>
+      <infon key="name_1">surname:Larsen;given-names:SB</infon>
+      <infon key="name_2">surname:Gomez;given-names:NC</infon>
+      <infon key="name_3">surname:Alaverdyan;given-names:K</infon>
+      <infon key="name_4">surname:Sendoel;given-names:A</infon>
+      <infon key="name_5">surname:Yuan;given-names:S</infon>
+      <infon key="name_6">surname:Polak;given-names:L</infon>
+      <infon key="name_7">surname:Kulukian;given-names:A</infon>
+      <infon key="name_8">surname:Chai;given-names:S</infon>
+      <infon key="name_9">surname:Fuchs;given-names:E</infon>
+      <infon key="note">Skin epithelial stem cells retain chromatin accessibility at key immune response loci following acute inflammation that enable them to elicit an enhanced transcriptional response to a secondary challenge resulting in enhanced wound healing. 
+          
+        </infon>
+      <infon key="pub-id_pmid">29045388</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">550</infon>
+      <infon key="year">2017</infon>
+      <offset>33421</offset>
+      <text>Inflammatory memory sensitizes skin epithelial stem cells to tissue damage</text>
+      <annotation id="T203">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:1000428</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal stem cell</infon>
+        <location offset="33452" length="26"/>
+        <text>skin epithelial stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">139</infon>
+      <infon key="name_0">surname:Ordovas-Montanes;given-names:J</infon>
+      <infon key="name_1">surname:Dwyer;given-names:DF</infon>
+      <infon key="name_2">surname:Nyquist;given-names:SK</infon>
+      <infon key="name_3">surname:Buchheit;given-names:KM</infon>
+      <infon key="name_4">surname:Vukovic;given-names:M</infon>
+      <infon key="name_5">surname:Deb;given-names:C</infon>
+      <infon key="name_6">surname:Wadsworth;given-names:MH</infon>
+      <infon key="name_7">surname:Hughes;given-names:TK</infon>
+      <infon key="name_8">surname:Kazer;given-names:SW</infon>
+      <infon key="name_9">surname:Yoshimoto;given-names:E</infon>
+      <infon key="note">Lung epithelial basal cells retain a transcriptional signature of chronic rhinosinusitis following isolation from their microenvironment and anti-inflammatory drug treatment, suggesting epigenetic scars of the inflammatory exposure may contribute to the chronic nature of the disease. 
+          
+        </infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nature</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">2018</infon>
+      <infon key="year">1752</infon>
+      <offset>33496</offset>
+      <text>Allergic inflammatory memory in human respiratory epithelial progenitor cells</text>
+      <annotation id="T204">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002396</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">non-classical monocyte, human</infon>
+        <location offset="33528" length="5"/>
+        <text>human</text>
+      </annotation>
+      <annotation id="T205">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002633</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">airway basal stem cell</infon>
+        <location offset="33534" length="39"/>
+        <text>respiratory epithelial progenitor cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">162</infon>
+      <infon key="lpage">175.e14</infon>
+      <infon key="name_0">surname:Christ;given-names:A</infon>
+      <infon key="name_1">surname:Günther;given-names:P</infon>
+      <infon key="name_2">surname:Lauterbach;given-names:MAR</infon>
+      <infon key="name_3">surname:Duewell;given-names:P</infon>
+      <infon key="name_4">surname:Biswas;given-names:D</infon>
+      <infon key="name_5">surname:Pelka;given-names:K</infon>
+      <infon key="name_6">surname:Scholz;given-names:CJ</infon>
+      <infon key="name_7">surname:Oosting;given-names:M</infon>
+      <infon key="name_8">surname:Haendler;given-names:K</infon>
+      <infon key="name_9">surname:Baßler;given-names:K</infon>
+      <infon key="pub-id_pmid">29328911</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">172</infon>
+      <infon key="year">2018</infon>
+      <offset>33574</offset>
+      <text>Western diet triggers NLRP3-dependent innate immune reprogramming</text>
+    </passage>
+    <passage>
+      <infon key="fpage">147</infon>
+      <infon key="lpage">161.e12</infon>
+      <infon key="name_0">surname:Mitroulis;given-names:I</infon>
+      <infon key="name_1">surname:Ruppova;given-names:K</infon>
+      <infon key="name_2">surname:Wang;given-names:B</infon>
+      <infon key="name_3">surname:Chen;given-names:L-S</infon>
+      <infon key="name_4">surname:Grzybek;given-names:M</infon>
+      <infon key="name_5">surname:Grinenko;given-names:T</infon>
+      <infon key="name_6">surname:Eugster;given-names:A</infon>
+      <infon key="name_7">surname:Troullinaki;given-names:M</infon>
+      <infon key="name_8">surname:Palladini;given-names:A</infon>
+      <infon key="name_9">surname:Kourtzelis;given-names:I</infon>
+      <infon key="pub-id_pmid">29328910</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">172</infon>
+      <infon key="year">2018</infon>
+      <offset>33640</offset>
+      <text>Modulation of myelopoiesis progenitors is an integral component of trained immunity</text>
+      <annotation id="T206">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000049</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">common myeloid precursor</infon>
+        <location offset="33654" length="24"/>
+        <text>myelopoiesis progenitors</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">176</infon>
+      <infon key="lpage">190.e19</infon>
+      <infon key="name_0">surname:Kaufmann;given-names:E</infon>
+      <infon key="name_1">surname:Sanz;given-names:J</infon>
+      <infon key="name_2">surname:Dunn;given-names:JL</infon>
+      <infon key="name_3">surname:Khan;given-names:N</infon>
+      <infon key="name_4">surname:Mendonça;given-names:LE</infon>
+      <infon key="name_5">surname:Pacis;given-names:A</infon>
+      <infon key="name_6">surname:Tzelepis;given-names:F</infon>
+      <infon key="name_7">surname:Pernet;given-names:E</infon>
+      <infon key="name_8">surname:Dumaine;given-names:A</infon>
+      <infon key="name_9">surname:Grenier;given-names:J-C</infon>
+      <infon key="pub-id_pmid">29328912</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">172</infon>
+      <infon key="year">2018</infon>
+      <offset>33724</offset>
+      <text>BCG educates hematopoietic stem cells to generate protective innate immunity against tuberculosis</text>
+      <annotation id="T207">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic stem cell</infon>
+        <location offset="33737" length="24"/>
+        <text>hematopoietic stem cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">355</infon>
+      <infon key="lpage">361</infon>
+      <infon key="name_0">surname:Netea;given-names:MG</infon>
+      <infon key="name_1">surname:Quintin;given-names:J</infon>
+      <infon key="name_2">surname:van der Meer;given-names:JWM</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">CellHostMicrobe</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">9</infon>
+      <infon key="year">2011</infon>
+      <offset>33822</offset>
+      <text>Trained immunity: a memoryforinnatehostdefense</text>
+    </passage>
+    <passage>
+      <infon key="fpage">aaf1098</infon>
+      <infon key="name_0">surname:Netea;given-names:MG</infon>
+      <infon key="name_1">surname:Joosten;given-names:LAB</infon>
+      <infon key="name_2">surname:Latz;given-names:E</infon>
+      <infon key="name_3">surname:Mills;given-names:KHG</infon>
+      <infon key="name_4">surname:Natoli;given-names:G</infon>
+      <infon key="name_5">surname:Stunnenberg;given-names:HG</infon>
+      <infon key="name_6">surname:O’Neill;given-names:LAJ</infon>
+      <infon key="name_7">surname:Xavier;given-names:RJ</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Science (New York, N.Y.)</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">352</infon>
+      <infon key="year">2016</infon>
+      <offset>33869</offset>
+      <text>Trained immunity: a program of innate immune memory in health and disease</text>
+    </passage>
+    <passage>
+      <infon key="fpage">885</infon>
+      <infon key="lpage">898.e887</infon>
+      <infon key="name_0">surname:Koyama;given-names:M</infon>
+      <infon key="name_1">surname:Mukhopadhyay;given-names:P</infon>
+      <infon key="name_2">surname:Schuster;given-names:IS</infon>
+      <infon key="name_3">surname:Henden;given-names:AS</infon>
+      <infon key="name_4">surname:Hülsdünker;given-names:J</infon>
+      <infon key="name_5">surname:Varelias;given-names:A</infon>
+      <infon key="name_6">surname:Vetizou;given-names:M</infon>
+      <infon key="name_7">surname:Kuns;given-names:RD</infon>
+      <infon key="name_8">surname:Robb;given-names:RJ</infon>
+      <infon key="name_9">surname:Zhang;given-names:P</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Immunity 2019</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">51</infon>
+      <infon key="year">2019</infon>
+      <offset>33943</offset>
+      <text>MHC class II antigen presentation by the intestinal epithelium initiates graft-versus-host disease and is influenced by the microbiota</text>
+    </passage>
+    <passage>
+      <infon key="fpage">10911</infon>
+      <infon key="lpage">10916</infon>
+      <infon key="name_0">surname:Gattu;given-names:S</infon>
+      <infon key="name_1">surname:Bang;given-names:Y-J</infon>
+      <infon key="name_2">surname:Pendse;given-names:M</infon>
+      <infon key="name_3">surname:Dende;given-names:C</infon>
+      <infon key="name_4">surname:Chara;given-names:AL</infon>
+      <infon key="name_5">surname:Harris;given-names:TA</infon>
+      <infon key="name_6">surname:Wang;given-names:Y</infon>
+      <infon key="name_7">surname:Ruhn;given-names:KA</infon>
+      <infon key="name_8">surname:Kuang;given-names:Z</infon>
+      <infon key="name_9">surname:Sockanathan;given-names:S</infon>
+      <infon key="pub-id_pmid">31097581</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Proc Natl Acad Sci U S A</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">116</infon>
+      <infon key="year">2019</infon>
+      <offset>34078</offset>
+      <text>Epithelial retinoic acid receptor b regulates serum amyloid A expression and vitamin A-dependent intestinal immunity</text>
+    </passage>
+    <passage>
+      <infon key="fpage">4703</infon>
+      <infon key="lpage">4715</infon>
+      <infon key="name_0">surname:Fyhrquist;given-names:N</infon>
+      <infon key="name_1">surname:Muirhead;given-names:G</infon>
+      <infon key="name_2">surname:Prast-Nielsen;given-names:S</infon>
+      <infon key="name_3">surname:Jeanmougin;given-names:M</infon>
+      <infon key="name_4">surname:Olah;given-names:P</infon>
+      <infon key="name_5">surname:Skoog;given-names:T</infon>
+      <infon key="name_6">surname:Jules-Clement;given-names:G</infon>
+      <infon key="name_7">surname:Feld;given-names:M</infon>
+      <infon key="name_8">surname:Barrientos-Somarribas;given-names:M</infon>
+      <infon key="name_9">surname:Sinkko;given-names:H</infon>
+      <infon key="pub-id_pmid">31619666</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Nat Commun</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">10</infon>
+      <infon key="year">2019</infon>
+      <offset>34195</offset>
+      <text>Microbe-host interplay in atopic dermatitis and psoriasis</text>
+    </passage>
+    <passage>
+      <infon key="fpage">511</infon>
+      <infon key="lpage">522.e515</infon>
+      <infon key="name_0">surname:Hernández-Santos;given-names:N</infon>
+      <infon key="name_1">surname:Wiesner;given-names:DL</infon>
+      <infon key="name_2">surname:Fites;given-names:JS</infon>
+      <infon key="name_3">surname:McDermott;given-names:AJ</infon>
+      <infon key="name_4">surname:Warner;given-names:T</infon>
+      <infon key="name_5">surname:Wüthrich;given-names:M</infon>
+      <infon key="name_6">surname:Klein;given-names:BS</infon>
+      <infon key="pub-id_pmid">29576482</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Cell Host Microbe</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">23</infon>
+      <infon key="year">2018</infon>
+      <offset>34253</offset>
+      <text>Lung epithelial cells coordinate innate lymphocytes and immunity against pulmonary fungal infection</text>
+      <annotation id="T208">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000082</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Lung Epithelial Cell</infon>
+        <location offset="34253" length="21"/>
+        <text>Lung epithelial cells</text>
+      </annotation>
+      <annotation id="T209">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001065</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">innate lymphoid cell</infon>
+        <location offset="34286" length="18"/>
+        <text>innate lymphocytes</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="fpage">eaau4643</infon>
+      <infon key="name_0">surname:Lee;given-names:S</infon>
+      <infon key="name_1">surname:Ishitsuka;given-names:A</infon>
+      <infon key="name_2">surname:Noguchi;given-names:M</infon>
+      <infon key="name_3">surname:Hirohama;given-names:M</infon>
+      <infon key="name_4">surname:Fujiyasu;given-names:Y</infon>
+      <infon key="name_5">surname:Petric;given-names:PP</infon>
+      <infon key="name_6">surname:Schwemmle;given-names:M</infon>
+      <infon key="name_7">surname:Staeheli;given-names:P</infon>
+      <infon key="name_8">surname:Nagata;given-names:K</infon>
+      <infon key="name_9">surname:Kawaguchi;given-names:A</infon>
+      <infon key="pub-id_pmid">31653718</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Sci Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">4</infon>
+      <infon key="year">2019</infon>
+      <offset>34353</offset>
+      <text>Influenza restriction factor MxA functions as inflammasome sensor in the respiratory epithelium</text>
+    </passage>
+    <passage>
+      <infon key="fpage">10</infon>
+      <infon key="lpage">1417</infon>
+      <infon key="name_0">surname:Shenoy;given-names:AT</infon>
+      <infon key="name_1">surname:Wasserman;given-names:GA</infon>
+      <infon key="name_2">surname:Arafa;given-names:EI</infon>
+      <infon key="name_3">surname:Wooten;given-names:AK</infon>
+      <infon key="name_4">surname:Smith;given-names:NMS</infon>
+      <infon key="name_5">surname:Martin;given-names:IMC</infon>
+      <infon key="name_6">surname:Jones;given-names:MR</infon>
+      <infon key="name_7">surname:Quinton;given-names:LJ</infon>
+      <infon key="name_8">surname:Mizgerd;given-names:JP</infon>
+      <infon key="section_type">REF</infon>
+      <infon key="source">Mucosal Immunol</infon>
+      <infon key="type">ref</infon>
+      <infon key="volume">98</infon>
+      <infon key="year">2019</infon>
+      <offset>34449</offset>
+      <text>Lung CD4+ resident memory T cells remodel epithelial responses to accelerate neutrophil recruitment during pneumonia</text>
+      <annotation id="T210">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033038</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">lung resident memory CD4 T cell</infon>
+        <location offset="34449" length="33"/>
+        <text>Lung CD4+ resident memory T cells</text>
+      </annotation>
+      <annotation id="T211">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="34526" length="10"/>
+        <text>neutrophil</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="file">nihms-1553045-f0001.jpg</infon>
+      <infon key="id">F1</infon>
+      <infon key="section_type">FIG</infon>
+      <infon key="type">fig_caption</infon>
+      <offset>34566</offset>
+      <text>Simplified schematic of epithelial tissues of the skin, lung, and small intestine. The skin is composed of epidermis (outer) and dermis (inner) layers. The epidermis is a stratified epithelium maintained and replenished by epithelial stem cells that reside in the innermost layer in contact with the basement membrane. Hair follicles form an orifice to the external environment, extend into the dermis, and are maintained by stem cells in the bulge that activate to generate new hairs. The sebaceous gland secretes sebum containing antimicrobial properties into the hair follicle orifice to prevent pathogen infiltration. In the lungs, the extrapulmonary tissue is a stratified epithelium that transitions to a simple epithelium further down the respiratory tree. Basal cells in these layers are able to generate the different specialized cell types of the lung epithelium. In the intestine, stem cells reside in the crypt, where they self-renew or differentiate into the various cell types of the intestine including Paneth cells, Tuft cells, and Goblet cells. Created with BioRender.com.</text>
+      <annotation id="T212">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="34789" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+      <annotation id="T213">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="34991" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T214">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000646</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Basal Cell</infon>
+        <location offset="35330" length="11"/>
+        <text>Basal cells</text>
+      </annotation>
+      <annotation id="T215">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="35458" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T216">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000510</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Paneth cell</infon>
+        <location offset="35584" length="12"/>
+        <text>Paneth cells</text>
+      </annotation>
+      <annotation id="T217">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002204</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tuft cell</infon>
+        <location offset="35598" length="10"/>
+        <text>Tuft cells</text>
+      </annotation>
+      <annotation id="T218">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0009039</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Goblet cell</infon>
+        <location offset="35614" length="12"/>
+        <text>Goblet cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="file">nihms-1553045-f0002.jpg</infon>
+      <infon key="id">F2</infon>
+      <infon key="section_type">FIG</infon>
+      <infon key="type">fig_caption</infon>
+      <offset>35656</offset>
+      <text>Epithelial initiated immune cell crosstalk in response to microbes, environmental factors/allergens and injury. (a) Microbes largely fall into two categories: commensals and pathogens, where each elicits a variety of responses from epithelial cells. Commensals instruct epithelial cell behavior through release of microbial proteins or metabolites. The epithelial cells in turn communicate this information to immune cells through MHCII, release of specific cytokines, or metabolites. In the event of pathogen invasion, epithelial cells are equipped with an arsenal of pattern recognition receptors (PRR) that allow detection of a variety of molecular signatures both at the extracellular membrane and within the cytosol. This information sets off signaling cascades that results in epithelial release of antimicrobial peptides and alarmins that signal to the immune system for help. (b) Environmental factors including dietary metabolites and allergens are detected by epithelial cells through internal sensors such as arylhydrocarbon receptor (AhR), membrane-bound toll like receptors (TLR), or through weakening of intercellular junctional proteins. Detection of these environmental cues leads to a transcriptional response that mounts host defenses including release of cytokines and chemokines that recruit and promote the expansion of a variety of immune cells. (c) Injuries result in a strong proliferative and migratory response within epithelial cells to reinstate barrier integrity. Epithelial cells detect barrier breaches through a variety of mechanisms including loss of intercellular junctions, Notch signaling, or presence of self-DNA within the cytosol. Immune cells are recruited and work together with epithelial cells to rapidly reseal the barrier breach. Created with BioRender.com</text>
+      <annotation id="T219">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial fate stem cell</infon>
+        <location offset="35656" length="20"/>
+        <text>Epithelial initiated</text>
+      </annotation>
+      <annotation id="T220">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="35677" length="11"/>
+        <text>immune cell</text>
+      </annotation>
+      <annotation id="T221">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="35888" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T222">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="35926" length="15"/>
+        <text>epithelial cell</text>
+      </annotation>
+      <annotation id="T223">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="36009" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T224">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="36066" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T225">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="36176" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T226">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="36626" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T227">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="37010" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T228">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="37100" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T229">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="37149" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+      <annotation id="T230">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="37326" length="12"/>
+        <text>Immune cells</text>
+      </annotation>
+      <annotation id="T231">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="37376" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="file">nihms-1553045-f0003.jpg</infon>
+      <infon key="id">F3</infon>
+      <infon key="section_type">FIG</infon>
+      <infon key="type">fig_caption</infon>
+      <offset>37458</offset>
+      <text>Epithelial stem cells retain a memory of inflammation. Epithelial stem cells are routinely exposed to inflammatory stimuli ranging from microbes, virus, injury and environmental factors. During an inflammatory response, inflammation-induced transcription factors facilitate chromatin remodeling resulting in increased chromatin accessibility. Upon resolution, epithelial stem cells retain inflammation-induced chromatin accessibility, but how these loci are maintained remains unknown. Perhaps it is the coupling of homoeostatic transcription factor binding with other epigenetic features such as histone modifications and DNA methylation? During a secondary challenge, stem cells have an increased transcriptional response which in the case of skin epithelial stem cells results in enhanced wound repair and in the case of airway epithelial progenitors propagates chronic inflammation. Further investigation is needed into the inflammation-induced epigenetic and cellular changes within epithelial progenitors and their contribution to inflammatory memory. Created with BioRender.com.</text>
+      <annotation id="T232">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="37458" length="21"/>
+        <text>Epithelial stem cells</text>
+      </annotation>
+      <annotation id="T233">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="37513" length="21"/>
+        <text>Epithelial stem cells</text>
+      </annotation>
+      <annotation id="T234">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000036</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial stem cell</infon>
+        <location offset="37818" length="21"/>
+        <text>epithelial stem cells</text>
+      </annotation>
+      <annotation id="T235">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="38128" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T236">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:1000428</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epidermal stem cell</infon>
+        <location offset="38203" length="26"/>
+        <text>skin epithelial stem cells</text>
+      </annotation>
+      <annotation id="T237">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002633</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">airway basal stem cell</infon>
+        <location offset="38282" length="29"/>
+        <text>airway epithelial progenitors</text>
+      </annotation>
+      <annotation id="T238">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:4033059</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">progenitor MEC</infon>
+        <location offset="38446" length="22"/>
+        <text>epithelial progenitors</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

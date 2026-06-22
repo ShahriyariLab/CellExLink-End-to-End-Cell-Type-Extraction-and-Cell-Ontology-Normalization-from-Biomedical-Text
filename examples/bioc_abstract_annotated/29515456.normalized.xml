@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>29515456</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Neutrophil: A Cell with Many Roles in Inflammation or Several Cell Types?</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="0" length="10"/>
+        <text>Neutrophil</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>74</offset>
+      <text>Neutrophils are the most abundant leukocytes in the circulation, and have been regarded as first line of defense in the innate arm of the immune system. They capture and destroy invading microorganisms, through phagocytosis and intracellular degradation, release of granules, and formation of neutrophil extracellular traps after detecting pathogens. Neutrophils also participate as mediators of inflammation. The classical view for these leukocytes is that neutrophils constitute a homogenous population of terminally differentiated cells with a unique function. However, evidence accumulated in recent years, has revealed that neutrophils present a large phenotypic heterogeneity and functional versatility, which place neutrophils as important modulators of both inflammation and immune responses. Indeed, the roles played by neutrophils in homeostatic conditions as well as in pathological inflammation and immune processes are the focus of a renovated interest in neutrophil biology. In this review, I present the concept of neutrophil phenotypic and functional heterogeneity and describe several neutrophil subpopulations reported to date. I also discuss the role these subpopulations seem to play in homeostasis and disease.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="74" length="11"/>
+        <text>Neutrophils</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Leukocyte</infon>
+        <location offset="108" length="10"/>
+        <text>leukocytes</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="367" length="10"/>
+        <text>neutrophil</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="425" length="11"/>
+        <text>Neutrophils</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Leukocyte</infon>
+        <location offset="513" length="10"/>
+        <text>leukocytes</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="532" length="11"/>
+        <text>neutrophils</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000353</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">blastoderm cell</infon>
+        <location offset="582" length="31"/>
+        <text>terminally differentiated cells</text>
+      </annotation>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="703" length="11"/>
+        <text>neutrophils</text>
+      </annotation>
+      <annotation id="T10">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="796" length="11"/>
+        <text>neutrophils</text>
+      </annotation>
+      <annotation id="T11">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="903" length="11"/>
+        <text>neutrophils</text>
+      </annotation>
+      <annotation id="T12">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="1043" length="10"/>
+        <text>neutrophil</text>
+      </annotation>
+      <annotation id="T13">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="1104" length="10"/>
+        <text>neutrophil</text>
+      </annotation>
+      <annotation id="T14">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000775</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Neutrophil</infon>
+        <location offset="1176" length="10"/>
+        <text>neutrophil</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

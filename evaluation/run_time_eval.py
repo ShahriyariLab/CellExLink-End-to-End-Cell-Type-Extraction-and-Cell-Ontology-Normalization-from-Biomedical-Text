@@ -10,6 +10,7 @@ from typing import Dict
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
 RUN_NER_PREDICT = PROJECT_ROOT / "recognition" / "src" / "predict_NER.py"
+RUN_NORMALIZE = PROJECT_ROOT / "normalization" / "normalize.py"
 NER_RUNTIME_SUMMARY_FILENAME = "predict_runtime_summary.json"
 EL_RUNTIME_SUMMARY_FILENAME = "el_predict_runtime_summary.json"
 
@@ -225,13 +226,13 @@ def run_ner(args):
     print(f"Total number of whitespace tokens (from XML): {stats['total_tokens']}")
 
     model_path_arg = str(resolved_model_path or model_name_or_path)
-
     cmd = [
         sys.executable,
-        "-u",
         str(RUN_NER_PREDICT),
         "--model-path",
         model_path_arg,
+        "--input-xml",
+        str(input_xml),
         "--output-dir",
         str(output_dir),
         "--warmup-runs",
@@ -240,13 +241,11 @@ def run_ner(args):
         str(args.per_device_predict_batch_size),
         "--model-revision",
         str(args.model_revision),
+        "--doc-stride",
+        "128",
     ]
-
     if output_xml is not None:
-        cmd.extend(["--input-xml", str(input_xml), "--output-xml", str(output_xml)])
-    else:
-        cmd.extend(["--input-xml", str(input_xml)])
-
+        cmd.extend(["--output-xml", str(output_xml)])
     if args.tokenizer_path is not None:
         cmd.extend(["--tokenizer-path", str(args.tokenizer_path)])
     if args.max_seq_length is not None:
@@ -269,14 +268,13 @@ def run_ner(args):
         cmd.append("--fp16")
 
     print("Launching NER predict-only benchmark...")
-    print("Command:", " ".join(cmd))
-    result = subprocess.run(cmd, cwd=BASE_DIR, check=False)
+    result = subprocess.run(cmd, cwd=PROJECT_ROOT, check=False).returncode
     runtime_summary_path = output_dir / NER_RUNTIME_SUMMARY_FILENAME
 
     print("\n=== NER Runtime Summary ===")
     if not runtime_summary_path.is_file():
         print(f"Missing predict-only runtime summary: {runtime_summary_path}")
-        return result.returncode
+        return result
 
     runtime_summary = json.loads(runtime_summary_path.read_text(encoding="utf-8"))
     elapsed = float(runtime_summary["elapsed_seconds"])
@@ -298,7 +296,7 @@ def run_ner(args):
         ms_per_1k_tokens = (elapsed * 1000.0) / (stats["total_tokens"] / 1000.0)
         print(f"Latency: {ms_per_1k_tokens:.4f} ms/1k tokens")
 
-    return result.returncode
+    return result
 
 
 def run_el(args):
@@ -337,45 +335,43 @@ def run_el(args):
 
     print(f"EL warmup runs: {args.el_warmup_runs}")
 
-    abbr_arg = str(abbreviations) if not args.disable_abbreviations else ""
-    model_path_arg = str(resolved_model_path or model_name_or_path)
+    print("Launching normalization benchmark...")
+    import time
 
+    predict_start_time = time.perf_counter()
     cmd = [
         sys.executable,
-        "-u",
-        "-m",
-        "normalization.normalize",
+        str(RUN_NORMALIZE),
         str(cell_types),
-        abbr_arg,
+        "" if args.disable_abbreviations else str(abbreviations),
         str(input_xml),
         str(output_xml),
         "--model-path",
-        model_path_arg,
+        str(resolved_model_path or model_name_or_path),
         "--el-warmup-runs",
         str(args.el_warmup_runs),
     ]
     if args.disable_abbreviations:
         cmd.append("--disable-abbreviations")
+    result = subprocess.run(cmd, cwd=PROJECT_ROOT, check=False).returncode
+    elapsed = time.perf_counter() - predict_start_time
+    total_mentions_processed = int(stats["total_mentions"])
 
-    print("Launching normalization benchmark...")
-    print("Command:", " ".join(cmd))
-
-    result = subprocess.run(cmd, cwd=PROJECT_ROOT, check=False)
     runtime_summary_path = output_xml.parent / EL_RUNTIME_SUMMARY_FILENAME
+    runtime_summary_path.write_text(
+        json.dumps(
+            {
+                Path(str(resolved_model_path or model_name_or_path)).name: {
+                    "elapsed_seconds": elapsed,
+                    "total_mentions_processed": total_mentions_processed,
+                }
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
 
     print("\n=== EL Runtime Summary ===")
-    if not runtime_summary_path.is_file():
-        print(f"Missing predict-only runtime summary: {runtime_summary_path}")
-        return result.returncode
-
-    runtime_summaries = json.loads(runtime_summary_path.read_text(encoding="utf-8"))
-    if len(runtime_summaries) != 1:
-        print(f"Expected exactly one EL runtime summary, found {len(runtime_summaries)}")
-        return result.returncode
-
-    runtime_summary = next(iter(runtime_summaries.values()))
-    elapsed = float(runtime_summary["elapsed_seconds"])
-    total_mentions_processed = int(runtime_summary.get("total_mentions_processed", stats["total_mentions"]))
     print(f"EL predict-only wall time: {elapsed:.6f} seconds")
 
     if total_mentions_processed > 0 and elapsed > 0:
@@ -386,7 +382,7 @@ def run_el(args):
         ms_per_mention = (elapsed * 1000.0) / total_mentions_processed
         print(f"Latency: {ms_per_mention:.4f} ms/mention")
 
-    return result.returncode
+    return result
 
 
 def main():

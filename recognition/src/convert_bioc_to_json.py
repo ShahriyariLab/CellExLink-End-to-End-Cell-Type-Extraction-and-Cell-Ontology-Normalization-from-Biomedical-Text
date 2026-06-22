@@ -5,7 +5,7 @@ import json
 import logging
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterator, List, Sequence
+from typing import Iterator, List, Optional, Sequence
 
 import bioc
 
@@ -35,12 +35,27 @@ class PassageRecord:
     entities: List[EntitySpan]
 
 
-def iter_input_files(paths: Sequence[str | Path]) -> Iterator[Path]:
+def iter_input_files(paths: Sequence[str | Path], *, split_filename: Optional[str] = None) -> Iterator[Path]:
     for raw_path in paths:
         path = Path(raw_path)
         if path.is_file():
             yield path
         elif path.is_dir():
+            if split_filename is not None:
+                direct_split = path / split_filename
+                if direct_split.is_file():
+                    yield direct_split
+                    continue
+
+                child_splits = [
+                    child / split_filename
+                    for child in sorted(path.iterdir())
+                    if child.is_dir() and (child / split_filename).is_file()
+                ]
+                if child_splits:
+                    yield from child_splits
+                    continue
+
             for child in sorted(p for p in path.rglob("*") if p.is_file()):
                 yield child
         else:
@@ -68,7 +83,20 @@ def first_overlapping_pair(entities: Sequence[EntitySpan]) -> tuple[EntitySpan, 
     return None
 
 
-def extract_entities(passage, *, overlap_policy: str = "last") -> List[EntitySpan]:
+def normalize_training_label(label: str) -> str | None:
+    if label == "cell_vague":
+        return None
+    if label in {"cell_phenotype", "cell_hetero"}:
+        return "cell_type"
+    return label
+
+
+def extract_entities(
+    passage,
+    *,
+    overlap_policy: str = "last",
+    normalize_for_training: bool = False,
+) -> List[EntitySpan]:
     if overlap_policy not in {"last", "error"}:
         raise ValueError("overlap_policy must be one of: last, error.")
 
@@ -78,6 +106,10 @@ def extract_entities(passage, *, overlap_policy: str = "last") -> List[EntitySpa
 
     for ann in passage.annotations:
         label = str(ann.infons.get("type", "Unknown"))
+        if normalize_for_training:
+            label = normalize_training_label(label)
+            if label is None:
+                continue
         ann_text = ann.text or ""
         locations = list(getattr(ann, "locations", []) or [])
 
@@ -161,7 +193,8 @@ def iter_passage_records(
     overlap_policy: str = "last",
 ) -> Iterator[PassageRecord]:
     record_id = 0
-    for src in iter_input_files(srcs):
+    split_filename = "train.xml" if include_entities else None
+    for src in iter_input_files(srcs, split_filename=split_filename):
         LOGGER.info("Reading %s", src)
         with bioc.biocxml.iterparse(str(src)) as reader:
             _ = reader.get_collection_info()
@@ -171,7 +204,15 @@ def iter_passage_records(
                     if not text:
                         continue
 
-                    entities = extract_entities(passage, overlap_policy=overlap_policy) if include_entities else []
+                    entities = (
+                        extract_entities(
+                            passage,
+                            overlap_policy=overlap_policy,
+                            normalize_for_training=include_entities,
+                        )
+                        if include_entities
+                        else []
+                    )
                     yield PassageRecord(
                         record_id=record_id,
                         document_id=str(document.id),

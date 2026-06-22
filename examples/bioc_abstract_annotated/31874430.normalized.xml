@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>31874430</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Epithelial cells: liaisons of immunity.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="0" length="16"/>
+        <text>Epithelial cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>40</offset>
+      <text>The surface and lining tissues of our body are exposed to the external environment, and as such these epithelial tissues must form structural barriers able to defend against microbes, environmental toxins, and mechanical stress. Their cells are equipped to detect a diverse array of surface perturbations, and then launch signaling relays to the immune system. The aim of these liaisons is to coordinate the requisite immune cell response needed to preserve and/or restore barrier integrity and defend the host. It has been recently appreciated that epithelial cells learn from these experiences. Following inflammatory exposure, long-lived stem cells within the tissue retain an epigenetic memory that endows them with heightened responsiveness to subsequent encounters with stress. Here, we review the recent literature on how epithelial cells sense signals from microbes, allergens, and injury at the tissue surface, and transmit this information to immune cells, while embedding a memory of the experience within their chromatin.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="458" length="11"/>
+        <text>immune cell</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="590" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000034</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">stem cell</infon>
+        <location offset="681" length="10"/>
+        <text>stem cells</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000066</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">epithelial cell</infon>
+        <location offset="869" length="16"/>
+        <text>epithelial cells</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="993" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

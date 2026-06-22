@@ -137,12 +137,12 @@ def main() -> int:
 
     if args.train_file is not None and not args.train_file.is_file():
         raise FileNotFoundError(f"Missing training file: {args.train_file}")
-    if args.train_xml is not None and not args.train_xml.is_file():
-        raise FileNotFoundError(f"Missing training XML: {args.train_xml}")
+    if args.train_xml is not None and not args.train_xml.exists():
+        raise FileNotFoundError(f"Missing training XML or dataset directory: {args.train_xml}")
     if args.validation_file is not None and not args.validation_file.is_file():
         raise FileNotFoundError(f"Missing validation file: {args.validation_file}")
-    if args.validation_xml is not None and not args.validation_xml.is_file():
-        raise FileNotFoundError(f"Missing validation XML: {args.validation_xml}")
+    if args.validation_xml is not None and not args.validation_xml.exists():
+        raise FileNotFoundError(f"Missing validation XML or dataset directory: {args.validation_xml}")
 
     if args.train_file is not None:
         args.train_file = args.train_file.resolve()

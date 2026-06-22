@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding=utf-8
-"""Run offset-based NER prediction from raw passage text and optionally export BioC XML.
-"""
+"""Run offset-based NER prediction from BioC XML."""
 
 from __future__ import annotations
 
@@ -15,27 +12,50 @@ from transformers import TrainingArguments
 from transformers.utils import check_min_version
 from transformers.utils.versions import require_version
 
-from ner_common import (
-    GENERATED_JSON_FILENAMES,
-    DatasetColumns,
-    ModelOptions,
-    TokenClassificationBatchCollator,
-    build_label_schema_from_model,
-    build_trainer,
-    configure_logging,
-    infer_columns,
-    load_fast_tokenizer,
-    load_model_config,
-    load_raw_datasets,
-    load_token_classification_model,
-    maybe_convert_bioc_xml,
-    normalize_auth_arguments,
-    preprocess_prediction_dataset,
-    reconstruct_prediction_outputs,
-    resolve_effective_max_seq_length,
-    save_prediction_outputs,
-    write_predictions_to_bioc_xml,
-)
+try:
+    from .ner_common import (
+        GENERATED_JSON_FILENAMES,
+        DatasetColumns,
+        ModelOptions,
+        TokenClassificationBatchCollator,
+        build_label_schema_from_model,
+        build_trainer,
+        configure_logging,
+        infer_columns,
+        load_fast_tokenizer,
+        load_model_config,
+        load_raw_datasets,
+        load_token_classification_model,
+        maybe_convert_bioc_xml,
+        normalize_auth_arguments,
+        preprocess_prediction_dataset,
+        reconstruct_prediction_outputs,
+        resolve_effective_max_seq_length,
+        save_prediction_outputs,
+        write_predictions_to_bioc_xml,
+    )
+except ImportError:  # pragma: no cover
+    from ner_common import (
+        GENERATED_JSON_FILENAMES,
+        DatasetColumns,
+        ModelOptions,
+        TokenClassificationBatchCollator,
+        build_label_schema_from_model,
+        build_trainer,
+        configure_logging,
+        infer_columns,
+        load_fast_tokenizer,
+        load_model_config,
+        load_raw_datasets,
+        load_token_classification_model,
+        maybe_convert_bioc_xml,
+        normalize_auth_arguments,
+        preprocess_prediction_dataset,
+        reconstruct_prediction_outputs,
+        resolve_effective_max_seq_length,
+        save_prediction_outputs,
+        write_predictions_to_bioc_xml,
+    )
 
 
 check_min_version("4.37.0")
@@ -46,16 +66,13 @@ RUNTIME_SUMMARY_FILENAME = "predict_runtime_summary.json"
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Run NER prediction and optionally convert predictions back to BioC XML."
+        description="Run NER prediction from BioC XML and optionally write predicted BioC XML."
     )
     parser.add_argument("--model-path", type=Path, required=True, help="Fine-tuned model directory or Hub id.")
     parser.add_argument("--tokenizer-path", type=str, default=None, help="Optional tokenizer path if different from model path.")
-    input_group = parser.add_mutually_exclusive_group(required=True)
-    input_group.add_argument("--input-xml", type=Path, help="Input BioC XML file to convert and predict.")
-    input_group.add_argument("--input-file", type=Path, help="Input JSON/JSONL/CSV file with raw passage text.")
+    parser.add_argument("--input-xml", type=Path, required=True, help="Input BioC XML file to convert and predict.")
     parser.add_argument("--output-dir", type=Path, required=True, help="Directory where prediction artifacts will be written.")
     parser.add_argument("--output-xml", type=Path, default=None, help="Optional output BioC XML path.")
-    parser.add_argument("--text-column-name", default=None, help="Optional raw text column name override.")
     parser.add_argument("--max-seq-length", type=int, default=None, help="Optional tokenizer max sequence length.")
     parser.add_argument("--doc-stride", type=int, default=128, help="Overlap in tokens between overflowing chunks.")
     parser.add_argument("--pad-to-max-length", action="store_true", help="Pad every batch item to max length.")
@@ -72,55 +89,97 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def build_model_options(args: argparse.Namespace) -> ModelOptions:
+def build_model_options(
+    *,
+    model_path,
+    tokenizer_path=None,
+    cache_dir=None,
+    model_revision="main",
+    token=None,
+    trust_remote_code=False,
+) -> ModelOptions:
     options = ModelOptions(
-        model_name_or_path=str(args.model_path),
-        tokenizer_name=args.tokenizer_path,
-        cache_dir=args.cache_dir,
-        model_revision=args.model_revision,
-        token=args.token,
-        trust_remote_code=args.trust_remote_code,
+        model_name_or_path=str(model_path),
+        tokenizer_name=tokenizer_path,
+        cache_dir=cache_dir,
+        model_revision=model_revision,
+        token=token,
+        trust_remote_code=trust_remote_code,
     )
     normalize_auth_arguments(options)
     return options
 
 
-def build_prediction_training_args(args: argparse.Namespace) -> TrainingArguments:
+def build_prediction_training_args(*, output_dir, per_device_predict_batch_size=16, fp16=False) -> TrainingArguments:
     return TrainingArguments(
-        output_dir=str(args.output_dir),
+        output_dir=str(output_dir),
         do_predict=True,
-        per_device_eval_batch_size=args.per_device_predict_batch_size,
+        per_device_eval_batch_size=per_device_predict_batch_size,
         remove_unused_columns=False,
         report_to=[],
-        fp16=args.fp16,
+        fp16=fp16,
     )
 
 
-def main() -> int:
-    args = parse_args()
-    args.output_dir.mkdir(parents=True, exist_ok=True)
+def run_prediction(
+    *,
+    model_path,
+    input_xml,
+    output_dir,
+    output_xml=None,
+    tokenizer_path=None,
+    max_seq_length=None,
+    doc_stride=128,
+    pad_to_max_length=False,
+    max_predict_samples=None,
+    warmup_runs=1,
+    per_device_predict_batch_size=16,
+    preprocessing_num_workers=None,
+    overwrite_cache=False,
+    cache_dir=None,
+    model_revision="main",
+    token=None,
+    trust_remote_code=False,
+    fp16=False,
+) -> int:
+    output_dir = Path(output_dir)
+    input_xml = Path(input_xml)
+    output_xml = Path(output_xml) if output_xml is not None else None
 
-    if args.output_xml is not None and args.input_xml is None:
-        raise ValueError("`--output-xml` requires `--input-xml`, because the original BioC structure is needed.")
-    if args.warmup_runs < 0:
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if warmup_runs < 0:
         raise ValueError("`--warmup-runs` must be >= 0.")
-    if args.doc_stride < 0:
+    if doc_stride < 0:
         raise ValueError("`--doc-stride` must be >= 0.")
+    if not input_xml.is_file():
+        raise FileNotFoundError(f"Missing input XML: {input_xml}")
+    if output_xml is not None:
+        output_xml.parent.mkdir(parents=True, exist_ok=True)
 
-    training_args = build_prediction_training_args(args)
+    training_args = build_prediction_training_args(
+        output_dir=output_dir,
+        per_device_predict_batch_size=per_device_predict_batch_size,
+        fp16=fp16,
+    )
     configure_logging(training_args)
-    model_options = build_model_options(args)
+    model_options = build_model_options(
+        model_path=model_path,
+        tokenizer_path=tokenizer_path,
+        cache_dir=cache_dir,
+        model_revision=model_revision,
+        token=token,
+        trust_remote_code=trust_remote_code,
+    )
 
-    test_file = str(args.input_file) if args.input_file is not None else None
-    if test_file is None:
-        test_file = maybe_convert_bioc_xml(
-            str(args.input_xml),
-            str(args.output_dir / GENERATED_JSON_FILENAMES["test"]),
-            include_entities=False,
-        )
+    test_file = maybe_convert_bioc_xml(
+        str(input_xml),
+        str(output_dir / GENERATED_JSON_FILENAMES["test"]),
+        include_entities=False,
+    )
 
     raw_datasets = load_raw_datasets({"test": test_file}, cache_dir=model_options.cache_dir)
-    inferred_columns = infer_columns(raw_datasets, args.text_column_name, None)
+    inferred_columns = infer_columns(raw_datasets, None, None)
     columns = DatasetColumns(
         text=inferred_columns.text,
         entities=None,
@@ -135,9 +194,9 @@ def main() -> int:
     tokenizer = load_fast_tokenizer(model_options, config)
     model = load_token_classification_model(model_options, config)
 
-    effective_max_seq_length = resolve_effective_max_seq_length(tokenizer, config, args.max_seq_length)
+    effective_max_seq_length = resolve_effective_max_seq_length(tokenizer, config, max_seq_length)
     print(f"Using max_seq_length={effective_max_seq_length}")
-    padding = "max_length" if args.pad_to_max_length else False
+    padding = "max_length" if pad_to_max_length else False
 
     with training_args.main_process_first(desc="tokenize prediction dataset"):
         raw_predict_subset, predict_dataset = preprocess_prediction_dataset(
@@ -145,11 +204,11 @@ def main() -> int:
             columns=columns,
             tokenizer=tokenizer,
             max_seq_length=effective_max_seq_length,
-            stride=args.doc_stride,
+            stride=doc_stride,
             padding=padding,
-            num_proc=args.preprocessing_num_workers,
-            overwrite_cache=args.overwrite_cache,
-            limit=args.max_predict_samples,
+            num_proc=preprocessing_num_workers,
+            overwrite_cache=overwrite_cache,
+            limit=max_predict_samples,
         )
 
     data_collator = TokenClassificationBatchCollator(
@@ -171,8 +230,8 @@ def main() -> int:
     except Exception:  # pragma: no cover
         torch = None
 
-    for warmup_index in range(args.warmup_runs):
-        print(f"Warmup run {warmup_index + 1}/{args.warmup_runs}")
+    for warmup_index in range(warmup_runs):
+        print(f"Warmup run {warmup_index + 1}/{warmup_runs}")
         _ = trainer.predict(predict_dataset, metric_key_prefix=f"warmup_{warmup_index + 1}")
         if torch is not None and torch.cuda.is_available():
             torch.cuda.synchronize()
@@ -195,9 +254,9 @@ def main() -> int:
         tokenizer=tokenizer,
         columns=columns,
     )
-    save_prediction_outputs(str(args.output_dir), prediction_entries)
+    save_prediction_outputs(str(output_dir), prediction_entries)
 
-    runtime_summary_path = args.output_dir / RUNTIME_SUMMARY_FILENAME
+    runtime_summary_path = output_dir / RUNTIME_SUMMARY_FILENAME
     runtime_summary_path.write_text(
         json.dumps(
             {
@@ -208,11 +267,35 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    if args.output_xml is not None:
-        write_predictions_to_bioc_xml(args.input_xml, args.output_xml, prediction_entries)
-        print(f"Wrote BioC XML predictions to {args.output_xml}")
+    if output_xml is not None:
+        write_predictions_to_bioc_xml(input_xml, output_xml, prediction_entries)
+        print(f"Wrote BioC XML predictions to {output_xml}")
 
     return 0
+
+
+def main() -> int:
+    args = parse_args()
+    return run_prediction(
+        model_path=args.model_path,
+        input_xml=args.input_xml,
+        output_dir=args.output_dir,
+        output_xml=args.output_xml,
+        tokenizer_path=args.tokenizer_path,
+        max_seq_length=args.max_seq_length,
+        doc_stride=args.doc_stride,
+        pad_to_max_length=args.pad_to_max_length,
+        max_predict_samples=args.max_predict_samples,
+        warmup_runs=args.warmup_runs,
+        per_device_predict_batch_size=args.per_device_predict_batch_size,
+        preprocessing_num_workers=args.preprocessing_num_workers,
+        overwrite_cache=args.overwrite_cache,
+        cache_dir=args.cache_dir,
+        model_revision=args.model_revision,
+        token=args.token,
+        trust_remote_code=args.trust_remote_code,
+        fp16=args.fp16,
+    )
 
 
 if __name__ == "__main__":

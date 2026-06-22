@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>26779180</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Mast Cell: A Multi-Functional Master Cell.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Mast cell</infon>
+        <location offset="0" length="9"/>
+        <text>Mast Cell</text>
+      </annotation>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000048</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">multifate stem cell</infon>
+        <location offset="30" length="11"/>
+        <text>Master Cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>43</offset>
+      <text>Mast cells are immune cells of the myeloid lineage and are present in connective tissues throughout the body. The activation and degranulation of mast cells significantly modulates many aspects of physiological and pathological conditions in various settings. With respect to normal physiological functions, mast cells are known to regulate vasodilation, vascular homeostasis, innate and adaptive immune responses, angiogenesis, and venom detoxification. On the other hand, mast cells have also been implicated in the pathophysiology of many diseases, including allergy, asthma, anaphylaxis, gastrointestinal disorders, many types of malignancies, and cardiovascular diseases. This review summarizes the current understanding of the role of mast cells in many pathophysiological conditions. </text>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Mast cell</infon>
+        <location offset="43" length="10"/>
+        <text>Mast cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">immune cell</infon>
+        <location offset="58" length="12"/>
+        <text>immune cells</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mast cell</infon>
+        <location offset="189" length="10"/>
+        <text>mast cells</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mast cell</infon>
+        <location offset="351" length="10"/>
+        <text>mast cells</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mast cell</infon>
+        <location offset="517" length="10"/>
+        <text>mast cells</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000097</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">mast cell</infon>
+        <location offset="784" length="10"/>
+        <text>mast cells</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

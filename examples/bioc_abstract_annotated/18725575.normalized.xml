@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>18725575</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>B lymphocytes: how they develop and function.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B lymphocyte</infon>
+        <location offset="0" length="13"/>
+        <text>B lymphocytes</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>46</offset>
+      <text>The discovery that lymphocyte subpopulations participate in distinct components of the immune response focused attention onto the origins and function of lymphocytes more than 40 years ago. Studies in the 1960s and 1970s demonstrated that B and T lymphocytes were responsible primarily for the basic functions of antibody production and cell-mediated immune responses, respectively. The decades that followed have witnessed a continuum of unfolding complexities in B-cell development, subsets, and function that could not have been predicted. Some of the landmark discoveries that led to our current understanding of B lymphocytes as the source of protective innate and adaptive antibodies are highlighted in this essay. The phenotypic and functional diversity of B lymphocytes, their regulatory roles independent of antibody production, and the molecular events that make this lineage unique are also considered. Finally, perturbations in B-cell development that give rise to certain types of congenital immunodeficiency, leukemia/lymphoma, and autoimmune disease are discussed in the context of normal B-cell development and selection. Despite the significant advances that have been made at the cellular and molecular levels, there is much more to learn, and cross-disciplinary studies in hematology and immunology will continue to pave the way for new discoveries.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000542</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Lymphocyte</infon>
+        <location offset="65" length="10"/>
+        <text>lymphocyte</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000542</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Lymphocyte</infon>
+        <location offset="200" length="11"/>
+        <text>lymphocytes</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000084</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">T lymphocyte</infon>
+        <location offset="285" length="19"/>
+        <text>B and T lymphocytes</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B Cell</infon>
+        <location offset="511" length="6"/>
+        <text>B-cell</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B lymphocyte</infon>
+        <location offset="663" length="13"/>
+        <text>B lymphocytes</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B lymphocyte</infon>
+        <location offset="810" length="13"/>
+        <text>B lymphocytes</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B Cell</infon>
+        <location offset="986" length="6"/>
+        <text>B-cell</text>
+      </annotation>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000236</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">B Cell</infon>
+        <location offset="1150" length="6"/>
+        <text>B-cell</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

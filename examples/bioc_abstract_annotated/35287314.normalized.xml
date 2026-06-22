@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>35287314</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Macrophages: shapes and functions.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="0" length="11"/>
+        <text>Macrophages</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>35</offset>
+      <text>Macrophages are cells of the innate immune system and represent an important component of the first-line defense against pathogens and tumor cells. Here, their diverse functions in inflammation and tumor defense are described, and the mechanisms, tools, and activation pathways and states applied are presented. The main focus is on the role and origin of reactive oxygen species (ROS), the important signal pathways TLR/NF-κB, and the M1/​​M2 polarization of macrophages. Graphical abstract: </text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="35" length="11"/>
+        <text>Macrophages</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0001063</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">tumor cell</infon>
+        <location offset="170" length="11"/>
+        <text>tumor cells</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000235</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Macrophage</infon>
+        <location offset="495" length="11"/>
+        <text>macrophages</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

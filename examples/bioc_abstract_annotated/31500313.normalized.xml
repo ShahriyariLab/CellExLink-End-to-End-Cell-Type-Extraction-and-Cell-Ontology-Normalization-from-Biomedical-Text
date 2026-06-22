@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>31500313</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Vascular Endothelial Cell Biology: An Update.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0002139</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">vascular VEC</infon>
+        <location offset="0" length="25"/>
+        <text>Vascular Endothelial Cell</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>46</offset>
+      <text>The vascular endothelium, a monolayer of endothelial cells (EC), constitutes the inner cellular lining of arteries, veins and capillaries and therefore is in direct contact with the components and cells of blood. The endothelium is not only a mere barrier between blood and tissues but also an endocrine organ. It actively controls the degree of vascular relaxation and constriction, and the extravasation of solutes, fluid, macromolecules and hormones, as well as that of platelets and blood cells. Through control of vascular tone, EC regulate the regional blood flow. They also direct inflammatory cells to foreign materials, areas in need of repair or defense against infections. In addition, EC are important in controlling blood fluidity, platelet adhesion and aggregation, leukocyte activation, adhesion, and transmigration. They also tightly keep the balance between coagulation and fibrinolysis and play a major role in the regulation of immune responses, inflammation and angiogenesis. To fulfill these different tasks, EC are heterogeneous and perform distinctly in the various organs and along the vascular tree. Important morphological, physiological and phenotypic differences between EC in the different parts of the arterial tree as well as between arteries and veins optimally support their specified functions in these vascular areas. This review updates the current knowledge about the morphology and function of endothelial cells, particularly their differences in different localizations around the body paying attention specifically to their different responses to physical, biochemical and environmental stimuli considering the different origins of the EC.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <location offset="87" length="17"/>
+        <text>endothelial cells</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="106" length="2"/>
+        <text>EC</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000233</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Platelet</infon>
+        <location offset="519" length="9"/>
+        <text>platelets</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000081</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">blood cell</infon>
+        <location offset="533" length="11"/>
+        <text>blood cells</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="580" length="2"/>
+        <text>EC</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0009002</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">inflammatory cell</infon>
+        <location offset="634" length="18"/>
+        <text>inflammatory cells</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="743" length="2"/>
+        <text>EC</text>
+      </annotation>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000233</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Platelet</infon>
+        <location offset="791" length="8"/>
+        <text>platelet</text>
+      </annotation>
+      <annotation id="T10">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000738</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Leukocyte</infon>
+        <location offset="826" length="9"/>
+        <text>leukocyte</text>
+      </annotation>
+      <annotation id="T11">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="1076" length="2"/>
+        <text>EC</text>
+      </annotation>
+      <annotation id="T12">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="1245" length="2"/>
+        <text>EC</text>
+      </annotation>
+      <annotation id="T13">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <location offset="1478" length="17"/>
+        <text>endothelial cells</text>
+      </annotation>
+      <annotation id="T14">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000115</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">endothelial cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">endothelial cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_key</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">EC</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="1722" length="2"/>
+        <text>EC</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>

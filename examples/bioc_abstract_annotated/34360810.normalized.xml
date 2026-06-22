@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<collection>
+  <source>BioC-API</source>
+  <date>20260621</date>
+  <key>collection.key</key>
+  <document>
+    <id>34360810</id>
+    <passage>
+      <infon key="type">title</infon>
+      <offset>0</offset>
+      <text>Review of Dendritic Cells, Their Role in Clinical Immunology, and Distribution in Various Animal Species.</text>
+      <annotation id="T1">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Dendritic Cell</infon>
+        <location offset="10" length="15"/>
+        <text>Dendritic Cells</text>
+      </annotation>
+    </passage>
+    <passage>
+      <infon key="type">abstract</infon>
+      <offset>106</offset>
+      <text>Dendritic cells (DCs) are cells derived from the hematopoietic stem cells (HSCs) of the bone marrow and form a widely distributed cellular system throughout the body. They are the most efficient, potent, and professional antigen-presenting cells (APCs) of the immune system, inducing and dispersing a primary immune response by the activation of naïve T-cells, and playing an important role in the induction and maintenance of immune tolerance under homeostatic conditions. Thus, this review has elucidated the general aspects of DCs as well as the current dynamic perspectives and distribution of DCs in humans and in various species of animals that includes mouse, rat, birds, dog, cat, horse, cattle, sheep, pig, and non-human primates. Besides the role that DCs play in immune response, they also play a pathogenic role in many diseases, thus becoming a target in disease prevention and treatment. In addition, its roles in clinical immunology have also been addressed, which include its involvement in transplantation, autoimmune disease, viral infections, cancer, and as a vaccine target. Therefore, based on the current knowledge and understanding of the important roles they play, DCs can be used in the future as a powerful tool for manipulating the immune system.</text>
+      <annotation id="T2">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">Dendritic Cell</infon>
+        <location offset="106" length="15"/>
+        <text>Dendritic cells</text>
+      </annotation>
+      <annotation id="T3">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">Dendritic cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">DCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="123" length="3"/>
+        <text>DCs</text>
+      </annotation>
+      <annotation id="T4">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic stem cell</infon>
+        <location offset="155" length="24"/>
+        <text>hematopoietic stem cells</text>
+      </annotation>
+      <annotation id="T5">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000037</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">hematopoietic stem cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">hematopoietic stem cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">HSCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="181" length="4"/>
+        <text>HSCs</text>
+      </annotation>
+      <annotation id="T6">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000145</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">professional antigen presenting cell</infon>
+        <location offset="314" length="37"/>
+        <text>professional antigen-presenting cells</text>
+      </annotation>
+      <annotation id="T7">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000145</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">professional antigen presenting cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">antigen-presenting cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">APCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="353" length="4"/>
+        <text>APCs</text>
+      </annotation>
+      <annotation id="T8">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000898</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">naive T-cell</infon>
+        <location offset="452" length="13"/>
+        <text>naïve T-cells</text>
+      </annotation>
+      <annotation id="T9">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">Dendritic cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">DCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="636" length="3"/>
+        <text>DCs</text>
+      </annotation>
+      <annotation id="T10">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">Dendritic cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">DCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="704" length="3"/>
+        <text>DCs</text>
+      </annotation>
+      <annotation id="T11">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">Dendritic cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">DCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="868" length="3"/>
+        <text>DCs</text>
+      </annotation>
+      <annotation id="T12">
+        <infon key="type">cell_type</infon>
+        <infon key="CellExLink-Sapbert_id_0">CL:0000451</infon>
+        <infon key="CellExLink-Sapbert_identifier_name_0">dendritic cell</infon>
+        <infon key="CellExLink-Sapbert_expanded_long_form">Dendritic cells</infon>
+        <infon key="CellExLink-Sapbert_ab3p_method">ab3p_exact_variant</infon>
+        <infon key="CellExLink-Sapbert_ab3p_matched_key">DCs</infon>
+        <infon key="CellExLink-Sapbert_ab3p_match_score">1.0</infon>
+        <location offset="1295" length="3"/>
+        <text>DCs</text>
+      </annotation>
+    </passage>
+  </document>
+</collection>
