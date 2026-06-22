@@ -2,7 +2,7 @@
 
 `CellExLink` is a Python pipeline for end-to-end cell-type extraction from biomedical text.
 
-The inference pipeline has two stages:
+The inference pipeline goes through two stages:
 
 1. `NER`: detect cell-type mention spans
 2. `NEN`: assign Cell Ontology (`CL`) identifiers to detected mentions
@@ -23,8 +23,8 @@ The default model checkpoints used by the recognition and ontology-linking compo
 
 Default checkpoints:
 
-- Recognition model: [`almire/CellExLink-bioformer16L`](https://huggingface.co/almire/CellExLink-bioformer16L)
-- Ontology-linking embedding-retrieval model: [`almire/CellExLink-Sapbert`](https://huggingface.co/almire/CellExLink-Sapbert)
+- Recognition model: [`CellExLink-bioformer16L`](https://huggingface.co/almire/CellExLink-bioformer16L)
+- Ontology-linking embedding-retrieval model: [`CellExLink-Sapbert`](https://huggingface.co/almire/CellExLink-Sapbert)
 
 Download the default checkpoints with:
 
@@ -109,7 +109,7 @@ python prediction_script.py examples/input_bioc.xml
 ```
 Precomputed output is available in:
 
-```tesxt
+```text
 examples/input_bioc_normalized.xml
 ```
 
@@ -117,7 +117,7 @@ examples/input_bioc_normalized.xml
 
 Additional repository guides are available for developers for training and benchmark evaluation.
 
-- [Training and benchmark evaluation](docs/TRAINING_EVALUATION.md)
+- [Training and benchmark evaluation](TRAINING_EVALUATION.md)
 - [Baseline methods](other_baselines/README.md)
 
 
