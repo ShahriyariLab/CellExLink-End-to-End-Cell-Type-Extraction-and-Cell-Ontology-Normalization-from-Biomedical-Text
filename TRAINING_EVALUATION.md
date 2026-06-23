@@ -6,9 +6,9 @@ This document is for training runs and evaluation.
 
 All datasets are used for named entity recognition evaluation. However, only `BioID`, `CRAFT`, and `CellLink` are used for named entity normalization and end-to-end evaluation, because the remaining datasets do not provide Cell Ontology identifier ground-truth labels.
 
-## Important note on the CellLink dataset
+## Important note on the CellLink corpus
 
-For CellLink data, the original test split does not provide ground-truth normalization labels. Therefore, this repository uses the validation split for evaluation. The CellLink data provided in this repository for evaluation correspond to the validation split from the original source.  Both for training and evaluation, vague cell type population  are excluded, since it dose not provide CL annotations.
+For CellLink data, the original test split does not provide ground-truth normalization labels. Therefore, this repository uses the validation split for evaluation. The CellLink data provided in this repository for evaluation correspond to the validation split from the original source. Vague cell-type populations are excluded for both training and evaluation. Although the data in this repository include `cell_vague` annotations, the NER fine-tuning and evaluation code exclude them.
 
 
 ## Fine-Tuning
@@ -21,6 +21,8 @@ python recognition/src/run_fine_tune_NER.py \
   --output-dir recognition/models/CellExLink-bioformer16L \
   --model-name-or-path bioformers/bioformer-16L
 ```
+
+- When `--train-xml` is set to the `dataset` folder, the script merges the training data from the files under that directory by simple concatenation.
 
 ### NEN fine-tuning
 
@@ -42,6 +44,8 @@ python evaluation/strict_relax_NER.py \
 ```
 
 Supported evaluation styles are `strict` and `relax`.
+
+By default, `strict_relax_NER.py` excludes `cell_vague` annotations.
 
 ### NEN evaluation
 

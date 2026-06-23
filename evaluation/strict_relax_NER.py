@@ -13,6 +13,7 @@ import bioc
 LOG_FORMAT = "[%(filename)s:%(lineno)s - %(funcName)s()] %(message)s"
 LOGGER = logging.getLogger(__name__)
 WORD_PATTERN = re.compile(r"\b\w+\b", re.UNICODE)
+DEFAULT_EXCLUDED_ANNOTATION_TYPES = {"cell_vague"}
 
 
 @dataclass(frozen=True, order=True)
@@ -92,6 +93,12 @@ def _normalize_annotation_types(annotation_types: Optional[Sequence[str] | str])
 
     cleaned = {value for value in annotation_types if value and value.lower() != "none"}
     return cleaned or None
+
+
+def _should_skip_annotation_type(entity_type: str, allowed_types: Optional[Set[str]]) -> bool:
+    if allowed_types is not None:
+        return entity_type not in allowed_types
+    return entity_type in DEFAULT_EXCLUDED_ANNOTATION_TYPES
 
 
 
@@ -181,7 +188,7 @@ def load_bioc_annotations(
                     if entity_type is None:
                         LOGGER.warning("Skipping annotation without type in %s / %s", xml_path, passage_key)
                         continue
-                    if allowed_types is not None and entity_type not in allowed_types:
+                    if _should_skip_annotation_type(entity_type, allowed_types):
                         continue
 
                     locations = _annotation_locations(annotation)
@@ -456,7 +463,10 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "-a",
         type=str,
         default="None",
-        help="Whitespace-separated annotation types to keep. Use 'None' to keep all types.",
+        help=(
+            "Whitespace-separated annotation types to keep. Use 'None' to keep the default set, "
+            "which excludes cell_vague unless it is explicitly requested."
+        ),
     )
     parser.add_argument(
         "--logging_level",

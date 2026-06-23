@@ -26,6 +26,11 @@ def parse_args() -> argparse.Namespace:
         help="Directory where per-file outputs will be written.",
     )
     parser.add_argument(
+        "--output-path",
+        default=None,
+        help="Explicit output BioC XML path for a single input file.",
+    )
+    parser.add_argument(
         "--ner-model-path",
         default=pick_default_path(
             "models/CellExLink-bioformer16L",
@@ -86,14 +91,21 @@ def run_command(command: list[str], stage_name: str, input_file: Path) -> None:
 
 def run_pipeline_for_file(
     input_file: Path,
-    output_root: Path,
+    output_root: Path | None,
+    output_path: Path | None,
     ner_model_path: str,
     nen_model_path: str,
     ontology_path: str,
     abbreviations_path: str,
 ) -> Path:
     base_name = derive_base_name(input_file)
-    final_output_xml = output_root / f"{base_name}.normalized.xml"
+    if output_path is not None:
+        final_output_xml = output_path
+    else:
+        if output_root is None:
+            raise ValueError("Either output_root or output_path must be provided.")
+        final_output_xml = output_root / f"{base_name}.normalized.xml"
+    final_output_xml.parent.mkdir(parents=True, exist_ok=True)
 
     if not Path(ner_model_path).exists():
         raise FileNotFoundError(
@@ -149,10 +161,16 @@ def run_pipeline_for_file(
 def main() -> None:
     args = parse_args()
     input_path = Path(args.input_path)
-    output_root = Path(args.output_root)
-    output_root.mkdir(parents=True, exist_ok=True)
-
     input_files = collect_input_files(input_path)
+    output_path = Path(args.output_path) if args.output_path is not None else None
+
+    if output_path is not None:
+        if len(input_files) != 1:
+            raise ValueError("--output-path can only be used when input_path is a single XML file.")
+        output_root = None
+    else:
+        output_root = Path(args.output_root)
+        output_root.mkdir(parents=True, exist_ok=True)
 
     print(f"Found {len(input_files)} XML file(s) to process.")
     for input_file in input_files:
@@ -160,6 +178,7 @@ def main() -> None:
         final_output_xml = run_pipeline_for_file(
             input_file=input_file,
             output_root=output_root,
+            output_path=output_path,
             ner_model_path=args.ner_model_path,
             nen_model_path=args.nen_model_path,
             ontology_path=args.ontology_path,
@@ -174,3 +193,5 @@ if __name__ == "__main__":
 #python prediction_script.py path/to/your/bioc_xml_folder
 
 #python prediction_script.py path/to/your/bioc_xml_folder --output-root batch_outputs
+
+#python prediction_script.py examples/input_bioc.xml --output-path outputs/input_bioc.normalized.xml

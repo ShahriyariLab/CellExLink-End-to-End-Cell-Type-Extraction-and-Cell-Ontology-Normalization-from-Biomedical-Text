@@ -1,5 +1,7 @@
-# CellExLink: End-to-End Cell-Type Recognition and Normalization in Biomedical Text
+# CellExLink
 
+![Landing image](landing.png)
+---
 `CellExLink` is a Python pipeline for end-to-end cell-type extraction from biomedical text.
 
 The inference pipeline goes through two stages:
@@ -105,8 +107,11 @@ examples/bioc_fulltext_annotated/
 Run the end-to-end pipeline on a single BioC XML file:
 
 ```bash
-python prediction_script.py examples/input_bioc.xml
+python prediction_script.py \
+    examples/input_bioc.xml \
+    --output-path examples/input_bioc_normalized.xml
 ```
+
 Precomputed output is available in:
 
 ```text
