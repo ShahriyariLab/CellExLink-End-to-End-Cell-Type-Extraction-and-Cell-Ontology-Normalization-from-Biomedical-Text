@@ -138,29 +138,17 @@ Developer documentation is available for reproducing model fine-tuning and bench
 - [Baseline methods](other_baselines/README.md)
 
 
-## Data
 
-The CellLink, BioID, CRAFT, AnatEM, and JNLPBA resources used by this project are available from the associated Zenodo record:
+## Dataset 
 
-<https://doi.org/10.5281/zenodo.18090009>
+The training and evaluation data used in this project are available in the [`dataset`](dataset) folder of this GitHub repository.
 
-Please follow each dataset's license, citation, and redistribution terms.
+The original data sources can be accessed through:
 
-## License
-
-Unless otherwise noted, CellExLink source code is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
+- the [Zenodo record](https://doi.org/10.5281/zenodo.18090009); and
+- the GitHub repository associated with the CellLink paper - the [CellLink paper GitHub repository](https://github.com/noamrotenberg/CellLink-paper).
 
 Datasets  remain subject to their respective licenses and terms of use.
 
-## Citation
+Please follow the applicable license, citation, and redistribution terms for each dataset from their original soruce.
 
-When using CellExLink, please cite the versioned software release and the associated paper. Citation metadata are provided in [CITATION.cff](CITATION.cff).
-
-## Questions and issues
-
-For usage questions or bug reports, open a GitHub issue and include:
-
-- the command or script you ran;
-- the input format;
-- the relevant error message; and
-- your operating system and Python version.
