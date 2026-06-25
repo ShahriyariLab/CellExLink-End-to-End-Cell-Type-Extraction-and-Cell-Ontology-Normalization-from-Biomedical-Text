@@ -1,3 +1,15 @@
+"""Normalize detected cell mentions to Cell Ontology identifiers.
+
+Input:
+- A Cell Ontology dictionary in JSONL format.
+- An optional abbreviation TSV file.
+- One or more BioC XML files that already contain mention annotations.
+
+Output:
+- BioC XML files with CL identifiers and matched ontology names written into
+  the annotation metadata.
+"""
+
 import json
 import argparse
 import re
@@ -259,6 +271,15 @@ def topk(array, k, axis=-1, sorted=True):
 
 
 def load_terms(filename):
+    """Load ontology names and synonyms from the JSONL dictionary file.
+
+    Input:
+    - `filename`: path to the ontology JSONL file.
+
+    Output:
+    - `term_entries`: flat list used for embedding search.
+    - `concept_metadata`: grouped metadata for each ontology concept.
+    """
     term_entries = []
     concept_metadata = {}
 
@@ -342,6 +363,15 @@ def classify_abbreviation_path(abbr_path):
 
 
 def load_abbreviation_identifier_lookup(abbr_paths, verbose=True):
+    """Read trusted short-form to identifier mappings from TSV files.
+
+    Input:
+    - `abbr_paths`: one TSV path or a list of TSV paths.
+    - `verbose`: whether to print loading details.
+
+    Output:
+    - A lookup dictionary containing direct and ambiguous abbreviation matches.
+    """
     if isinstance(abbr_paths, str):
         abbr_paths = [abbr_paths]
 
@@ -436,6 +466,16 @@ def get_document_key(document, passage):
 
 
 def get_mention_records(input_filename):
+    """Collect unique mention texts from a BioC XML file.
+
+    Input:
+    - `input_filename`: BioC XML file with mention annotations.
+
+    Output:
+    - A set of unique `(document_key, normalized_mention)` pairs.
+    - A mapping from document key to full document text.
+    - The total number of annotated mentions seen in the file.
+    """
     mentions = set()
     document_text_by_key = {}
     annotation_count = 0
@@ -520,6 +560,16 @@ def normalize_pyab3p_output(results):
 
 
 def build_document_abbreviation_lookup(document_text_by_key, target_document_keys, verbose=True):
+    """Use Ab3P to find short-form and long-form pairs inside documents.
+
+    Input:
+    - `document_text_by_key`: full text for each document.
+    - `target_document_keys`: documents that need abbreviation help.
+    - `verbose`: whether to print progress details.
+
+    Output:
+    - A lookup from document key to abbreviation expansions found in that document.
+    """
     if not target_document_keys:
         return {}
 
@@ -579,6 +629,15 @@ def get_topn_term_results(distances, term_entries, k):
 
 
 def retrieve_term_candidates(encoder, dictionary_embeddings, term_entries, query_text, topn, initial_k=None):
+    """Retrieve the best ontology concepts for one mention text.
+
+    Input:
+    - Encoded ontology embeddings, ontology term entries, and one query string.
+    - `topn`: number of concepts to keep after grouping synonyms.
+
+    Output:
+    - A list of the highest-scoring concept candidates for the query.
+    """
     if initial_k is None:
         initial_k = max(topn * 10, 20)
 
@@ -767,6 +826,15 @@ def resolve_abbreviation(
     mention_embedding_cache=None,
     result_cache=None,
 ):
+    """Resolve a short mention through abbreviation rules before normal retrieval.
+
+    Input:
+    - Encoder state, abbreviation indexes, document abbreviation lookups, and one mention.
+
+    Output:
+    - A dictionary describing the resolved abbreviation match, or `None` if no
+      safe abbreviation-based match is available.
+    """
     match = find_best_abbreviation_key(
         encoder=encoder,
         abbreviation_index=abbreviation_index,
@@ -873,6 +941,15 @@ def run_inference(
     document_abbreviation_lookup=None,
     el_warmup_runs=1,
 ):
+    """Normalize all unique mentions by retrieving the best ontology concepts.
+
+    Input:
+    - Model path, ontology term data, unique mentions, and optional abbreviation help.
+
+    Output:
+    - A dictionary mapping each mention to its best normalization result.
+    - A runtime summary dictionary with elapsed time and mention count.
+    """
     encoder = load_encoder(model_name)
 
     print("Encoding CL dictionary names/synonyms")
@@ -889,6 +966,7 @@ def run_inference(
         raise ValueError("el_warmup_runs must be >= 0")
 
     def run_mentions_loop(collect_outputs=True):
+        """Run one pass over all mentions, optionally keeping the predictions."""
         local_normalized = {} if collect_outputs else None
         query_cache = {}
         mention_embedding_cache = {}
@@ -1050,6 +1128,14 @@ def process_collection(
     output_filename,
     include_identifier_scores=False,
 ):
+    """Write normalization results back into a BioC XML collection.
+
+    Input:
+    - One input BioC XML file, model predictions, and one output path.
+
+    Output:
+    - A new BioC XML file with normalization fields added to each mention annotation.
+    """
     print("Processing file", input_filename, "to", output_filename)
 
     with open(input_filename, "r", encoding="utf-8") as fp:
@@ -1123,6 +1209,14 @@ def process_collection(
 
 
 def paths_to_filenames(input_paths, output_paths):
+    """Expand matching input and output path lists for file or directory mode.
+
+    Input:
+    - Input paths and output paths from the command line.
+
+    Output:
+    - Two aligned filename lists used by the main normalization loop.
+    """
     new_input_paths = []
     new_output_paths = []
 
@@ -1160,6 +1254,14 @@ def main(
     el_warmup_runs=1,
     include_identifier_scores=False,
 ):
+    """Run ontology normalization for one file or a batch of BioC XML files.
+
+    Input:
+    - Dictionary path, abbreviation path(s), input/output path(s), and model settings.
+
+    Output:
+    - Writes normalized BioC XML files to disk.
+    """
     if isinstance(abbr_paths, str):
         abbr_paths = [abbr_paths]
     if isinstance(input_paths, str):
@@ -1240,6 +1342,15 @@ def main(
 
 
 def parse_args():
+    """Read command-line arguments for the normalization stage.
+
+    Input:
+    - Values passed on the command line.
+
+    Output:
+    - An `argparse.Namespace` with dictionary, abbreviation, input, output,
+      and runtime settings.
+    """
     parser = argparse.ArgumentParser(description="Normalize CellLink mentions in BioC XML.")
     parser.add_argument("term_filename", help="Cell ontology JSONL file.")
     parser.add_argument("abbr_paths", nargs="?", default="", help="Abbreviations TSV file.")

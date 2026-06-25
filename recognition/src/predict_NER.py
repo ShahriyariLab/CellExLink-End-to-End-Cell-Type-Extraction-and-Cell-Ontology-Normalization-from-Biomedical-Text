@@ -1,4 +1,13 @@
-"""Run offset-based NER prediction from BioC XML."""
+"""Run CellExLink named-entity recognition on BioC XML.
+
+Input:
+- A BioC XML file plus a fine-tuned NER model path.
+- Optional tokenizer and runtime settings.
+
+Output:
+- Prediction files in an output directory and, if requested, a BioC XML file
+  with detected mention annotations added.
+"""
 
 from __future__ import annotations
 
@@ -65,6 +74,14 @@ RUNTIME_SUMMARY_FILENAME = "predict_runtime_summary.json"
 
 
 def parse_args() -> argparse.Namespace:
+    """Read command-line options for NER prediction.
+
+    Input:
+    - Values passed on the command line.
+
+    Output:
+    - An `argparse.Namespace` with paths and prediction settings.
+    """
     parser = argparse.ArgumentParser(
         description="Run NER prediction from BioC XML and optionally write predicted BioC XML."
     )
@@ -98,6 +115,14 @@ def build_model_options(
     token=None,
     trust_remote_code=False,
 ) -> ModelOptions:
+    """Package model-loading settings into one object.
+
+    Input:
+    - Model path plus optional tokenizer, cache, auth, and revision settings.
+
+    Output:
+    - A `ModelOptions` object used by the shared NER utilities.
+    """
     options = ModelOptions(
         model_name_or_path=str(model_path),
         tokenizer_name=tokenizer_path,
@@ -111,6 +136,14 @@ def build_model_options(
 
 
 def build_prediction_training_args(*, output_dir, per_device_predict_batch_size=16, fp16=False) -> TrainingArguments:
+    """Create lightweight Hugging Face runtime settings for prediction only.
+
+    Input:
+    - Output directory, batch size, and fp16 flag.
+
+    Output:
+    - A `TrainingArguments` object configured for inference.
+    """
     return TrainingArguments(
         output_dir=str(output_dir),
         do_predict=True,
@@ -142,6 +175,15 @@ def run_prediction(
     trust_remote_code=False,
     fp16=False,
 ) -> int:
+    """Run the full NER prediction workflow for one BioC XML file.
+
+    Input:
+    - Model settings, one input XML path, and output locations.
+    - Optional preprocessing and runtime arguments.
+
+    Output:
+    - Returns `0` on success after writing prediction artifacts to disk.
+    """
     output_dir = Path(output_dir)
     input_xml = Path(input_xml)
     output_xml = Path(output_xml) if output_xml is not None else None
@@ -172,6 +214,7 @@ def run_prediction(
         trust_remote_code=trust_remote_code,
     )
 
+    # Convert BioC XML into the JSON format expected by the token-classification pipeline.
     test_file = maybe_convert_bioc_xml(
         str(input_xml),
         str(output_dir / GENERATED_JSON_FILENAMES["test"]),
@@ -275,6 +318,14 @@ def run_prediction(
 
 
 def main() -> int:
+    """Command-line entry point for NER prediction.
+
+    Input:
+    - Command-line arguments.
+
+    Output:
+    - Returns the exit code from `run_prediction`.
+    """
     args = parse_args()
     return run_prediction(
         model_path=args.model_path,

@@ -1,19 +1,58 @@
 # Training and Evaluation
 
-This document is for training runs and evaluation. 
+This guide covers data preparation, model training, and evaluation for CellExLink.
 
-## Notes about Data 
+## Data Notes
 
-All datasets are used for named entity recognition evaluation. However, only `BioID`, `CRAFT`, and `CellLink` are used for named entity normalization and end-to-end evaluation, because the remaining datasets do not provide Cell Ontology identifier ground-truth labels.
+All datasets in the repository can be used for named entity recognition evaluation.
+Only `BioID`, `CRAFT`, and `CellLink` are used for named entity normalization and end-to-end evaluation, because the other datasets do not include Cell Ontology ground-truth identifiers.
 
-## Important note on the CellLink corpus
+## CellLink Notes
 
-For CellLink data, the original test split does not provide ground-truth normalization labels. Therefore, this repository uses the validation split for evaluation. The CellLink data provided in this repository for evaluation correspond to the validation split from the original source. Vague cell-type populations are excluded for both training and evaluation. Although the data in this repository include `cell_vague` annotations, the NER fine-tuning and evaluation code exclude them.
+For CellLink, the original test split does not include gold normalization labels.
+Because of that, this repository uses the validation split for normalization and end-to-end evaluation.
 
+`cell_vague` annotations are excluded from NER training and evaluation.
+
+## Data Preparation for NER
+
+Use [recognition/src/data_processing.py](/Users/alma/CellExLink-End-to-End-Cell-Type-Extraction-and-Cell-Ontology-Normalization-from-Biomedical-Text/recognition/src/data_processing.py) if you want to prepare one combined BioC XML training file before running training.
+
+This script:
+
+- reads one BioC XML file or many corpus folders
+- simply concatenates the `train.xml` training sets under `dataset/`
+- writes one combined BioC XML file
+
+Example:
+
+```bash
+python recognition/src/data_processing.py \
+  dataset \
+  --output recognition/data/train_all.xml
+```
+
+This step is optional.
+If you skip it, the NER training script can still read `dataset/` directly.
 
 ## Fine-Tuning
 
-### NER fine-tuning
+### NER Fine-Tuning
+
+Recommended workflow with explicit preprocessing:
+
+```bash
+python recognition/src/data_processing.py \
+  dataset \
+  --output recognition/data/train_all.xml
+
+python recognition/src/run_fine_tune_NER.py \
+  --train-xml recognition/data/train_all.xml \
+  --output-dir recognition/models/CellExLink-bioformer16L \
+  --model-name-or-path bioformers/bioformer-16L
+```
+
+You can also train directly from BioC XML:
 
 ```bash
 python recognition/src/run_fine_tune_NER.py \
@@ -22,9 +61,18 @@ python recognition/src/run_fine_tune_NER.py \
   --model-name-or-path bioformers/bioformer-16L
 ```
 
-- When `--train-xml` is set to the `dataset` folder, the script merges the training data from the files under that directory by simple concatenation.
+### What Joint Fine-Tuning Does
 
-### NEN fine-tuning
+With the repository's standard `dataset/<corpus>/train.xml` layout, passing `--train-xml dataset` performs the following steps:
+
+1. The converter selects `train.xml` from each direct corpus directory under `dataset/`. It does not read `validation.xml` or `test.xml` for parameter updates.
+2. During training conversion, annotations whose type is `cell_vague` are skipped. The passage itself is retained, together with its text and any other annotations. If `cell_vague` was the passage's only annotation, the resulting training record has an empty entity list.
+3. CellLink labels `cell_phenotype` and `cell_hetero` are normalized to the shared `cell_type` label.
+4. The selected `train.xml` files are used in sorted corpus-directory order. From the user side, the training input is still BioC XML. Inside the training pipeline, those passages are converted into training records for the trainer.
+
+Accordingly, it is accurate to say that joint fine-tuning uses the designated training partitions, excludes `cell_vague` annotations, and concatenates the training data from the selected `train.xml` files. This does not mean that entire passages containing a `cell_vague` annotation are discarded.
+
+### NEN Fine-Tuning
 
 ```bash
 python normalization/fine_tune_NEN.py \
@@ -34,7 +82,7 @@ python normalization/fine_tune_NEN.py \
 
 ## Evaluation
 
-### NER-only evaluation
+### NER-Only Evaluation
 
 ```bash
 python evaluation/strict_relax_NER.py \
@@ -43,11 +91,14 @@ python evaluation/strict_relax_NER.py \
   --evaluation_method strict
 ```
 
-Supported evaluation styles are `strict` and `relax`.
+Supported evaluation styles:
+
+- `strict`
+- `relax`
 
 By default, `strict_relax_NER.py` excludes `cell_vague` annotations.
 
-### NEN evaluation
+### NEN Evaluation
 
 ```bash
 python evaluation/run_eval.py \
@@ -60,11 +111,12 @@ python evaluation/run_eval.py \
 
 Useful `--score-mode` values:
 
-- `gold_mention_normalize`: score normalization on gold mentions only
-- `end_to_end`: score exact-span recognition and normalization jointly
-- `--dataset celllink`: use the CellLink evaluation setting
+- `gold_mention_normalize`
+- `end_to_end`
 
-### Runtime evaluation
+Use `--dataset celllink` for the CellLink evaluation setting.
+
+### Runtime Evaluation
 
 ```bash
 python evaluation/run_time_eval.py \
@@ -75,9 +127,9 @@ python evaluation/run_time_eval.py \
 
 Task choices:
 
-- `--task ner`: runtime for mention recognition
-- `--task el`: runtime for normalization
+- `--task ner` for mention recognition runtime
+- `--task el` for normalization runtime
 
 ## Other Baselines
 
-Baseline are documented in [../other_baselines/README.md](../other_baselines/README.md).
+Baseline methods are documented in [other_baselines/README.md](/Users/alma/CellExLink-End-to-End-Cell-Type-Extraction-and-Cell-Ontology-Normalization-from-Biomedical-Text/other_baselines/README.md).

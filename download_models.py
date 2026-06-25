@@ -1,3 +1,12 @@
+"""Download the default CellExLink model checkpoints.
+
+Input:
+- Optional output directory and a `--force` flag from the command line.
+
+Output:
+- Local model folders and a `models.json` manifest inside the chosen output directory.
+"""
+
 import argparse
 import json
 from pathlib import Path
@@ -16,6 +25,14 @@ MODEL_SPECS = {
 
 
 def parse_args() -> argparse.Namespace:
+    """Read command-line options for model download.
+
+    Input:
+    - Values passed on the command line.
+
+    Output:
+    - An `argparse.Namespace` with the output folder and force flag.
+    """
     parser = argparse.ArgumentParser(
         description="Download CellExLink models into the repository root models/ folder."
     )
@@ -33,6 +50,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def get_snapshot_download():
+    """Import the Hugging Face download helper only when needed.
+
+    Input:
+    - No direct function arguments.
+
+    Output:
+    - The `snapshot_download` function from `huggingface_hub`.
+    """
     try:
         from huggingface_hub import snapshot_download
     except ImportError as exc:
@@ -43,6 +68,14 @@ def get_snapshot_download():
 
 
 def write_manifest(output_root: Path) -> Path:
+    """Write a small JSON file describing the downloaded models.
+
+    Input:
+    - `output_root`: folder where the models are stored.
+
+    Output:
+    - The path to the created `models.json` file.
+    """
     manifest_path = output_root / "models.json"
     manifest_data = {
         "models": {
@@ -59,6 +92,14 @@ def write_manifest(output_root: Path) -> Path:
 
 
 def main() -> None:
+    """Download each default model and record where it was saved.
+
+    Input:
+    - Command-line arguments.
+
+    Output:
+    - Writes model files and a manifest to disk.
+    """
     args = parse_args()
     output_root = Path(args.output_root)
     output_root.mkdir(parents=True, exist_ok=True)

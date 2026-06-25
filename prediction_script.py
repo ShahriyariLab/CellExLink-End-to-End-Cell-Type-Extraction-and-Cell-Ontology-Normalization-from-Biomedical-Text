@@ -1,3 +1,13 @@
+"""Run the full CellExLink pipeline on BioC XML files.
+
+Input:
+- One BioC XML file or a directory of BioC XML files.
+- Paths to the NER model, NEN model, ontology JSONL, and abbreviation TSV.
+
+Output:
+- One normalized BioC XML file per input file with mention spans and Cell Ontology IDs added.
+"""
+
 import argparse
 import subprocess
 import sys
@@ -6,6 +16,14 @@ from pathlib import Path
 
 
 def pick_default_path(*candidates: str) -> str:
+    """Return the first existing path from the given options.
+
+    Input:
+    - `candidates`: possible file or directory paths.
+
+    Output:
+    - A string path. If none exist yet, the first candidate is returned.
+    """
     for candidate in candidates:
         if Path(candidate).exists():
             return candidate
@@ -13,6 +31,14 @@ def pick_default_path(*candidates: str) -> str:
 
 
 def parse_args() -> argparse.Namespace:
+    """Read command-line arguments for the end-to-end pipeline.
+
+    Input:
+    - Values passed on the command line.
+
+    Output:
+    - An `argparse.Namespace` containing the user settings.
+    """
     parser = argparse.ArgumentParser(
         description="Run CellExLink end-to-end on one BioC XML file or every XML file in a directory."
     )
@@ -60,6 +86,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def derive_base_name(path: Path) -> str:
+    """Build a clean file stem used for output names.
+
+    Input:
+    - `path`: input XML file path.
+
+    Output:
+    - A base filename without `.bioc.xml` or `.xml`.
+    """
     name = path.name
     if name.endswith(".bioc.xml"):
         return name[: -len(".bioc.xml")]
@@ -69,6 +103,14 @@ def derive_base_name(path: Path) -> str:
 
 
 def collect_input_files(input_path: Path) -> list[Path]:
+    """Expand a file or directory into the XML files that should be processed.
+
+    Input:
+    - `input_path`: one XML file or a directory containing XML files.
+
+    Output:
+    - A list of XML file paths sorted in processing order.
+    """
     if input_path.is_file():
         if input_path.suffix.lower() != ".xml":
             raise ValueError(f"Expected an XML file, got: {input_path}")
@@ -84,6 +126,16 @@ def collect_input_files(input_path: Path) -> list[Path]:
 
 
 def run_command(command: list[str], stage_name: str, input_file: Path) -> None:
+    """Run one pipeline stage and raise an error if it fails.
+
+    Input:
+    - `command`: command to execute.
+    - `stage_name`: human-readable stage label.
+    - `input_file`: file currently being processed.
+
+    Output:
+    - No return value. Raises `RuntimeError` on failure.
+    """
     status = subprocess.run(command, check=False).returncode
     if status != 0:
         raise RuntimeError(f"{stage_name} failed for {input_file} with exit code {status}")
@@ -98,6 +150,15 @@ def run_pipeline_for_file(
     ontology_path: str,
     abbreviations_path: str,
 ) -> Path:
+    """Run NER first, then normalization, for one BioC XML file.
+
+    Input:
+    - One input XML file plus model/resource paths.
+    - Either `output_root` for batch mode or `output_path` for a single file.
+
+    Output:
+    - The final normalized BioC XML path that was written.
+    """
     base_name = derive_base_name(input_file)
     if output_path is not None:
         final_output_xml = output_path
@@ -118,6 +179,7 @@ def run_pipeline_for_file(
             "or pass --nen-model-path."
         )
 
+    # Keep intermediate NER files in a temporary folder so only the final XML is saved.
     with tempfile.TemporaryDirectory(prefix=f"cellexlink_{base_name}_") as tmp_dir:
         ner_output_dir = Path(tmp_dir) / "ner"
         ner_output_dir.mkdir(parents=True, exist_ok=True)
@@ -159,6 +221,14 @@ def run_pipeline_for_file(
 
 
 def main() -> None:
+    """Entry point for batch or single-file CellExLink prediction.
+
+    Input:
+    - Command-line arguments.
+
+    Output:
+    - Writes normalized XML files to disk and prints progress messages.
+    """
     args = parse_args()
     input_path = Path(args.input_path)
     input_files = collect_input_files(input_path)
