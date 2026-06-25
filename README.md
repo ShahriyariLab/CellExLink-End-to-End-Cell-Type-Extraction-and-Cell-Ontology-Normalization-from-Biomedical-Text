@@ -152,3 +152,10 @@ Datasets  remain subject to their respective licenses and terms of use.
 
 Please follow the applicable license, citation, and redistribution terms for each dataset from their original soruce.
 
+## License
+
+Unless otherwise noted, the CellExLink source code is licensed under the
+GNU General Public License v3.0 only. See [LICENSE](LICENSE).
+
+Datasets, ontology resources, model checkpoints, and dependencies remain
+subject to their respective licenses and terms of use.
