@@ -13,6 +13,7 @@ authors:
     orcid: "https://orcid.org/0000-0001-6234-8449"
 
 license: GPL-3.0-or-later
+date-released: 2026-06-25
 
 repository-code: "https://github.com/ShahriyariLab/CellExLink-End-to-End-Cell-Type-Extraction-and-Cell-Ontology-Normalization-from-Biomedical-Text"
 
