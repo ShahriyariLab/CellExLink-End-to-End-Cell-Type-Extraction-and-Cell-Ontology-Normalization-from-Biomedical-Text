@@ -7,8 +7,8 @@ CellExLink is an end-to-end biomedical text-mining pipeline that detects cell-ty
 
 **Input**
 
-- One unannotated [BioC XML](https://bioc.sourceforge.net/) file, or a directory containing BioC XML files at its top level.
-- Typical inputs include PubMed titles and abstracts or eligible PMC full-text articles obtained through the NCBI BioC APIs.
+- An unannotated [BioC XML](https://bioc.sourceforge.net/) file, or a directory containing BioC XML files.
+- Accepts BioC XML input, including PubMed title/abstract records and eligible PMC full-text articles retrieved through the NCBI BioC APIs. Example inputs are provided in `examples/bioc_abstracts` and `examples/bioc_fulltext`.
 
 **Output**
 
@@ -28,7 +28,7 @@ BioC XML with cell-type spans and CL identifiers
 
 ## How CellExLink works
 
-1. **Named entity recognition (NER):** Bioformer16L detects cell-type mention spans in biomedical text.
+1. **Named entity recognition (NER):** Fine-tuned bioformer16L detects cell-type mention spans in biomedical text.
 2. **Named entity normalization (NEN):** Fine-tuned SapBERT retrieves candidate Cell Ontology concepts from preferred labels and synonyms. Abbreviation handling and semantic–lexical reranking select the final `CL` identifier.
 
 The released command-line workflow runs both stages automatically; users do not need to fine-tune the models or manually transfer NER output into the normalization component.
@@ -44,9 +44,9 @@ conda activate cellexlink
 python -m pip install -r requirements.txt
 ```
 
-## Download the released models
+## Download the released checkpoints
 
-The default recognition and ontology-linking checkpoints are hosted on Hugging Face and are not stored in this repository:
+CellExLink uses two checkpoints: Bioformer16L for cell-type recognition and SapBERT as the dense-retrieval backbone for Cell Ontology normalization. These checkpoints are hosted on Hugging Face and are not stored in this repository.
 
 - Recognition: [`CellExLink-bioformer16L`](https://huggingface.co/almire/CellExLink-bioformer16L)
 - Ontology linking: [`CellExLink-Sapbert`](https://huggingface.co/almire/CellExLink-Sapbert)
