@@ -12,7 +12,7 @@ Only `BioID`, `CRAFT`, and `CellLink` are used for named entity normalization an
 For CellLink, the original test split does not include gold normalization labels.
 Because of that, this repository uses the validation split for normalization and end-to-end evaluation.
 
-`cell_vague` annotations are excluded from NER training and evaluation.
+`cell_vague` annotations are excluded from training and evaluation.
 
 ## Data Preparation for NER
 
@@ -31,9 +31,6 @@ python recognition/src/data_processing.py \
   dataset \
   --output recognition/data/train_all.xml
 ```
-
-This step is optional.
-If you skip it, the NER training script can still read `dataset/` directly.
 
 ## Fine-Tuning
 
@@ -65,12 +62,10 @@ python recognition/src/run_fine_tune_NER.py \
 
 With the repository's standard `dataset/<corpus>/train.xml` layout, passing `--train-xml dataset` performs the following steps:
 
-1. The converter selects `train.xml` from each direct corpus directory under `dataset/`. It does not read `validation.xml` or `test.xml` for parameter updates.
-2. During training conversion, annotations whose type is `cell_vague` are skipped. The passage itself is retained, together with its text and any other annotations. If `cell_vague` was the passage's only annotation, the resulting training record has an empty entity list.
+1. The converter selects `train.xml` from each direct corpus directory under `dataset/`. 
+2. During training conversion, annotations whose type is `cell_vague` are skipped. 
 3. CellLink labels `cell_phenotype` and `cell_hetero` are normalized to the shared `cell_type` label.
-4. The selected `train.xml` files are used in sorted corpus-directory order. From the user side, the training input is still BioC XML. Inside the training pipeline, those passages are converted into training records for the trainer.
-
-Accordingly, it is accurate to say that joint fine-tuning uses the designated training partitions, excludes `cell_vague` annotations, and concatenates the training data from the selected `train.xml` files. This does not mean that entire passages containing a `cell_vague` annotation are discarded.
+4. It concatenates the training data from the `train.xml` files. 
 
 ### NEN Fine-Tuning
 
