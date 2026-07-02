@@ -1,19 +1,19 @@
 cff-version: 1.2.0
 message: "If you use CellExLink, please cite this software."
-title: "CellExLink: End-to-End Cell-Type Recognition and Normalization in Biomedical Text"
-type: software
+title: "CellExLink: End-to-end cell-type recognition and normalization in biomedical text"
 version: "1.0.0"
 
 authors:
   - family-names: "Nabijiang"
     given-names: "Alimire"
-
+    orcid: "https://orcid.org/0009-0009-6081-7016"
   - family-names: "Shahriyari"
     given-names: "Leili"
     orcid: "https://orcid.org/0000-0001-6234-8449"
 
-license: GPL-3.0-or-later
+license: GPL-3.0-only
 date-released: 2026-06-25
+commit: "6b97b9c53b868b6c3ba184a6f3471aad3362fd83"
 
 repository-code: "https://github.com/ShahriyariLab/CellExLink-End-to-End-Cell-Type-Extraction-and-Cell-Ontology-Normalization-from-Biomedical-Text"
 
